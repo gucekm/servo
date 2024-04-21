@@ -10,6 +10,7 @@ void ServoLoop();
 int ServoPosition();
 
 #ifdef SIMULATION
-void ServoSimulatePosition(int position);
+void SimulatedServoSetup();
+void SimulatedServoLoop();
 #endif // SIMULATION
 #endif

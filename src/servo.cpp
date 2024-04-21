@@ -1,27 +1,31 @@
 #include <Arduino.h>
 #include <servo.h>
+#include "simulation/simulation.h"
 
-
-void ServoSetup() {
+void ServoSetup()
+{
     pinMode(SERVO_POSITION_PIN, INPUT);
 }
 
-void ServoLoop() {
+void ServoLoop()
+{
     // Serial.print("Position: ");
     // Serial.println(ServoPosition());
 }
 
+void SetServoSetSpeed(int newSpeed)
+{
 #ifdef SIMULATION
-int servoSimulationPosition = 0;
-
-void ServoSimulatePosition(int position) {
-    servoSimulationPosition = position;
-}
+    setSimulatedServoSpeed(newSpeed);
+#else
+    // Not implemented
 #endif
+}
 
-int ServoPosition() {
+int ServoPosition()
+{
 #ifdef SIMULATION
-    return servoSimulationPosition;
+    return getSimulatedServoPosition();
 #else
     return analogRead(SERVO_POSITION_PIN);
 #endif

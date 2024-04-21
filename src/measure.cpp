@@ -114,7 +114,6 @@ int MeasureSwingTimeLoop() {
             return 0; //state machine not completed yet
         }
     case 2: //wait for servo to reach max position
-        ServoSimulatePosition(MAX_SERVO_POSITION);
         if (ServoPosition() >= MAX_SERVO_SWING_POSITION) {
             measurements[measurementIndex].time = micros();
             measurements[measurementIndex].value.intVal = ServoPosition();
@@ -155,21 +154,21 @@ int  MeasureMotorSpeedLinearityLoop() {
         motor1.setSpeed(-255);
         state = 1;
     case 1: //wait for servo to reach min position
-        ServoSimulatePosition(MIN_SERVO_SWING_POSITION);
         if (ServoPosition() > MIN_SERVO_SWING_POSITION) {
             return 0;
         }
-        motor1.setSpeed(0);
-        measurementTime = micros() + 500000; //wait motor to stop for half a second
+        motor1.setSpeed(0); //stop motor
+        measurementTime = micros() + 500000; 
         state = 2;
     case 2: //wait for motor to stop
         if (micros() < measurementTime) {
             return 0;
         }
         state = 3;
+        motor1.setSpeed(255); //start motor
     case 3:
-        currentTime = micros(); //wait for next measurement 
-        if (currentTime < measurementTime)
+        currentTime = micros(); 
+        if (currentTime < measurementTime) //wait for next measurement 
             return 0;
 
         measurements[measurementIndex].time = currentTime;
