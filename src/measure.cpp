@@ -4,17 +4,18 @@
 #include <servo.h>
 #include <motor.h>
 
-#define MAX_MEASUREMENTS 20  
+#define MAX_MEASUREMENTS 20
 #define MEASUREMENT_RUNS 10
 #define MEASUREMENT_INTERVAL 1000
-#define MAX_SERVO_POSITION 1023  
+#define MAX_SERVO_POSITION 1023
 #define MIN_SERVO_SWING_POSITION 100
 #define MAX_SERVO_SWING_POSITION 1000
 
-
-typedef struct {
+typedef struct
+{
     unsigned long time;
-    union {
+    union
+    {
         float floatVal;
         int intVal;
         unsigned int uintVal;
@@ -75,14 +76,15 @@ typedef struct {
 } myStateMachine;
 */
 
-typedef struct {
+typedef struct
+{
     int state;
-    struct {
+    struct
+    {
         int var1;
         int var2;
     } variable;
 } measureMachine;
-
 
 /**
  * Measures the time it takes for the servo to swing from min to max position.
@@ -92,43 +94,51 @@ typedef struct {
  *
  * @return 1 if the state machine is completed, 0 otherwise.
  */
-int MeasureSwingTimeLoop() {
+int MeasureSwingTimeLoop()
+{
     static int state = 0;
 
-    switch (state) {
-    case 0: //measuremnt setup
+    switch (state)
+    {
+    case 0: // measuremnt setup
         measurementIndex = 0;
         isNewMeasurementAvailable = false;
         isMeasurementComplete = false;
         isMeasurementPrinted = false;
         motor1.setSpeed(-255);
         state = 1;
-    case 1: //wait for servo to reach min position
-        if (ServoPosition() < MIN_SERVO_SWING_POSITION) {
+    case 1: // wait for servo to reach min position
+        if (ServoPosition() < MIN_SERVO_SWING_POSITION)
+        {
             measurements[measurementIndex].time = micros();
             measurements[measurementIndex].value.intVal = ServoPosition();
             measurementIndex++;
             motor1.setSpeed(255);
             state = 2;
-        } else {
-            return 0; //state machine not completed yet
         }
-    case 2: //wait for servo to reach max position
-        if (ServoPosition() >= MAX_SERVO_SWING_POSITION) {
+        else
+        {
+            return 0; // state machine not completed yet
+        }
+    case 2: // wait for servo to reach max position
+        if (ServoPosition() >= MAX_SERVO_SWING_POSITION)
+        {
             measurements[measurementIndex].time = micros();
             measurements[measurementIndex].value.intVal = ServoPosition();
             isMeasurementComplete = true;
             isNewMeasurementAvailable = true;
             measurementIndex++;
             state = 3;
-        } else {
-            return 0; //stay in this state
+        }
+        else
+        {
+            return 0; // stay in this state
         }
     case 3:
-        return 1;   //state machine completed
+        return 1; // state machine completed
     }
-    //In case of error stay in same state.
-    //Optional: add error handling code here
+    // In case of error stay in same state.
+    // Optional: add error handling code here
     return 0;
 }
 
@@ -140,53 +150,67 @@ int MeasureSwingTimeLoop() {
  *
  * @return 1 if the state machine is completed, 0 otherwise.
  */
-int  MeasureMotorSpeedLinearityLoop() {
+int MeasureMotorSpeedLinearityLoop()
+{
     static int state = 0;
     static unsigned long currentTime;
     static unsigned long measurementTime;
 
-    switch (state) {
-    case 0: //measurement setup
-        measurementIndex = 0;
-        isNewMeasurementAvailable = false;
-        isMeasurementComplete = false;
-        isMeasurementPrinted = false;
-        motor1.setSpeed(-255);
-        state = 1;
-    case 1: //wait for servo to reach min position
-        if (ServoPosition() > MIN_SERVO_SWING_POSITION) {
-            return 0;
+    while (1)
+    {
+        switch (state)
+        {
+        case 0: // measurement setup
+            measurementIndex = 0;
+            isNewMeasurementAvailable = false;
+            isMeasurementComplete = false;
+            isMeasurementPrinted = false;
+            motor1.setSpeed(-255);
+            state = 1;
+            continue;
+        case 1: // wait for servo to reach min position
+            if (ServoPosition() < MIN_SERVO_SWING_POSITION)
+            {
+                motor1.setSpeed(0); // stop motor
+                measurementTime = micros() + 500000;
+                state = 2;
+                continue;
+            }
+            break;
+        case 2: // wait for motor to stop
+            if (micros() > measurementTime)
+            {
+                state = 3;
+                motor1.setSpeed(255); // start motor
+                continue;
+            }
+            break;
+        case 3:
+            currentTime = micros();
+            if (currentTime > measurementTime)
+            { // wait for next measurement
+                measurements[measurementIndex].time = currentTime;
+                measurements[measurementIndex].value.intVal = ServoPosition();
+                isNewMeasurementAvailable = true;
+                measurementIndex++;
+                measurementTime += MEASUREMENT_INTERVAL;
+            }
+            if (measurementIndex = MAX_MEASUREMENTS)
+            {
+                isMeasurementComplete = true;
+                state = 4;
+                continue;
+            }
+            break;
+        case 4:
+            return 1; // state machine completed
+        default:
+            // In case of error stay in same state.
+            // Optional: add error handling code here
         }
-        motor1.setSpeed(0); //stop motor
-        measurementTime = micros() + 500000; 
-        state = 2;
-    case 2: //wait for motor to stop
-        if (micros() < measurementTime) {
-            return 0;
-        }
-        state = 3;
-        motor1.setSpeed(255); //start motor
-    case 3:
-        currentTime = micros(); 
-        if (currentTime < measurementTime) //wait for next measurement 
-            return 0;
-
-        measurements[measurementIndex].time = currentTime;
-        measurements[measurementIndex].value.intVal = ServoPosition();
-        isNewMeasurementAvailable = true;
-        measurementIndex++;
-        measurementTime += MEASUREMENT_INTERVAL;
-        if (measurementIndex < MAX_MEASUREMENTS)
-            return 0;
-
-        isMeasurementComplete = true;
-        state = 4;
-    case 4:
-        return 1; //state machine completed
+        // stay in same state
+        return 0;
     }
-    //In case of error stay in same state.
-    //Optional: add error handling code here
-    return 0;
 }
 
 /**
@@ -194,7 +218,8 @@ int  MeasureMotorSpeedLinearityLoop() {
  *
  * @return true if a new measurement is available, false otherwise.
  */
-bool IsNewMeasurementAvailable() {
+bool IsNewMeasurementAvailable()
+{
     bool retValue = isNewMeasurementAvailable;
     isNewMeasurementAvailable = false;
     return retValue;
@@ -205,7 +230,8 @@ bool IsNewMeasurementAvailable() {
  *
  * @return true if the measurement is complete, false otherwise.
  */
-bool IsMeasurementComplete() {
+bool IsMeasurementComplete()
+{
     return isMeasurementComplete;
 }
 
@@ -216,7 +242,8 @@ bool IsMeasurementComplete() {
  *
  * @return A reference to the last measurement.
  */
-measurement& GetLastMeasurement() {
+measurement &GetLastMeasurement()
+{
     return measurements[measurementIndex - 1];
 }
 
@@ -225,26 +252,34 @@ measurement& GetLastMeasurement() {
  *
  * This function prints all measurements to the console.
  */
-int  PrintAllMeasurementsLoop() {
+int PrintAllMeasurementsLoop()
+{
     static int state = 0;
     static int i = 0;
-    switch (state) {
-    case 0:
-        i = 0;
-        state = 1;
-    case 1:
-        if (i == measurementIndex) {
-            isMeasurementPrinted = true;
-            return 1;
+    while (1)
+    {
+        switch (state)
+        {
+        case 0:
+            i = 0;
+            state = 1;
+            continue;
+        case 1:
+            if (i == measurementIndex)
+            {
+                isMeasurementPrinted = true;
+                return 1;
+            }
+            Serial.print(measurements[i].time);
+            Serial.print(",");
+            Serial.println(measurements[i].value.intVal);
+            i++;
+            break;
+        default:
+            // In case of error stay in same state.
+            // Optional: add error handling code here
         }
-        Serial.print(measurements[i].time);
-        Serial.print(",");
-        Serial.println(measurements[i].value.intVal);
-        i++;
-        return 0;
     }
-    //In case of error stay in same state.
-    //Optional: add error handling code here
     return 0;
 }
 
@@ -255,33 +290,51 @@ int  PrintAllMeasurementsLoop() {
  *
  * @return True if the measurement has been printed, false otherwise.
  */
-bool IsMeasurementPrinted() {
+bool IsMeasurementPrinted()
+{
     return isMeasurementPrinted;
 }
 
-void MeasurementSetup() {
-
+void MeasurementSetup()
+{
 }
 
-int MeasurementLoop() {
+int MeasurementLoop()
+{
     static int state = 0;
-    switch (state) {
+    while (1)
+    {
+        switch (state)
+        {
 
-    case 0:
-        if (!MeasureSwingTimeLoop())
-            return 0;
-        state = 1;
-    case 1:
-        if (!MeasureMotorSpeedLinearityLoop())
-            return 0;
-        motor1.setEnabled(false); //measurements are complete, disable motor
-        state = 2;
-    case 2:
-        if (!PrintAllMeasurementsLoop())
-            return 0;
-        state = 3;
-    case 3:
-        return 1;
+        case 0:
+            if (MeasureSwingTimeLoop())
+            {
+                state = 1;
+                continue;
+            }
+            break;
+        case 1:
+            if (!MeasureMotorSpeedLinearityLoop())
+            {
+                motor1.setEnabled(false); // measurements are complete, disable motor
+                state = 2;
+                continue;
+            }
+            break;
+        case 2:
+            if (PrintAllMeasurementsLoop())
+            {
+                state = 3;
+                continue;
+            }
+            break;
+        case 3:
+            return 1;
+        default:
+            // In case of error stay in same state.
+            // Optional: add error handling code here
+        }
     }
     return 0;
 }
