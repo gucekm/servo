@@ -1,0 +1,322 @@
+<title>Maks — Answer Quality Audit</title>
+<style>
+  :root{
+    --bg:#FAF7F9; --surface:#FFFFFF; --surface-2:#F4EEF3; --ink:#1E1720;
+    --muted:#736A75; --line:#E7DEE6; --accent:#C60068; --accent-ink:#A80059;
+    --good:#0E7C5A; --warn:#9A6A12; --crit:#C1362F;
+    --good-bg:#E3F3EC; --warn-bg:#F6EDD8; --crit-bg:#F7E3E1;
+    --shadow:0 1px 2px rgba(30,23,32,.05),0 8px 24px -12px rgba(30,23,32,.18);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#16121A; --surface:#1E1922; --surface-2:#262029; --ink:#F2E9EF;
+      --muted:#A79DAB; --line:#322B36; --accent:#FF4FA3; --accent-ink:#FF7BBB;
+      --good:#43C295; --warn:#E0A63C; --crit:#F2726B;
+      --good-bg:#12271F; --warn-bg:#2A2314; --crit-bg:#2C1919;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#FAF7F9; --surface:#FFFFFF; --surface-2:#F4EEF3; --ink:#1E1720;
+    --muted:#736A75; --line:#E7DEE6; --accent:#C60068; --accent-ink:#A80059;
+    --good:#0E7C5A; --warn:#9A6A12; --crit:#C1362F;
+    --good-bg:#E3F3EC; --warn-bg:#F6EDD8; --crit-bg:#F7E3E1;
+    --shadow:0 1px 2px rgba(30,23,32,.05),0 8px 24px -12px rgba(30,23,32,.18);
+  }
+  :root[data-theme="dark"]{
+    --bg:#16121A; --surface:#1E1922; --surface-2:#262029; --ink:#F2E9EF;
+    --muted:#A79DAB; --line:#322B36; --accent:#FF4FA3; --accent-ink:#FF7BBB;
+    --good:#43C295; --warn:#E0A63C; --crit:#F2726B;
+    --good-bg:#12271F; --warn-bg:#2A2314; --crit-bg:#2C1919;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.6);
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:ui-monospace,"SF Mono","Cascadia Code",Menlo,Consolas,monospace}
+  .tnum{font-variant-numeric:tabular-nums}
+  .wrap{max-width:1060px;margin:0 auto;padding:clamp(20px,4vw,52px)}
+
+  .eyebrow{
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-ink);
+    margin:0 0 10px;
+  }
+  h1{
+    font-size:clamp(1.9rem,4.6vw,3rem);line-height:1.03;margin:0;font-weight:800;
+    letter-spacing:-.02em;text-wrap:balance;
+  }
+  .lede{color:var(--muted);max-width:60ch;margin:14px 0 0;font-size:1.02rem}
+  .rule{height:1px;background:var(--line);border:0;margin:30px 0}
+
+  /* headline metric band */
+  .headline{
+    display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,44px);align-items:center;
+    background:var(--surface);border:1px solid var(--line);border-radius:20px;
+    padding:clamp(20px,3.4vw,36px);box-shadow:var(--shadow);
+  }
+  .gauge{
+    --v:75.7; width:172px;height:172px;border-radius:50%;flex:none;
+    background:
+      radial-gradient(closest-side,var(--surface) 78%,transparent 79%),
+      conic-gradient(var(--accent) calc(var(--v)*1%), var(--surface-2) 0);
+    display:grid;place-items:center;position:relative;
+  }
+  .gauge .num{font-size:2.5rem;font-weight:800;letter-spacing:-.03em;line-height:1}
+  .gauge .den{color:var(--muted);font-size:.78rem;margin-top:2px}
+  .gauge .cap{position:absolute;bottom:20px;font-size:.66rem;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--accent-ink)}
+  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;min-width:0}
+  .kpi{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+  .kpi .v{font-size:1.7rem;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+  .kpi .l{color:var(--muted);font-size:.82rem;margin-top:3px}
+  .kpi .s{font-size:.74rem;margin-top:6px}
+
+  h2{font-size:1.32rem;font-weight:800;letter-spacing:-.01em;margin:0 0 4px}
+  .sub{color:var(--muted);font-size:.9rem;margin:0 0 18px}
+  section{margin-top:46px}
+
+  /* category meters */
+  .cats{display:flex;flex-direction:column;gap:14px}
+  .cat{
+    display:grid;grid-template-columns:150px 1fr auto;gap:18px;align-items:center;
+    background:var(--surface);border:1px solid var(--line);border-radius:14px;
+    padding:16px 20px;box-shadow:var(--shadow);
+  }
+  .cat .name{font-weight:700}
+  .cat .name small{display:block;color:var(--muted);font-weight:500;font-size:.76rem;margin-top:2px}
+  .meter{height:12px;border-radius:99px;background:var(--surface-2);overflow:hidden;position:relative}
+  .meter>span{display:block;height:100%;border-radius:99px;width:0;animation:grow .9s cubic-bezier(.22,1,.36,1) forwards}
+  .meter.good>span{background:var(--good)} .meter.warn>span{background:var(--warn)} .meter.crit>span{background:var(--crit)}
+  .cat .meta{display:flex;gap:18px;align-items:baseline;justify-content:flex-end;min-width:210px}
+  .cat .score{font-size:1.5rem;font-weight:800;letter-spacing:-.02em}
+  .cat .sm{color:var(--muted);font-size:.78rem;text-align:right;line-height:1.35}
+  @keyframes grow{to{width:var(--w)}}
+  @media (prefers-reduced-motion:reduce){.meter>span{animation:none;width:var(--w)}}
+
+  .chip{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:700;
+    padding:3px 9px;border-radius:99px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.02em}
+  .chip.good{color:var(--good);background:var(--good-bg)}
+  .chip.warn{color:var(--warn);background:var(--warn-bg)}
+  .chip.crit{color:var(--crit);background:var(--crit-bg)}
+
+  /* stars */
+  .stars{display:flex;flex-direction:column;gap:9px;background:var(--surface);
+    border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow)}
+  .star{display:grid;grid-template-columns:64px 1fr 42px;gap:14px;align-items:center}
+  .star .lab{color:var(--accent-ink);font-size:.85rem;letter-spacing:.04em}
+  .sbar{height:14px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+  .sbar>span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-ink));
+    width:0;animation:grow 1s cubic-bezier(.22,1,.36,1) forwards;border-radius:99px}
+  .star .ct{text-align:right;font-weight:700}
+
+  /* error callout */
+  .errhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .errs{display:flex;flex-direction:column;gap:14px;margin-top:18px}
+  .err{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--crit);
+    border-radius:12px;padding:16px 20px;box-shadow:var(--shadow)}
+  .err .q{font-weight:700;margin:0 0 10px}
+  .err .row{display:grid;grid-template-columns:88px 1fr;gap:12px;font-size:.92rem;padding:4px 0}
+  .err .row .k{color:var(--muted);font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;padding-top:2px}
+  .err .said{color:var(--crit)}
+  .err .true{color:var(--good)}
+
+  /* examples two-col */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .col h3{margin:0 0 12px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;
+    font-family:ui-monospace,Menlo,monospace}
+  .col.win h3{color:var(--good)} .col.lose h3{color:var(--warn)}
+  .ex{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;
+    margin-bottom:12px;box-shadow:var(--shadow)}
+  .ex .exq{font-weight:600;font-size:.92rem;margin:0 0 6px;display:flex;gap:10px;align-items:baseline}
+  .ex .exq b{margin-left:auto;font-family:ui-monospace,Menlo,monospace;font-size:.78rem}
+  .ex .exa{color:var(--muted);font-size:.86rem;margin:0}
+
+  .method{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;
+    padding:20px 22px;font-size:.86rem;color:var(--muted)}
+  .method b{color:var(--ink)}
+  .method code{font-family:ui-monospace,Menlo,monospace;background:var(--surface);
+    border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:.82em;color:var(--ink)}
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.78rem;text-wrap:pretty}
+
+  @media (max-width:760px){
+    .headline{grid-template-columns:1fr;justify-items:center;text-align:center}
+    .kpis{grid-template-columns:1fr;width:100%}
+    .cat{grid-template-columns:1fr;gap:12px}
+    .cat .metelem,.cat .meta{justify-content:flex-start}
+    .cat .meta{min-width:0}
+    .cols{grid-template-columns:1fr}
+    .err .row{grid-template-columns:1fr}
+  }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">Independent automated evaluation · 12 Jul 2026</p>
+  <h1>Maks answer-quality audit</h1>
+  <p class="lede">300 customer-style questions drawn from Telekom Slovenije product pages
+    <em>and the official price lists (ceniki)</em> — prepaid&nbsp;(Mobi), postpaid&nbsp;(Naj),
+    fixed broadband and IPTV&nbsp;(NEO), 75 each — asked to the live <b>Maks</b> chat assistant
+    and scored automatically against the facts published on the site.</p>
+
+  <hr class="rule">
+
+  <div class="headline">
+    <div class="gauge" style="--v:77.2">
+      <div>
+        <div class="num tnum">77.2</div>
+        <div class="den tnum">/ 100</div>
+      </div>
+      <div class="cap">Quality</div>
+    </div>
+    <div class="kpis">
+      <div class="kpi">
+        <div class="v tnum">77.3<span style="font-size:1rem">%</span></div>
+        <div class="l">Fact recall</div>
+        <div class="s" style="color:var(--muted)">published facts present in answer</div>
+      </div>
+      <div class="kpi">
+        <div class="v tnum">17<span style="font-size:1rem">%</span></div>
+        <div class="l">Deflections</div>
+        <div class="s"><span class="chip warn">51 / 300 non-answers</span></div>
+      </div>
+      <div class="kpi">
+        <div class="v tnum">3.86<span style="font-size:1rem">★</span></div>
+        <div class="l">Mean rating</div>
+        <div class="s" style="color:var(--muted)">222 of 300 scored ★★★★★</div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Quality by topic</h2>
+    <p class="sub">Bars show the 0–100 quality score; band colour marks strong / mixed / weak.</p>
+    <div class="cats">
+      <!-- prepaid -->
+      <div class="cat">
+        <div class="name">Prepaid <small>Mobi · 75 Q</small></div>
+        <div class="meter good"><span style="--w:86.8%"></span></div>
+        <div class="meta">
+          <div class="score tnum">86.8</div>
+          <div class="sm">recall 87%<br><span class="chip good">3 deflect</span></div>
+        </div>
+      </div>
+      <!-- iptv -->
+      <div class="cat">
+        <div class="name">IPTV <small>NEO TV · 75 Q</small></div>
+        <div class="meter good"><span style="--w:82.3%"></span></div>
+        <div class="meta">
+          <div class="score tnum">82.3</div>
+          <div class="sm">recall 83%<br><span class="chip good">8 deflect</span></div>
+        </div>
+      </div>
+      <!-- postpaid -->
+      <div class="cat">
+        <div class="name">Postpaid <small>Naj · 75 Q</small></div>
+        <div class="meter good"><span style="--w:78.6%"></span></div>
+        <div class="meta">
+          <div class="score tnum">78.6</div>
+          <div class="sm">recall 79%<br><span class="chip warn">11 deflect</span></div>
+        </div>
+      </div>
+      <!-- broadband -->
+      <div class="cat">
+        <div class="name">Broadband <small>fixed internet · 75 Q</small></div>
+        <div class="meter crit"><span style="--w:61%"></span></div>
+        <div class="meta">
+          <div class="score tnum">61.0</div>
+          <div class="sm">recall 61%<br><span class="chip crit">29 deflect</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Where the weakness is</h2>
+    <p class="sub">Star rating across all 300 answers — the split is bimodal: mostly excellent, with a heavy tail of near-zero broadband answers.</p>
+    <div class="stars">
+      <div class="star"><span class="lab">★★★★★</span><div class="sbar"><span style="--w:100%"></span></div><span class="ct tnum">222</span></div>
+      <div class="star"><span class="lab">★★★★</span><div class="sbar"><span style="--w:4.5%"></span></div><span class="ct tnum">10</span></div>
+      <div class="star"><span class="lab">★★★</span><div class="sbar"><span style="--w:5.4%"></span></div><span class="ct tnum">12</span></div>
+      <div class="star"><span class="lab">★★</span><div class="sbar"><span style="--w:10.4%"></span></div><span class="ct tnum">23</span></div>
+      <div class="star"><span class="lab">★</span><div class="sbar"><span style="--w:14.9%"></span></div><span class="ct tnum">33</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="errhead">
+      <h2 style="margin:0">Potential factual errors</h2>
+      <span class="chip crit">answered confidently · fact-check failed</span>
+    </div>
+    <p class="sub" style="margin-top:10px">Answers where Maks stated a specific value that contradicts the site or the price list. These are the highest-risk failures — a hand-off would be safer than a wrong number. ~10 confirmed across the 300 questions; a representative set:</p>
+    <div class="errs">
+      <div class="err">
+        <p class="q">Po koliko GB se v paketu Mobi C zniža hitrost prenosa? <span class="mono" style="color:var(--muted);font-size:.8rem">· prepaid/mobi05</span></p>
+        <div class="row"><div class="k">Maks said</div><div class="said">“…hitrost se zniža <b>po porabi 1&nbsp;GB</b> podatkov.”</div></div>
+        <div class="row"><div class="k">Site</div><div class="true">Throttling kicks in after <b>200&nbsp;GB</b>. Off by 200×. (Earlier run said 5&nbsp;GB — the wrong answer isn't even stable.)</div></div>
+      </div>
+      <div class="err">
+        <p class="q">Koliko znaša priključna taksa ob sklenitvi paketa Naj? <span class="mono" style="color:var(--muted);font-size:.8rem">· postpaid/naj10</span></p>
+        <div class="row"><div class="k">Maks said</div><div class="said">“Priključna taksa … znaša <b>29,00&nbsp;€</b>.”</div></div>
+        <div class="row"><div class="k">Cenik</div><div class="true">The connection fee is <b>10,95&nbsp;€</b>.</div></div>
+      </div>
+      <div class="err">
+        <p class="q">Koliko GB v EU-tarifi lahko porabim s paketom Naj B? <span class="mono" style="color:var(--muted);font-size:.8rem">· postpaid/naj46</span></p>
+        <div class="row"><div class="k">Maks said</div><div class="said">“…v državah EU brez dodatnih stroškov porabite <b>13&nbsp;GB</b>.”</div></div>
+        <div class="row"><div class="k">Site</div><div class="true">Naj B includes <b>41,71&nbsp;GB</b> in the EU-tariff zone.</div></div>
+      </div>
+      <div class="err">
+        <p class="q">Na kakšno hitrost pade prenos po limitu pri Naj B in Naj C? <span class="mono" style="color:var(--muted);font-size:.8rem">· postpaid/naj57</span></p>
+        <div class="row"><div class="k">Maks said</div><div class="said">“…zmanjša na <b>64&nbsp;kbps</b>.”</div></div>
+        <div class="row"><div class="k">Site</div><div class="true">Naj B/C throttle to <b>2/1&nbsp;Mbit/s</b> — 64&nbsp;kbit/s is <em>Mobi&nbsp;C</em>'s spec. Maks mixed up two products.</div></div>
+      </div>
+      <div class="err">
+        <p class="q">Koliko stane dodatna telefonska številka pri fiksnem paketu? <span class="mono" style="color:var(--muted);font-size:.8rem">· iptv/tv62</span></p>
+        <div class="row"><div class="k">Maks said</div><div class="said">“…stane <b>2&nbsp;EUR</b> na mesec na številko.”</div></div>
+        <div class="row"><div class="k">Cenik</div><div class="true">Additional IP-telephony number is <b>1,27&nbsp;€/mo</b>.</div></div>
+      </div>
+      <div class="err">
+        <p class="q">Koliko stane samostojni TV paket NEO TV brez interneta? <span class="mono" style="color:var(--muted);font-size:.8rem">· iptv/tv07, tv32</span></p>
+        <div class="row"><div class="k">Maks said</div><div class="said">“NEO TV <b>ni na voljo</b> kot samostojni TV paket brez interneta.”</div></div>
+        <div class="row"><div class="k">Site</div><div class="true">A standalone <b>NEO TV</b> package exists at <b>41&nbsp;€/mo</b> (scheme Standard, 7-day catch-up).</div></div>
+      </div>
+    </div>
+    <p class="sub" style="margin-top:14px">Also seen: SIM 2 quoted at 4,99&nbsp;€ (cenik 11,99&nbsp;€) and the recurring inability to price the fixed NEO packages at all.</p>
+  </section>
+
+  <section>
+    <h2>The two failure modes</h2>
+    <div class="cols">
+      <div class="col win">
+        <h3>◆ Strong — mobile & add-on facts</h3>
+        <div class="ex"><p class="exq">Naj A — cena in podatki? <b class="tnum" style="color:var(--good)">100</b></p><p class="exa">“Naj A stane 20,99 € na mesec. Vključuje 20 GB prenosa, od tega do 20 GB v EU-tarifi.”</p></div>
+        <div class="ex"><p class="exq">Zavarovanje naprave 401–600 €? <b class="tnum" style="color:var(--good)">95</b></p><p class="exa">“Mesečna premija … znaša 7,45 EUR. Soudeležba ob škodnem primeru je 60 EUR.” (matches the cenik)</p></div>
+        <div class="ex"><p class="exq">Cena storitve Ena številka? <b class="tnum" style="color:var(--good)">93</b></p><p class="exa">“Ena številka znaša 1 EUR na mesec … dodatne številke brezplačno.”</p></div>
+      </div>
+      <div class="col lose">
+        <h3>◇ Weak — deflects to agent / UI</h3>
+        <div class="ex"><p class="exq">Je priklop optike lahko brezplačen? <b class="tnum" style="color:var(--crit)">10</b></p><p class="exa">“Podatkov o statusu gradnje nimam … vas povežem s sodelavcem?”</p></div>
+        <div class="ex"><p class="exq">Hitrost do uporabnika pri NEO A? <b class="tnum" style="color:var(--crit)">5</b></p><p class="exa">“Hitrost … lahko preverite spodaj 👇 … v Mojem Telekomu.”</p></div>
+        <div class="ex"><p class="exq">Telefonska številka za pakete Naj? <b class="tnum" style="color:var(--crit)">0</b></p><p class="exa">“Svoje pakete preverite spodaj … kliknite spodaj 👇” (041 700 700 not given.)</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How it was scored</h2>
+    <div class="method">
+      <p style="margin:0 0 10px">Each answer’s <b>quality</b> = <code>55% fact-recall + 20% relevance + 15% specificity + 10% non-deflection</code>.
+      <b>Fact recall</b> checks whether the site’s key facts (prices, data caps, speeds, programme counts) appear in the answer, matched on normalised text. A <b>deflection</b> is a clarify-first reply or human-agent hand-off that never states the fact.</p>
+      <p style="margin:0">Source of truth: telekom.si product pages (<code>/mobilno</code>, <code>/internet</code>, <code>/neo</code>) plus the published price lists (<code>/pomoc/ceniki</code>), captured July 2026. All <b>300</b> questions were asked live via the public Boost.ai Chat API, one fresh conversation each. Fully reproducible from the saved transcript with <code>evaluate.py --rescore results.json</code>.</p>
+    </div>
+  </section>
+
+  <footer>
+    Independent, automated evaluation for quality-assurance purposes. Not affiliated with, authored by, or endorsed by Telekom Slovenije. “Maks” and product names (Mobi, Naj, NEO) are used only to identify the service under test; all figures reflect a single automated run and may vary between runs and over time as the bot and offers change.
+  </footer>
+</div>
