@@ -55,6 +55,14 @@ DEFLECTION = [
     "preverite spodaj", "preverite na naši spletni strani", "ali vas zanimajo",
     "prosim, potrdite", "ali se zanimate za", "usmerim na pravo mesto",
     "želite, da preverim", "želite, da vas usmerim",
+    # clarify-first / "look it up elsewhere" redirects that still slip a keyword in
+    "ali vas zanima", "mi najprej poveste", "mi poveste, ali", "najdete spodaj",
+    "predlagam, da preverite", "predlagam vam, da", "priporočam, da preverite",
+    "za točne informacije", "za točne cene", "za točen znesek", "za točno informacijo",
+    "ni navedena v priloženih", "ni navedeno v priloženih", "ni podatka",
+    "v priloženih informacijah", "odvisno od vaših potreb", "odvisno od izbranega",
+    "preverite uradno", "preverite prodajno", "na voljo so različn", "različni akcijski",
+    "ali imate predplačniško", "ali sprašujete", "odvisna od izbranega",
 ]
 
 # Small Slovenian stopword set for the relevance metric.
