@@ -14,8 +14,15 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from evaluate import DEFLECTION, content_words, normalize, score_answer, stars
+from evaluate import (DEFLECTION, SPECIFICITY_RE, content_words, normalize,
+                      score_answer, stars)
 from questions import QUESTIONS
+
+# Human-readable description of what would satisfy the specificity signal.
+SPECIFICITY_KINDS = ("a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), "
+                     "a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel "
+                     "count (`program`), a percentage, or a package name "
+                     "(`Naj`/`Mobi`/`NEO`/`SUPR`)")
 
 HERE = Path(__file__).resolve().parent
 CATS = {"prepaid": "Prepaid (Mobi)", "postpaid": "Postpaid (Naj)",
@@ -88,19 +95,32 @@ def explain(qid: str, cat: str, question: str, facts, answer: str) -> str:
         mark = "✅ found" if hd["hit"] else "❌ missing"
         out.append(f"    - {mark}: {forms}")
 
-    # Relevance detail
+    # Relevance detail — state both echoed and missing question keywords
     if rel_q:
-        shown = ", ".join(f"`{w}`" for w in matched_kw[:8]) or "—"
-        out.append(f"- **Relevance — {len(rel_q & rel_a)}/{len(rel_q)} = {relevance:.0%}** "
-                   f"(weight {W['relevance']:.0%}). Question keywords echoed in the answer: {shown}"
-                   + (" …" if len(matched_kw) > 8 else ""))
+        missing_kw = sorted(rel_q - rel_a)
+        echoed = ", ".join(f"`{w}`" for w in matched_kw[:8]) or "—"
+        line = (f"- **Relevance — {len(rel_q & rel_a)}/{len(rel_q)} = {relevance:.0%}** "
+                f"(weight {W['relevance']:.0%}). Echoed: {echoed}"
+                + (" …" if len(matched_kw) > 8 else ""))
+        if missing_kw:
+            miss = ", ".join(f"`{w}`" for w in missing_kw[:8]) + (" …" if len(missing_kw) > 8 else "")
+            line += f". **Missing** question keyword(s): {miss}"
+        else:
+            line += ". **Missing:** none — every question keyword appeared."
+        out.append(line)
     else:
-        out.append(f"- **Relevance — n/a** (weight {W['relevance']:.0%}).")
+        out.append(f"- **Relevance — n/a** (weight {W['relevance']:.0%}): the question has no "
+                   f"scorable content words after stop-word removal.")
 
-    # Specificity
-    out.append(f"- **Specificity — {int(spec)}/1** (weight {W['specificity']:.0%}): "
-               + ("the answer contains a concrete price/quantity/package token."
-                  if spec else "no concrete price/quantity/package token found."))
+    # Specificity — when absent, say what kind of concrete token is missing
+    if spec:
+        m = SPECIFICITY_RE.search(normalize(answer))
+        tok = f" (matched on “{m.group(0).strip()}”)" if m else ""
+        out.append(f"- **Specificity — 1/1** (weight {W['specificity']:.0%}): a concrete token is "
+                   f"present{tok}.")
+    else:
+        out.append(f"- **Specificity — 0/1** (weight {W['specificity']:.0%}): **missing** a "
+                   f"concrete value — the answer states none of {SPECIFICITY_KINDS}.")
 
     # Deflection
     if deflected:

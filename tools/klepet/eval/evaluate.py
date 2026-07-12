@@ -93,6 +93,11 @@ def content_words(text: str) -> set:
     return {w for w in words if w not in STOP}
 
 
+# A concrete price / quantity / package token — the specificity signal.
+SPECIFICITY_RE = re.compile(
+    r"\d+[.,]?\d*\s*(?:eur|€|gb|tb|mbit|gbit|mb|kbit|dni|program|%)|naj|mobi|neo|supr")
+
+
 def score_answer(answer: str, facts) -> dict:
     norm = normalize(answer)
     raw_low = answer.lower()
@@ -110,10 +115,7 @@ def score_answer(answer: str, facts) -> dict:
     #    (filled in by caller which has the question); placeholder here.
 
     # 3) specificity: does it contain a concrete price / quantity / package token
-    specificity = 1.0 if re.search(
-        r"\d+[.,]?\d*\s*(?:eur|€|gb|tb|mbit|gbit|mb|kbit|dni|program|%)|naj|mobi|neo|supr",
-        norm,
-    ) else 0.0
+    specificity = 1.0 if SPECIFICITY_RE.search(norm) else 0.0
 
     # 4) deflection
     deflected = any(p in raw_low for p in DEFLECTION) and recall < 0.34

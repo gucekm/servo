@@ -68,8 +68,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
     - ❌ missing: `4,99`
     - ✅ found: `1000` / `1.000`
     - ✅ found: `1 gb`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `enot`, `mobi`, `podatkov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `enot`, `mobi`, `podatkov`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.67 + 0.20×1.00 + 0.15×1 + 0.10×1` = **0.817 → 81.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -90,8 +90,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `9,99`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mobi`, `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mobi`, `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -112,8 +112,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `100 gb`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `mobi`, `prenosa`, `sloveniji`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `mobi`, `prenosa`, `sloveniji`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -134,8 +134,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `13,99`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mobi`, `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mobi`, `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -156,8 +156,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `200 gb`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `mobi`, `prenosa`, `zniža`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `hitrost`, `mobi`, `prenosa`, `zniža`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **0.450 → 45.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -181,8 +181,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `3,73`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `akcijska`, `mesecev`, `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `akcijska`, `mesecev`, `mobi`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -203,8 +203,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `6,99`
-- **Relevance — 2/4 = 50%** (weight 20%). Question keywords echoed in the answer: `akcijska`, `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/4 = 50%** (weight 20%). Echoed: `akcijska`, `mobi`. **Missing** question keyword(s): `kakšna`, `paketov`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -225,8 +225,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `2 eur`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `aktivacija`, `esim`, `kartice`, `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `aktivacija`, `esim`, `kartice`, `mobi`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **0.450 → 45.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -249,8 +249,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
     - ✅ found: `7 dni` / `7-dnev`
     - ✅ found: `neomejen`
     - ✅ found: `1 gb`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `aktivaciji`, `mobi`, `promocijski`, `zakup`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `aktivaciji`, `mobi`, `promocijski`, `zakup`. **Missing** question keyword(s): `dobim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -282,8 +282,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `0,12`
-- **Relevance — 5/5 = 100%** (weight 20%). Question keywords echoed in the answer: `ceniku`, `klici`, `mobi`, `rednem`, `stanejo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/5 = 100%** (weight 20%). Echoed: `ceniku`, `klici`, `mobi`, `rednem`, `stanejo`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -307,8 +307,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `0,12`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `mobi`, `podatkov`, `prenos`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `mobi`, `podatkov`, `prenos`. **Missing** question keyword(s): `ceniku`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -333,8 +333,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 2/2 = 100%** (weight 55%). Expected facts:
     - ✅ found: `29,99`
     - ✅ found: `365` / `eno leto` / `leto`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mobi`, `velja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mobi`, `velja`. **Missing** question keyword(s): `časa`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -362,8 +362,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 2/2 = 100%** (weight 55%). Expected facts:
     - ✅ found: `9,99`
     - ✅ found: `100 gb`
-- **Relevance — 1/3 = 33%** (weight 20%). Question keywords echoed in the answer: `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/3 = 33%** (weight 20%). Echoed: `mobi`. **Missing** question keyword(s): `ceni`, `kakšni`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.33 + 0.15×1 + 0.10×1` = **0.867 → 86.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -387,8 +387,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
     - ❌ missing: `vrednostn` / `kartic`
     - ❌ missing: `valú` / `valu`
     - ✅ found: `123` / `moj mobi` / `aplikacij`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mobi`, `račun`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mobi`, `račun`. **Missing** question keyword(s): `napolnim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.33 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.567 → 56.7/100**.
 - **Verdict:** Partial: some but not all expected facts were stated.
@@ -409,8 +409,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `123`
-- **Relevance — 5/8 = 62%** (weight 20%). Question keywords echoed in the answer: `mobi`, `nizom`, `račun`, `ukaznim`, `številko`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/8 = 62%** (weight 20%). Echoed: `mobi`, `nizom`, `račun`, `ukaznim`, `številko`. **Missing** question keyword(s): `katero`, `klicem`, `napolnim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.62 + 0.15×1 + 0.10×1` = **0.925 → 92.5/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -434,8 +434,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `90 dni` / `90`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `mobi`, `podaljša`, `računa`, `veljavnost`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `mobi`, `podaljša`, `računa`, `veljavnost`. **Missing** question keyword(s): `samodejno`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -456,8 +456,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1,99`
-- **Relevance — 5/6 = 83%** (weight 20%). Question keywords echoed in the answer: `dobroimetja`, `mobi`, `podaljšanje`, `samodejno`, `veljavnosti`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/6 = 83%** (weight 20%). Echoed: `dobroimetja`, `mobi`, `podaljšanje`, `samodejno`, `veljavnosti`. **Missing** question keyword(s): `potrebujem`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.83 + 0.15×1 + 0.10×1` = **0.967 → 96.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -487,8 +487,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `5g`
-- **Relevance — 2/4 = 50%** (weight 20%). Question keywords echoed in the answer: `mobi`, `omrežje`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/4 = 50%** (weight 20%). Echoed: `mobi`, `omrežje`. **Missing** question keyword(s): `imam`, `voljo`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -527,8 +527,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
     - ✅ found: `petrol`
     - ✅ found: `pošt` / `posta`
     - ✅ found: `telekomov` / `trafik` / `mercator` / `spar` / `prodajn`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `kartico`, `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `kartico`, `mobi`. **Missing** question keyword(s): `kupim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -552,8 +552,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `moj mobi`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `aplikacijo`, `mobi`, `storitev`, `upravljanje`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `aplikacijo`, `mobi`, `storitev`, `upravljanje`. **Missing** question keyword(s): `katero`, `uporabljam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -575,8 +575,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `prenes` / `ohran` / `obdrž`
-- **Relevance — 1/6 = 17%** (weight 20%). Question keywords echoed in the answer: `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/6 = 17%** (weight 20%). Echoed: `mobi`. **Missing** question keyword(s): `obstoječo`, `prenesem`, `svojo`, `telefonsko`, `številko`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “vas povežem s sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.17 + 0.15×1 + 0.10×0` = **0.183 → 18.3/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -602,8 +602,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1000` / `1.000`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `enot`, `klice`, `mobi`, `sporočila`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `enot`, `klice`, `mobi`, `sporočila`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -624,8 +624,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `14,89`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `mobi`, `paketom`, `tarifi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `mobi`, `paketom`, `tarifi`. **Missing** question keyword(s): `porabim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -649,8 +649,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `20,85`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mobi`, `tarife`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mobi`, `tarife`. **Missing** question keyword(s): `območje`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -671,8 +671,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `samodejno` / `podaljš`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `mobi`, `paketi`, `podaljšujejo`, `samodejno`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `mobi`, `paketi`, `podaljšujejo`, `samodejno`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -693,8 +693,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `4,99`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mobi`, `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mobi`, `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -715,8 +715,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `13,99`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mobi`, `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mobi`, `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -742,8 +742,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1000` / `1.000`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `enot`, `klice`, `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `enot`, `klice`, `mobi`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -764,8 +764,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `100 gb`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `mobi`, `sloveniji`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `mobi`, `sloveniji`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -789,8 +789,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `300` / `300/100` / `300 mbit`
-- **Relevance — 5/6 = 83%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `mobi`, `paketih`, `podatkov`, `prenosa`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/6 = 83%** (weight 20%). Echoed: `hitrost`, `mobi`, `paketih`, `podatkov`, `prenosa`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.83 + 0.15×1 + 0.10×1` = **0.967 → 96.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -811,8 +811,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `3,73`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `akcijska`, `mesecev`, `mobi`, `prvih`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `akcijska`, `mesecev`, `mobi`, `prvih`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -833,8 +833,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `6,99`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `akcijska`, `mobi`, `paketov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `akcijska`, `mobi`, `paketov`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -855,8 +855,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `6 mesec` / `šest mesec`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `akcijska`, `mobi`, `paketov`, `velja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `akcijska`, `mobi`, `paketov`, `velja`. **Missing** question keyword(s): `časa`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -877,8 +877,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `0,12`
-- **Relevance — 5/5 = 100%** (weight 20%). Question keywords echoed in the answer: `ceniku`, `klic`, `minuto`, `mobi`, `rednem`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/5 = 100%** (weight 20%). Echoed: `ceniku`, `klic`, `minuto`, `mobi`, `rednem`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -902,8 +902,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `0,12`
-- **Relevance — 2/4 = 50%** (weight 20%). Question keywords echoed in the answer: `ceniku`, `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/4 = 50%** (weight 20%). Echoed: `ceniku`, `mobi`. **Missing** question keyword(s): `poslano`, `sporočilo`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.350 → 35.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -927,8 +927,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `0,12`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `mobi`, `podatkov`, `prenos`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `mobi`, `podatkov`, `prenos`. **Missing** question keyword(s): `ceniku`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -949,8 +949,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `29,99`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `leto`, `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `leto`, `mobi`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -971,8 +971,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `365` / `eno leto` / `leto`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `mobi`, `velja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `mobi`, `velja`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -996,8 +996,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `100 gb`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `mobi`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1021,8 +1021,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `9,99`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `mobi`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1043,8 +1043,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `2 eur` / `2 €`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `aktivacija`, `esim`, `kartice`, `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `aktivacija`, `esim`, `kartice`, `mobi`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **0.450 → 45.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -1067,8 +1067,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
     - ✅ found: `7 dni` / `7-dnev`
     - ✅ found: `neomejen`
     - ✅ found: `1 gb`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `aktivaciji`, `mobi`, `promocijski`, `zakup`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `aktivaciji`, `mobi`, `promocijski`, `zakup`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1092,8 +1092,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `123`
-- **Relevance — 5/7 = 71%** (weight 20%). Question keywords echoed in the answer: `mobi`, `nizom`, `račun`, `ukaznim`, `številko`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/7 = 71%** (weight 20%). Echoed: `mobi`, `nizom`, `račun`, `ukaznim`, `številko`. **Missing** question keyword(s): `katero`, `napolnim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.71 + 0.15×1 + 0.10×1` = **0.943 → 94.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1114,8 +1114,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `valú` / `valu`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `mobi`, `moneta`, `račun`, `storitvijo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `mobi`, `moneta`, `račun`, `storitvijo`. **Missing** question keyword(s): `katero`, `napolnim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1136,8 +1136,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `90` / `90 dni`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `mobi`, `podaljša`, `računa`, `veljavnost`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `mobi`, `podaljša`, `računa`, `veljavnost`. **Missing** question keyword(s): `samodejno`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1161,8 +1161,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `1,99`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `dobroimetja`, `podaljšanje`, `samodejno`, `veljavnosti`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `dobroimetja`, `podaljšanje`, `samodejno`, `veljavnosti`. **Missing** question keyword(s): `potrebujem`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×0.80 + 0.15×0 + 0.10×1` = **0.260 → 26.0/100**.
 - **Verdict:** Weak: the expected fact(s) did not appear in the answer.
@@ -1192,8 +1192,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `5g`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `dostop`, `imajo`, `mobi`, `uporabniki`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `dostop`, `imajo`, `mobi`, `uporabniki`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1217,8 +1217,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `petrol`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `bencinskih`, `kartico`, `mobi`, `servisih`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `bencinskih`, `kartico`, `mobi`, `servisih`. **Missing** question keyword(s): `katerih`, `kupim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1242,8 +1242,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `pošt` / `posta` / `da`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `kartico`, `mobi`, `slovenije`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `kartico`, `mobi`, `slovenije`. **Missing** question keyword(s): `kupim`, `pošti`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1272,8 +1272,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `mercator` / `spar`
-- **Relevance — 3/6 = 50%** (weight 20%). Question keywords echoed in the answer: `mobi`, `trgovinah`, `vrednostnice`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/6 = 50%** (weight 20%). Echoed: `mobi`, `trgovinah`, `vrednostnice`. **Missing** question keyword(s): `katerih`, `kupim`, `živila`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1297,8 +1297,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `moj mobi`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `aplikacijo`, `mobi`, `upravljanje`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `aplikacijo`, `mobi`, `upravljanje`. **Missing** question keyword(s): `katero`, `uporabljam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1320,8 +1320,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `prenes` / `ohran` / `obdrž`
-- **Relevance — 1/5 = 20%** (weight 20%). Question keywords echoed in the answer: `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/5 = 20%** (weight 20%). Echoed: `mobi`. **Missing** question keyword(s): `obstoječo`, `prenesem`, `telefonsko`, `številko`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “vas povežem s sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.20 + 0.15×1 + 0.10×0` = **0.190 → 19.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -1345,8 +1345,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `14,89`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `mobi`, `paketom`, `tarifi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `mobi`, `paketom`, `tarifi`. **Missing** question keyword(s): `porabim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1370,8 +1370,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `20,85`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mobi`, `tarife`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mobi`, `tarife`. **Missing** question keyword(s): `območje`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1392,8 +1392,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `200 gb`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `mobi`, `zniža`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `hitrost`, `mobi`, `zniža`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1417,8 +1417,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `64` / `64/64` / `64 kbit`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `limitu`, `mobi`, `pade`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `hitrost`, `limitu`, `mobi`, `pade`. **Missing** question keyword(s): `kakšno`, `prenos`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1439,8 +1439,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `samodejno` / `podaljš`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `mobi`, `paketi`, `podaljšujejo`, `samodejno`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `mobi`, `paketi`, `podaljšujejo`, `samodejno`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1) (a redirect phrase “želite izvedeti” is present, but fact recall ≥ 34%, so it is *not* treated as a deflection).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1461,8 +1461,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `po porabi` / `brez paket` / `dobroimetj`
-- **Relevance — 1/4 = 25%** (weight 20%). Question keywords echoed in the answer: `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/4 = 25%** (weight 20%). Echoed: `mobi`. **Missing** question keyword(s): `plačilo`, `porabi`, `uporabljam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.25 + 0.15×1 + 0.10×1` = **0.850 → 85.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1491,8 +1491,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `hr-internet` / `hr internet` / `hrvaš`
-- **Relevance — 6/6 = 100%** (weight 20%). Question keywords echoed in the answer: `hrvaškem`, `imenuje`, `mobi`, `neomejene`, `podatke`, `zakup`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 6/6 = 100%** (weight 20%). Echoed: `hrvaškem`, `imenuje`, `mobi`, `neomejene`, `podatke`, `zakup`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1522,8 +1522,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `bosn` / `srbij` / `kosov` / `makedonij` / `črn` / `albanij`
-- **Relevance — 3/6 = 50%** (weight 20%). Question keywords echoed in the answer: `balkan`, `mobi`, `zakupi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/6 = 50%** (weight 20%). Echoed: `balkan`, `mobi`, `zakupi`. **Missing** question keyword(s): `države`, `katere`, `pokrivajo`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1545,8 +1545,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `zda` / `neomejen`
-- **Relevance — 1/4 = 25%** (weight 20%). Question keywords echoed in the answer: `voljo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/4 = 25%** (weight 20%). Echoed: `voljo`. **Missing** question keyword(s): `mobi`, `podatkov`, `zakup`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “mi najprej poveste” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.25 + 0.15×1 + 0.10×0` = **0.200 → 20.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -1567,8 +1567,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1 gb`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `mobi`, `podatkov`, `sloveniji`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `mobi`, `podatkov`, `sloveniji`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1592,8 +1592,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `neomejen`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `klici`, `mobi`, `neomejeni`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `klici`, `mobi`, `neomejeni`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1615,8 +1615,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `prenos` / `prenes` / `da`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `dobroimetje`, `drug`, `mobi`, `račun`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `dobroimetje`, `drug`, `mobi`, `račun`. **Missing** question keyword(s): `prenesem`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1640,8 +1640,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `moja številka` / `moja stevilka`
-- **Relevance — 6/6 = 100%** (weight 20%). Question keywords echoed in the answer: `brezplačno`, `imenuje`, `klicanje`, `mobi`, `storitev`, `številke`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 6/6 = 100%** (weight 20%). Echoed: `brezplačno`, `imenuje`, `klicanje`, `mobi`, `storitev`, `številke`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1662,8 +1662,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `limit` / `plačuj` / `otrok` / `starš`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `mobi`, `storitev`, `žepnina`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `mobi`, `storitev`, `žepnina`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1687,8 +1687,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `moj mobi` / `da` / `aplikacij`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `aplikaciji`, `esim`, `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `aplikaciji`, `esim`, `mobi`. **Missing** question keyword(s): `aktiviram`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1717,8 +1717,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `mobi b` / `mobi c`
-- **Relevance — 2/7 = 29%** (weight 20%). Question keywords echoed in the answer: `mobi`, `poleg`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/7 = 29%** (weight 20%). Echoed: `mobi`, `poleg`. **Missing** question keyword(s): `katere`, `klici`, `neomejeni`, `pakete`, `ponuja`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.29 + 0.15×1 + 0.10×1` = **0.857 → 85.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1742,8 +1742,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `100 gb`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `leto`, `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `leto`, `mobi`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1765,8 +1765,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `več` / `otrok` / `številk`
-- **Relevance — 1/5 = 20%** (weight 20%). Question keywords echoed in the answer: `mobi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/5 = 20%** (weight 20%). Echoed: `mobi`. **Missing** question keyword(s): `hkrati`, `mojim`, `upravljam`, `številk`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.20 + 0.15×1 + 0.10×1` = **0.840 → 84.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1799,8 +1799,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `telekomov` / `prodajn` / `petrol` / `pošt`
-- **Relevance — 2/5 = 40%** (weight 20%). Question keywords echoed in the answer: `mobi`, `osebno`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/5 = 40%** (weight 20%). Echoed: `mobi`, `osebno`. **Missing** question keyword(s): `kupim`, `poleg`, `spleta`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.40 + 0.15×1 + 0.10×1` = **0.880 → 88.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1821,8 +1821,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `ne` / `ne prenaš`
-- **Relevance — 2/5 = 40%** (weight 20%). Question keywords echoed in the answer: `mobi`, `prenašajo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/5 = 40%** (weight 20%). Echoed: `mobi`, `prenašajo`. **Missing** question keyword(s): `količine`, `naslednji`, `neporabljene`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.40 + 0.15×1 + 0.10×1` = **0.880 → 88.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1843,8 +1843,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `100` / `100 mbit`
-- **Relevance — 5/6 = 83%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `mobi`, `paketih`, `prenosa`, `upload`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/6 = 83%** (weight 20%). Echoed: `hitrost`, `mobi`, `paketih`, `prenosa`, `upload`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×0.83 + 0.15×1 + 0.10×1` = **0.417 → 41.7/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -1865,8 +1865,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `9,99`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mobi`, `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mobi`, `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1888,8 +1888,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `registracij`
-- **Relevance — 2/5 = 40%** (weight 20%). Question keywords echoed in the answer: `mobi`, `registracija`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/5 = 40%** (weight 20%). Echoed: `mobi`, `registracija`. **Missing** question keyword(s): `enot`, `koriščenje`, `potrebna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.40 + 0.15×1 + 0.10×1` = **0.880 → 88.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1921,8 +1921,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 2/2 = 100%** (weight 55%). Expected facts:
     - ✅ found: `20,99`
     - ✅ found: `20 gb`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `podatkov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `podatkov`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1943,8 +1943,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `20 gb`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `podatkov`, `prenosa`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `podatkov`, `prenosa`. **Missing** question keyword(s): `vključenega`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1965,8 +1965,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `27,99`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mesečna`, `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mesečna`, `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -1987,8 +1987,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `200 gb`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `podatkov`, `prenosa`, `zniža`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `hitrost`, `podatkov`, `prenosa`, `zniža`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2009,8 +2009,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `28,99`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2031,8 +2031,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `500 gb`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `porabljenih`, `zniža`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `hitrost`, `porabljenih`, `zniža`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2065,8 +2065,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
     - ✅ found: `4,99`
     - ✅ found: `1 gb`
     - ✅ found: `500`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `naprava`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `naprava`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2087,8 +2087,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `1 gbit` / `gbit`
-- **Relevance — 5/6 = 83%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `najvišja`, `paketih`, `prenosa`, `uporabnika`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/6 = 83%** (weight 20%). Echoed: `hitrost`, `najvišja`, `paketih`, `prenosa`, `uporabnika`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “odvisna od izbranega” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.83 + 0.15×1 + 0.10×0` = **0.317 → 31.7/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -2109,8 +2109,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `neomejen`
-- **Relevance — 5/5 = 100%** (weight 20%). Question keywords echoed in the answer: `klice`, `neomejene`, `paketi`, `sloveniji`, `vključujejo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/5 = 100%** (weight 20%). Echoed: `klice`, `neomejene`, `paketi`, `sloveniji`, `vključujejo`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1) (a redirect phrase “prosim sporočite” is present, but fact recall ≥ 34%, so it is *not* treated as a deflection).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2134,8 +2134,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `10,95`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `priključna`, `sklenitvi`, `taksa`, `znaša`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `priključna`, `sklenitvi`, `taksa`, `znaša`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **0.450 → 45.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -2156,8 +2156,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `10,95`
-- **Relevance — 0/2 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/2 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `naročniškega`, `sprememba`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “mi povejte” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×1 + 0.10×0` = **0.150 → 15.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -2179,8 +2179,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 0/2 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `moj telekom` / `mojem telekomu`
     - ❌ missing: `041 700 700` / `prodajn`
-- **Relevance — 0/3 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/3 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `naročniški`, `spremenim`, `svoj`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “mi povejte” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×1 + 0.10×0` = **0.150 → 15.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -2201,8 +2201,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `5 eur`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `popust`, `poveži`, `prihrani`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `popust`, `poveži`, `prihrani`. **Missing** question keyword(s): `kolikšen`, `ugodnosti`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “5 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2223,8 +2223,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1 eur`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `storitev`, `številka`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `storitev`, `številka`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “1 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2248,8 +2248,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `4` / `štiri`
-- **Relevance — 3/6 = 50%** (weight 20%). Question keywords echoed in the answer: `druga`, `omogoča`, `številka`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/6 = 50%** (weight 20%). Echoed: `druga`, `omogoča`, `številka`. **Missing** question keyword(s): `dodatnih`, `naročniških`, `razmerij`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2270,8 +2270,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `50 gb` / `20 gb` / `10 gb` / `5 gb`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `delim`, `najbližjim`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `delim`, `najbližjim`. **Missing** question keyword(s): `gigabajte`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2295,8 +2295,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1918`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `delim`, `deljenje`, `številko`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `delim`, `deljenje`, `številko`. **Missing** question keyword(s): `katero`, `pošljem`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2321,8 +2321,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `5g`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `omrežje`, `paketih`, `voljo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `omrežje`, `paketih`, `voljo`. **Missing** question keyword(s): `imam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2343,8 +2343,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `41,71`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `brezplačno`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `brezplačno`. **Missing** question keyword(s): `porabim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2365,8 +2365,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `43,20` / `43,2`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `tarife`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `tarife`. **Missing** question keyword(s): `območje`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2388,8 +2388,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 2/2 = 100%** (weight 55%). Expected facts:
     - ✅ found: `30`
     - ✅ found: `garancij`
-- **Relevance — 6/6 = 100%** (weight 20%). Question keywords echoed in the answer: `dnevna`, `garancija`, `naročnike`, `nove`, `velja`, `zadovoljstva`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 6/6 = 100%** (weight 20%). Echoed: `dnevna`, `garancija`, `naročnike`, `nove`, `velja`, `zadovoljstva`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2416,8 +2416,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `60 dni` / `zadnjih 60`
-- **Relevance — 3/6 = 50%** (weight 20%). Question keywords echoed in the answer: `akcijski`, `paketov`, `ponudbi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/6 = 50%** (weight 20%). Echoed: `akcijski`, `paketov`, `ponudbi`. **Missing** question keyword(s): `naročnika`, `novega`, `velja`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2439,8 +2439,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `041 700 700`
-- **Relevance — 0/5 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 0/5 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `informacije`, `katera`, `paketih`, `telefonska`, `številka`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “preverite spodaj” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×0 + 0.10×0` = **0.000 → 0.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -2475,8 +2475,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `15,99` / `10,99`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `akcijska`, `naročnike`, `nove`, `paketov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `akcijska`, `naročnike`, `nove`, `paketov`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2500,8 +2500,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `moj telekom`
-- **Relevance — 1/5 = 20%** (weight 20%). Question keywords echoed in the answer: `aplikaciji`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/5 = 20%** (weight 20%). Echoed: `aplikaciji`. **Missing** question keyword(s): `ceni`, `enotni`, `kateri`, `sklenem`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.20 + 0.15×1 + 0.10×1` = **0.840 → 84.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2522,8 +2522,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `200 mbit`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `oddajanja`, `paketih`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `hitrost`, `oddajanja`, `paketih`. **Missing** question keyword(s): `kakšna`, `upload`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2544,8 +2544,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `300 mbit` / `300`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `naprava`, `prenosa`, `uporabnika`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `hitrost`, `naprava`, `prenosa`, `uporabnika`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2574,8 +2574,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `10 eur` / `10 €` / `do 10`
-- **Relevance — 5/6 = 83%** (weight 20%). Question keywords echoed in the answer: `klice`, `limit`, `naprava`, `velja`, `zneskovni`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/6 = 83%** (weight 20%). Echoed: `klice`, `limit`, `naprava`, `velja`, `zneskovni`. **Missing** question keyword(s): `kakšen`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.83 + 0.15×1 + 0.10×1` = **0.967 → 96.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2596,8 +2596,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `500`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `naprava`, `sporočil`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `naprava`, `sporočil`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2618,8 +2618,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1 eur` / `1,00` / `1 €`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `storitev`, `številka`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `storitev`, `številka`. **Missing** question keyword(s): `dodatna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “1 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2640,8 +2640,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `3` / `tri`
-- **Relevance — 2/5 = 40%** (weight 20%). Question keywords echoed in the answer: `storitvijo`, `številka`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 2/5 = 40%** (weight 20%). Echoed: `storitvijo`, `številka`. **Missing** question keyword(s): `telefonskih`, `združim`, `številk`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.40 + 0.15×0 + 0.10×1` = **0.730 → 73.0/100**.
 - **Verdict:** Partial: some but not all expected facts were stated.
@@ -2662,8 +2662,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `brezplač`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `priključna`, `storitev`, `taksa`, `številka`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `priključna`, `storitev`, `taksa`, `številka`. **Missing** question keyword(s): `kolikšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “10.95 eur”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “prosim sporočite” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.80 + 0.15×1 + 0.10×0` = **0.310 → 31.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -2684,8 +2684,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `11,99` / `14,99`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `brezskrbni`, `mesečna`, `naročnina`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `brezskrbni`, `mesečna`, `naročnina`. **Missing** question keyword(s): `storitve`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “4.99 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.400 → 40.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -2706,8 +2706,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `10,95`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `priključna`, `storitev`, `taksa`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `priključna`, `storitev`, `taksa`. **Missing** question keyword(s): `kolikšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “10.95 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2731,8 +2731,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `100 mb`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `podatkov`, `prenosa`, `storitev`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `podatkov`, `prenosa`, `storitev`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **0.450 → 45.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -2753,8 +2753,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `0,99`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `splet`, `storitev`, `varen`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `splet`, `storitev`, `varen`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “0.99 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2778,8 +2778,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `7,45`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `naprave`, `premium`, `zavarovanje`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `naprave`, `premium`, `zavarovanje`. **Missing** question keyword(s): `vredne`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “600 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2800,8 +2800,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `14,95`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `1001`, `3000`, `naprav`, `premium`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `1001`, `3000`, `naprav`, `premium`. **Missing** question keyword(s): `najdražjih`, `zavarovanje`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “3000 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2822,8 +2822,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `2 eur` / `2,00` / `2 €`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `pametne`, `zavarovanje`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `pametne`, `zavarovanje`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “2 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2844,8 +2844,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `2 eur` / `2,00` / `2 €`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `prenosnika`, `tablice`, `zavarovanje`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `prenosnika`, `tablice`, `zavarovanje`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “400 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2874,8 +2874,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `5 eur`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `poveži`, `prihrani`, `prinaša`, `ugodnost`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `poveži`, `prihrani`, `prinaša`, `ugodnost`. **Missing** question keyword(s): `kolikšen`, `popust`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “5 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2896,8 +2896,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `50 gb`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `delim`, `naenkrat`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `delim`, `naenkrat`. **Missing** question keyword(s): `največ`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2918,8 +2918,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1918`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `delim`, `deljenje`, `gigabajtov`, `številko`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `delim`, `deljenje`, `gigabajtov`, `številko`. **Missing** question keyword(s): `katero`, `pošljem`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “5gb”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2943,8 +2943,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1` / `eno` / `ena`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `druga`, `omogoča`, `številka`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `druga`, `omogoča`, `številka`. **Missing** question keyword(s): `dodatnih`, `razmerij`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2968,8 +2968,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `4` / `štiri`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `druga`, `omogoča`, `številka`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `druga`, `omogoča`, `številka`. **Missing** question keyword(s): `dodatnih`, `razmerij`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -2993,8 +2993,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `41,71`
-- **Relevance — 1/4 = 25%** (weight 20%). Question keywords echoed in the answer: `paketom`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/4 = 25%** (weight 20%). Echoed: `paketom`. **Missing** question keyword(s): `brezplačno`, `porabim`, `tarifi`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×0.25 + 0.15×1 + 0.10×1` = **0.300 → 30.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -3015,8 +3015,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `43,20` / `43,2`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `tarife`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `tarife`. **Missing** question keyword(s): `območje`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3038,8 +3038,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `0,11`
-- **Relevance — 0/6 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/6 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `dodatek`, `kolikšen`, `omrežja`, `slovenije`, `tuja`, `zaračuna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “preverite spodaj” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×1 + 0.10×0` = **0.150 → 15.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -3071,8 +3071,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `15,99` / `10,99`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `akcijska`, `naročnike`, `nove`, `paketov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `akcijska`, `naročnike`, `nove`, `paketov`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3094,8 +3094,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `041 700 700`
-- **Relevance — 0/5 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 0/5 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `informacije`, `katera`, `paketih`, `telefonska`, `številka`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “preverite spodaj” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×0 + 0.10×0` = **0.000 → 0.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -3116,8 +3116,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `info@telekom.si`
-- **Relevance — 1/5 = 20%** (weight 20%). Question keywords echoed in the answer: `naslov`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 1/5 = 20%** (weight 20%). Echoed: `naslov`. **Missing** question keyword(s): `informacije`, `kateri`, `pišem`, `ponudbi`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.20 + 0.15×0 + 0.10×1` = **0.690 → 69.0/100**.
 - **Verdict:** Partial: some but not all expected facts were stated.
@@ -3141,8 +3141,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `3 leta` / `tri leta`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `akcijska`, `aplikaciji`, `telekom`, `velja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `akcijska`, `aplikaciji`, `telekom`, `velja`. **Missing** question keyword(s): `enotna`, `časa`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “za točne informacije” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.67 + 0.15×1 + 0.10×0` = **0.283 → 28.3/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -3163,8 +3163,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `esim`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `esim`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `esim`. **Missing** question keyword(s): `sklenem`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3209,8 +3209,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `hr-internet` / `hr internet` / `hrvaš`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `hrvaškem`, `neomejene`, `podatke`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `hrvaškem`, `neomejene`, `podatke`. **Missing** question keyword(s): `imenuje`, `zakup`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3240,8 +3240,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `bosn` / `srbij` / `kosov` / `makedonij` / `črn` / `albanij`
-- **Relevance — 2/5 = 40%** (weight 20%). Question keywords echoed in the answer: `balkan`, `zakup`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 2/5 = 40%** (weight 20%). Echoed: `balkan`, `zakup`. **Missing** question keyword(s): `države`, `katere`, `pokriva`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.40 + 0.15×0 + 0.10×1` = **0.730 → 73.0/100**.
 - **Verdict:** Partial: some but not all expected facts were stated.
@@ -3294,8 +3294,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `zda` / `neomejen`
-- **Relevance — 2/4 = 50%** (weight 20%). Question keywords echoed in the answer: `podatkov`, `voljo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/4 = 50%** (weight 20%). Echoed: `podatkov`, `voljo`. **Missing** question keyword(s): `neomejenih`, `zakup`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3316,8 +3316,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `2/1` / `2 mbit` / `2 mbit/s`
-- **Relevance — 3/6 = 50%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `paketih`, `prenos`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/6 = 50%** (weight 20%). Echoed: `hitrost`, `paketih`, `prenos`. **Missing** question keyword(s): `kakšno`, `limitu`, `pade`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.350 → 35.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -3338,8 +3338,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `neomejen`
-- **Relevance — 6/6 = 100%** (weight 20%). Question keywords echoed in the answer: `klice`, `neomejene`, `omrežja`, `paketi`, `slovenska`, `vključujejo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 6/6 = 100%** (weight 20%). Echoed: `klice`, `neomejene`, `omrežja`, `paketi`, `slovenska`, `vključujejo`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3360,8 +3360,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `neomejen`
-- **Relevance — 2/4 = 50%** (weight 20%). Question keywords echoed in the answer: `paketih`, `sloveniji`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/4 = 50%** (weight 20%). Echoed: `paketih`, `sloveniji`. **Missing** question keyword(s): `imam`, `neomejene`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3382,8 +3382,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `10,95`
-- **Relevance — 2/4 = 50%** (weight 20%). Question keywords echoed in the answer: `priključna`, `taksa`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/4 = 50%** (weight 20%). Echoed: `priključna`, `taksa`. **Missing** question keyword(s): `kolikšna`, `sklenitvi`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “ali vas zanima” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.50 + 0.15×1 + 0.10×0` = **0.250 → 25.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -3407,8 +3407,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `30` / `garancij`
-- **Relevance — 5/5 = 100%** (weight 20%). Question keywords echoed in the answer: `garancija`, `naročnike`, `nove`, `voljo`, `zadovoljstva`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/5 = 100%** (weight 20%). Echoed: `garancija`, `naročnike`, `nove`, `voljo`, `zadovoljstva`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3429,8 +3429,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `20 gb`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `podatkov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `podatkov`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3451,8 +3451,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `neomejen`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `neomejen`, `podatkov`, `prenos`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `neomejen`, `podatkov`, `prenos`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3476,8 +3476,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `avstrij` / `hrvaš` / `nemčij` / `italij` / `francij`
-- **Relevance — 3/6 = 50%** (weight 20%). Question keywords echoed in the answer: `državah`, `tarifa`, `velja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/6 = 50%** (weight 20%). Echoed: `državah`, `tarifa`, `velja`. **Missing** question keyword(s): `katerih`, `naštej`, `nekaj`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3499,8 +3499,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 0/2 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `moj telekom` / `mojem telekomu`
     - ❌ missing: `041 700 700` / `prodajn`
-- **Relevance — 0/2 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/2 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `naročniški`, `spremenim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “mi povejte” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×1 + 0.10×0` = **0.150 → 15.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -3527,8 +3527,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `5g`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `delujejo`, `omrežju`, `paketi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `delujejo`, `omrežju`, `paketi`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3549,8 +3549,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `100 mbit` / `100`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `naprava`, `oddajanja`, `upload`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `hitrost`, `naprava`, `oddajanja`, `upload`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3571,8 +3571,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1 gb`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `naprava`, `podatkov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `naprava`, `podatkov`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3596,8 +3596,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `upokojen` / `starej` / `penzion`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `penzion`, `popust`, `velja`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `penzion`, `popust`, `velja`. **Missing** question keyword(s): `koga`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×0 + 0.10×1` = **0.800 → 80.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3618,8 +3618,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `mobi` / `predplač` / `da`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `delim`, `gigabajte`, `mobi`, `uporabnikom`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `delim`, `gigabajte`, `mobi`, `uporabnikom`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3648,8 +3648,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1 gbit` / `gbit`
-- **Relevance — 5/6 = 83%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `najvišja`, `paketih`, `prenosa`, `uporabnika`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/6 = 83%** (weight 20%). Echoed: `hitrost`, `najvišja`, `paketih`, `prenosa`, `uporabnika`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.83 + 0.15×1 + 0.10×1` = **0.967 → 96.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3670,8 +3670,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `volte`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `storitev`, `vključen`, `volte`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `storitev`, `vključen`, `volte`. **Missing** question keyword(s): `zahteva`, `številka`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1) (a redirect phrase “prosim sporočite” is present, but fact recall ≥ 34%, so it is *not* treated as a deflection).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×0 + 0.10×1` = **0.770 → 77.0/100**.
 - **Verdict:** Partial: some but not all expected facts were stated.
@@ -3692,8 +3692,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `10,95`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `1000`, `naprave`, `premium`, `zavarovanje`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `1000`, `naprave`, `premium`, `zavarovanje`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “1000 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3715,8 +3715,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `0,23` / `0,2318` / `0,19`
-- **Relevance — 0/6 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/6 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `ceniku`, `klica`, `kolikšna`, `minute`, `naprava`, `slovenije`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “najdete spodaj” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×1 + 0.10×0` = **0.150 → 15.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -3737,8 +3737,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `28,99`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mesečna`, `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mesečna`, `redna`. **Missing** question keyword(s): `kolikšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3765,8 +3765,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `1 gbit` / `gbit`
-- **Relevance — 1/6 = 17%** (weight 20%). Question keywords echoed in the answer: `paketih`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/6 = 17%** (weight 20%). Echoed: `paketih`. **Missing** question keyword(s): `hitrost`, `interneta`, `kakšna`, `najvišja`, `optičnega`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “ali vas zanima” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.17 + 0.15×1 + 0.10×0` = **0.183 → 18.3/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -3797,8 +3797,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `5 gbit`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `hitrosti`, `internet`, `optični`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `hitrosti`, `internet`, `optični`. **Missing** question keyword(s): `katere`, `nadgradim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3819,8 +3819,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `39 eur` / `39,00` / `39 €`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `internet`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `internet`. **Missing** question keyword(s): `samo`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “mi povejte” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.50 + 0.15×1 + 0.10×0` = **0.250 → 25.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -3842,8 +3842,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `1 gbit` / `gbit`
-- **Relevance — 1/4 = 25%** (weight 20%). Question keywords echoed in the answer: `hitrost`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 1/4 = 25%** (weight 20%). Echoed: `hitrost`. **Missing** question keyword(s): `internetnega`, `kakšna`, `optiki`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “preverite spodaj” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.25 + 0.15×0 + 0.10×0` = **0.050 → 5.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -3867,8 +3867,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `13,99`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `fiksni`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `fiksni`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -3892,8 +3892,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `32,99`
-- **Relevance — 2/6 = 33%** (weight 20%). Question keywords echoed in the answer: `mesečni`, `vezavi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/6 = 33%** (weight 20%). Echoed: `mesečni`, `vezavi`. **Missing** question keyword(s): `akcijska`, `fiksnih`, `kakšna`, `paketov`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “priporočam, da preverite” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.33 + 0.15×1 + 0.10×0` = **0.217 → 21.7/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -3916,8 +3916,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `neo 5g` / `5g`
-- **Relevance — 0/4 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 0/4 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `mojem`, `naredim`, `naslovu`, `optike`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “vas povežem s sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×0 + 0.10×0` = **0.000 → 0.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -3940,8 +3940,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `naslov` / `lokacij`
-- **Relevance — 0/5 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 0/5 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `mojem`, `naslovu`, `optika`, `preverim`, `voljo`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1) (a redirect phrase “vas povežem s sodelavcem” is present, but fact recall ≥ 34%, so it is *not* treated as a deflection).
 - **Weighted total:** `0.55×1.00 + 0.20×0.00 + 0.15×0 + 0.10×1` = **0.650 → 65.0/100**.
 - **Verdict:** Partial: some but not all expected facts were stated.
@@ -3963,8 +3963,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `brezplač`
-- **Relevance — 0/3 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 0/3 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `brezplačen`, `optike`, `priklop`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “podatkov o statusu” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×0 + 0.10×0` = **0.000 → 0.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -3986,8 +3986,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `250.000` / `250000` / `250 000`
-- **Relevance — 0/4 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 0/4 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `brezplačno`, `gospodinjstev`, `optika`, `priključena`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “podatkov o statusu” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×0 + 0.10×0` = **0.000 → 0.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4018,8 +4018,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 2/2 = 100%** (weight 55%). Expected facts:
     - ✅ found: `optik` / `ftth`
     - ✅ found: `vdsl` / `adsl` / `lte` / `5g`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `dostop`, `interneta`, `ponuja`, `telekom`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `dostop`, `interneta`, `ponuja`, `telekom`. **Missing** question keyword(s): `katere`, `tehnologije`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “10 gb”).
 - **Deflection — no** (weight 10% → 1) (a redirect phrase “o kateri” is present, but fact recall ≥ 34%, so it is *not* treated as a deflection).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4041,8 +4041,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `1 gbit` / `gbit`
-- **Relevance — 1/4 = 25%** (weight 20%). Question keywords echoed in the answer: `hitrost`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 1/4 = 25%** (weight 20%). Echoed: `hitrost`. **Missing** question keyword(s): `kakšna`, `optiki`, `uporabnika`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “preverite spodaj” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.25 + 0.15×0 + 0.10×0` = **0.050 → 5.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4066,8 +4066,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `300 mbit` / `300`
-- **Relevance — 1/4 = 25%** (weight 20%). Question keywords echoed in the answer: `hitrost`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/4 = 25%** (weight 20%). Echoed: `hitrost`. **Missing** question keyword(s): `kakšna`, `oddajanje`, `uporabnika`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.25 + 0.15×1 + 0.10×1` = **0.850 → 85.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4092,8 +4092,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 2/2 = 100%** (weight 55%). Expected facts:
     - ✅ found: `mobiln` / `5g`
     - ✅ found: `optik` / `brez optike` / `vikend` / `odročn`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `primeren`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `primeren`. **Missing** question keyword(s): `koga`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4114,8 +4114,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `brez` / `ni potreb` / `ne zahteva`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `posege`, `priklop`, `vrtanje`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `posege`, `priklop`, `vrtanje`. **Missing** question keyword(s): `zahteva`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “prosim, potrdite” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.75 + 0.15×1 + 0.10×0` = **0.300 → 30.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4137,8 +4137,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 0/2 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `2 mbit`
     - ❌ missing: `neomejen`
-- **Relevance — 0/4 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/4 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `hitrost`, `kakšna`, `neomejen`, `prenos`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “lahko natančneje” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×1 + 0.10×0` = **0.150 → 15.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4162,8 +4162,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `150 mbit` / `150`
-- **Relevance — 1/3 = 33%** (weight 20%). Question keywords echoed in the answer: `hitrosti`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/3 = 33%** (weight 20%). Echoed: `hitrosti`. **Missing** question keyword(s): `katere`, `nadgradim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.33 + 0.15×1 + 0.10×1` = **0.867 → 86.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4185,8 +4185,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 2/2 = 100%** (weight 55%). Expected facts:
     - ✅ found: `wifi` / `wi-fi`
     - ✅ found: `signal` / `dom`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `turbo`, `wifi`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `turbo`, `wifi`. **Missing:** none — every question keyword appeared.
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×0 + 0.10×1` = **0.850 → 85.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4215,8 +4215,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `041 700 700`
-- **Relevance — 2/6 = 33%** (weight 20%). Question keywords echoed in the answer: `internetne`, `opreme`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/6 = 33%** (weight 20%). Echoed: `internetne`, `opreme`. **Missing** question keyword(s): `katero`, `pokličem`, `priklop`, `številko`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “povežem z mojim sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.33 + 0.15×1 + 0.10×0` = **0.217 → 21.7/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4237,8 +4237,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `neo 5g` / `5g` / `mobiln`
-- **Relevance — 5/6 = 83%** (weight 20%). Question keywords echoed in the answer: `internet`, `mobilnega`, `omrežja`, `optike`, `prek`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/6 = 83%** (weight 20%). Echoed: `internet`, `mobilnega`, `omrežja`, `optike`, `prek`. **Missing** question keyword(s): `dobim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.83 + 0.15×1 + 0.10×1` = **0.967 → 96.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4259,8 +4259,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `49 eur` / `49,00` / `49 €`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mesečna`, `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mesečna`, `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “predlagam, da preverite” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.67 + 0.15×1 + 0.10×0` = **0.283 → 28.3/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4281,8 +4281,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `58 eur` / `58,00` / `58 €`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4303,8 +4303,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `63 eur` / `63,00` / `63 €`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4325,8 +4325,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `6 mesec` / `šest mesec`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `akcijska`, `mobilnega`, `naročnike`, `velja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `akcijska`, `mobilnega`, `naročnike`, `velja`. **Missing** question keyword(s): `časa`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4347,8 +4347,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `24 mesec`
-- **Relevance — 6/7 = 86%** (weight 20%). Question keywords echoed in the answer: `akcijska`, `mobilnim`, `naročnike`, `nove`, `paketom`, `velja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 6/7 = 86%** (weight 20%). Echoed: `akcijska`, `mobilnim`, `naročnike`, `nove`, `paketom`, `velja`. **Missing** question keyword(s): `časa`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.86 + 0.15×1 + 0.10×1` = **0.971 → 97.1/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4369,8 +4369,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `49 eur` / `49,00` / `49 €`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `mesečna`, `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `mesečna`, `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “prosim, pojasnite” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.67 + 0.15×1 + 0.10×0` = **0.283 → 28.3/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4391,8 +4391,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `58 eur` / `58,00` / `58 €`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4413,8 +4413,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `63 eur` / `63,00` / `63 €`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `redna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `redna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4435,8 +4435,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `39 eur` / `39,00` / `39 €`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `internet`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `internet`. **Missing** question keyword(s): `samo`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “mi povejte” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.50 + 0.15×1 + 0.10×0` = **0.250 → 25.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4460,8 +4460,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `32,99`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `fiksnih`, `mesečni`, `paketov`, `vezavi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `fiksnih`, `mesečni`, `paketov`, `vezavi`. **Missing** question keyword(s): `akcijska`, `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “kateri paket vas zanima” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.67 + 0.15×1 + 0.10×0` = **0.283 → 28.3/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4482,8 +4482,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1 gbit` / `gbit`
-- **Relevance — 5/6 = 83%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `najvišja`, `optiki`, `paketih`, `uporabnika`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/6 = 83%** (weight 20%). Echoed: `hitrost`, `najvišja`, `optiki`, `paketih`, `uporabnika`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.83 + 0.15×1 + 0.10×1` = **0.967 → 96.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4516,8 +4516,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `5 gbit`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `hitrosti`, `internet`, `optični`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `hitrosti`, `internet`, `optični`. **Missing** question keyword(s): `katere`, `nadgradim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4538,8 +4538,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `300 mbit` / `300`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `oddajanja`, `optiki`, `upload`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `hitrost`, `oddajanja`, `optiki`, `upload`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4563,8 +4563,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `40 mbit` / `40`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `ftth`, `hitrost`, `oddajanja`, `optiki`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `ftth`, `hitrost`, `oddajanja`, `optiki`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4585,8 +4585,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `100 mbit` / `100`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `oddajanja`, `optiki`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `hitrost`, `oddajanja`, `optiki`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4607,8 +4607,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `13,99`
-- **Relevance — 0/1 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/1 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `fiksni`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “želite izvedeti” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×1 + 0.10×0` = **0.150 → 15.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4632,8 +4632,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `2 mbit`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `osnovna`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `hitrost`, `osnovna`. **Missing** question keyword(s): `kakšna`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4657,8 +4657,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `150 mbit` / `150`
-- **Relevance — 0/3 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/3 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `hitrosti`, `katere`, `nadgradim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.00 + 0.15×1 + 0.10×1` = **0.800 → 80.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4679,8 +4679,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `neomejen`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `neomejen`, `podatkov`, `prenos`, `sloveniji`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `neomejen`, `podatkov`, `prenos`, `sloveniji`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4703,8 +4703,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `neo 5g` / `5g`
-- **Relevance — 0/4 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 0/4 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `mojem`, `naslovu`, `optike`, `rešitev`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “vas povežem s sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×0 + 0.10×0` = **0.000 → 0.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4725,8 +4725,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `brez` / `ne zahteva` / `ni potreb`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `posege`, `priklop`, `vrtanje`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `posege`, `priklop`, `vrtanje`. **Missing** question keyword(s): `zahteva`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “ali sprašujete” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.75 + 0.15×1 + 0.10×0` = **0.300 → 30.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4749,8 +4749,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `naslov` / `lokacij` / `prever`
-- **Relevance — 0/5 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 0/5 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `dostopnost`, `naslovu`, `optike`, `preverim`, `svojem`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1) (a redirect phrase “vas povežem s sodelavcem” is present, but fact recall ≥ 34%, so it is *not* treated as a deflection).
 - **Weighted total:** `0.55×1.00 + 0.20×0.00 + 0.15×0 + 0.10×1` = **0.650 → 65.0/100**.
 - **Verdict:** Partial: some but not all expected facts were stated.
@@ -4772,8 +4772,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `250.000` / `250000` / `250 000`
-- **Relevance — 0/4 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 0/4 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `brezplačno`, `gospodinjstev`, `optika`, `priključena`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “podatkov o statusu” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×0 + 0.10×0` = **0.000 → 0.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4804,8 +4804,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 2/2 = 100%** (weight 55%). Expected facts:
     - ✅ found: `optik` / `ftth`
     - ✅ found: `vdsl` / `adsl` / `lte` / `5g`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `dostop`, `interneta`, `ponuja`, `telekom`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `dostop`, `interneta`, `ponuja`, `telekom`. **Missing** question keyword(s): `katere`, `tehnologije`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “10 gb”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4830,8 +4830,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 2/2 = 100%** (weight 55%). Expected facts:
     - ✅ found: `wifi` / `wi-fi`
     - ✅ found: `signal` / `dom`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `storitev`, `turbo`, `wifi`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `storitev`, `turbo`, `wifi`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “1.3 gb”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4855,8 +4855,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `satelit`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `internet`, `prek`, `satelita`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `internet`, `prek`, `satelita`. **Missing** question keyword(s): `ponuja`, `telekom`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1) (a redirect phrase “na voljo so različn” is present, but fact recall ≥ 34%, so it is *not* treated as a deflection).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4886,8 +4886,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `plc` / `električn` / `vtičnic` / `omrežj`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `brezžični`, `omogoča`, `sistem`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `brezžični`, `omogoča`, `sistem`. **Missing:** none — every question keyword appeared.
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×0 + 0.10×1` = **0.850 → 85.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4917,8 +4917,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `kaspersky`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `internet`, `kaspersky`, `rešitev`, `voljo`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `internet`, `kaspersky`, `rešitev`, `voljo`. **Missing** question keyword(s): `katera`, `varnostna`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×0 + 0.10×1` = **0.783 → 78.3/100**.
 - **Verdict:** Partial: some but not all expected facts were stated.
@@ -4942,8 +4942,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `neviht` / `strel` / `obvest` / `alarm`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `alarm`, `storitev`, `strela`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `alarm`, `storitev`, `strela`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -4972,8 +4972,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `041 700 700`
-- **Relevance — 3/6 = 50%** (weight 20%). Question keywords echoed in the answer: `internetne`, `opreme`, `priklop`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 3/6 = 50%** (weight 20%). Echoed: `internetne`, `opreme`, `priklop`. **Missing** question keyword(s): `katero`, `pokličem`, `številko`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “povežem z mojim sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.50 + 0.15×0 + 0.10×0` = **0.100 → 10.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -4996,8 +4996,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `neo 5g` / `5g` / `mobiln`
-- **Relevance — 1/6 = 17%** (weight 20%). Question keywords echoed in the answer: `omrežja`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 1/6 = 17%** (weight 20%). Echoed: `omrežja`. **Missing** question keyword(s): `dobim`, `internet`, `mobilnega`, `optike`, `prek`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “vas povežem s sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.17 + 0.15×0 + 0.10×0` = **0.033 → 3.3/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -5019,8 +5019,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `1 gbit` / `gbit`
-- **Relevance — 1/4 = 25%** (weight 20%). Question keywords echoed in the answer: `hitrost`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 1/4 = 25%** (weight 20%). Echoed: `hitrost`. **Missing** question keyword(s): `kakšna`, `optiki`, `uporabnika`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “preverite spodaj” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.25 + 0.15×0 + 0.10×0` = **0.050 → 5.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -5041,8 +5041,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `6 mesec` / `šest mesec`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `akcijska`, `mobilnega`, `naročnike`, `velja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `akcijska`, `mobilnega`, `naročnike`, `velja`. **Missing** question keyword(s): `časa`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5063,8 +5063,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `24 mesec`
-- **Relevance — 6/7 = 86%** (weight 20%). Question keywords echoed in the answer: `akcijska`, `mobilnim`, `naročnike`, `nove`, `paketom`, `velja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 6/7 = 86%** (weight 20%). Echoed: `akcijska`, `mobilnim`, `naročnike`, `nove`, `paketom`, `velja`. **Missing** question keyword(s): `časa`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.86 + 0.15×1 + 0.10×1` = **0.971 → 97.1/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5086,8 +5086,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `brezplač`
-- **Relevance — 0/3 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 0/3 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `brezplačen`, `optike`, `priklop`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “podatkov o statusu” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×0 + 0.10×0` = **0.000 → 0.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -5108,8 +5108,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `16` / `16,01`
-- **Relevance — 1/5 = 20%** (weight 20%). Question keywords echoed in the answer: `popust`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/5 = 20%** (weight 20%). Echoed: `popust`. **Missing** question keyword(s): `akcija`, `kolikšen`, `naročnino`, `prinaša`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “prosim sporočite” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.20 + 0.15×1 + 0.10×0` = **0.190 → 19.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -5130,8 +5130,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `30` / `30,01`
-- **Relevance — 2/4 = 50%** (weight 20%). Question keywords echoed in the answer: `akcija`, `prinaša`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/4 = 50%** (weight 20%). Echoed: `akcija`, `prinaša`. **Missing** question keyword(s): `kolikšen`, `popust`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5152,8 +5152,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `30` / `garancij`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `garancija`, `pakete`, `velja`, `zadovoljstva`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `garancija`, `pakete`, `velja`, `zadovoljstva`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5183,8 +5183,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `modem` / `oprem`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `doma`, `priklop`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `doma`, `priklop`. **Missing** question keyword(s): `potrebujem`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5208,8 +5208,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `vikend` / `odročn` / `da`
-- **Relevance — 0/4 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/4 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `lokacijo`, `odročno`, `pokrijem`, `vikend`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.00 + 0.15×1 + 0.10×1` = **0.800 → 80.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5231,8 +5231,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `100 mbit` / `100`
-- **Relevance — 1/4 = 25%** (weight 20%). Question keywords echoed in the answer: `hitrost`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 1/4 = 25%** (weight 20%). Echoed: `hitrost`. **Missing** question keyword(s): `kakšna`, `oddajanja`, `optiki`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “preverite spodaj” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.25 + 0.15×0 + 0.10×0` = **0.050 → 5.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -5253,8 +5253,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1 gbit` / `gbit` / `najhitrej`
-- **Relevance — 2/7 = 29%** (weight 20%). Question keywords echoed in the answer: `najhitrejša`, `povezava`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/7 = 29%** (weight 20%). Echoed: `najhitrejša`, `povezava`. **Missing** question keyword(s): `internetna`, `katera`, `mnenju`, `optika`, `uporabnikov`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.29 + 0.15×1 + 0.10×1` = **0.857 → 85.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5275,8 +5275,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `nadgrad` / `5 gbit` / `da`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `paketih`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `hitrost`, `paketih`. **Missing** question keyword(s): `nadgradljiva`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1) (a redirect phrase “na voljo so različn” is present, but fact recall ≥ 34%, so it is *not* treated as a deflection).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5297,8 +5297,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `prodajn` / `041 700 700` / `pošt`
-- **Relevance — 2/4 = 50%** (weight 20%). Question keywords echoed in the answer: `optike`, `priklop`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 2/4 = 50%** (weight 20%). Echoed: `optike`, `priklop`. **Missing** question keyword(s): `naročim`, `opremo`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “povežem z mojim sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.50 + 0.15×0 + 0.10×0` = **0.100 → 10.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -5320,8 +5320,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `0,23` / `0,2318` / `0,19`
-- **Relevance — 0/5 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/5 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `ceniku`, `kakšna`, `klica`, `minute`, `slovenije`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “najdete spodaj” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×1 + 0.10×0` = **0.150 → 15.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -5351,8 +5351,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `televiz` / `tv` / `program`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `paketi`, `televizijo`, `vključujejo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `paketi`, `televizijo`, `vključujejo`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5373,8 +5373,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `ne` / `brez tv` / `samo internet`
-- **Relevance — 1/3 = 33%** (weight 20%). Question keywords echoed in the answer: `internet`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/3 = 33%** (weight 20%). Echoed: `internet`. **Missing** question keyword(s): `samo`, `televizijo`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1) (a redirect phrase “mi povejte” is present, but fact recall ≥ 34%, so it is *not* treated as a deflection).
 - **Weighted total:** `0.55×1.00 + 0.20×0.33 + 0.15×1 + 0.10×1` = **0.867 → 86.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5398,8 +5398,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `150` / `150/50` / `150 mbit` / `2 mbit`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `hitrost`, `interneta`, `mobilnega`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `hitrost`, `interneta`, `mobilnega`. **Missing** question keyword(s): `kakšna`, `najvišja`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5420,8 +5420,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `ošo` / `oso` / `alternativ`
-- **Relevance — 0/5 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 0/5 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `alternativni`, `dobim`, `fiksni`, `internet`, `omrežju`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “vas povežem s sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×0 + 0.10×0` = **0.000 → 0.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -5442,8 +5442,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `25` / `25,01`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `akcija`, `naročnino`, `popust`, `prinaša`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `akcija`, `naročnino`, `popust`, `prinaša`. **Missing** question keyword(s): `kolikšen`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5464,8 +5464,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `24 mesec` / `24-mesec` / `24-mesečn` / `24 mesečn`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `mesečna`, `pakete`, `velja`, `vezava`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `mesečna`, `pakete`, `velja`, `vezava`. **Missing** question keyword(s): `akcijsko`, `ceno`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5486,8 +5486,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `redn` / `redna cena` / `redna naročnina`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `akcijskega`, `ceno`, `izteku`, `obdobja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `akcijskega`, `ceno`, `izteku`, `obdobja`. **Missing** question keyword(s): `zgodi`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1) (a redirect phrase “povežem z mojim sodelavcem” is present, but fact recall ≥ 34%, so it is *not* treated as a deflection).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5511,8 +5511,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `2 gbit` / `5 gbit` / `nadgrad`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `gbit`, `hitrost`, `interneta`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `gbit`, `hitrost`, `interneta`. **Missing** question keyword(s): `nadgradim`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5533,8 +5533,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `041 700 700`
-- **Relevance — 2/5 = 40%** (weight 20%). Question keywords echoed in the answer: `internetu`, `pomoč`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 2/5 = 40%** (weight 20%). Echoed: `internetu`, `pomoč`. **Missing** question keyword(s): `katera`, `telefonska`, `številka`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “povežem z mojim sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.40 + 0.15×0 + 0.10×0` = **0.080 → 8.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -5555,8 +5555,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `takoj` / `hiter` / `enostav`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `priklop`, `takojšen`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `priklop`, `takojšen`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5583,8 +5583,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `150`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `programov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `programov`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5608,8 +5608,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `210`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `programov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `programov`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5633,8 +5633,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `255`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `programov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `programov`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5658,8 +5658,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `mega hd` / `mega`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `programsko`, `shemo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `programsko`, `shemo`. **Missing** question keyword(s): `katero`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5683,8 +5683,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `osnovna`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `programsko`, `shemo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `programsko`, `shemo`. **Missing** question keyword(s): `katero`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5708,8 +5708,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `standard`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `kakšno`, `programsko`, `shemo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `kakšno`, `programsko`, `shemo`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5730,8 +5730,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `41 eur` / `41,00` / `41 €`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `interneta`, `samostojni`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `interneta`, `samostojni`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **0.450 → 45.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -5752,8 +5752,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `7 dni` / `7-dnev` / `7`
-- **Relevance — 1/4 = 25%** (weight 20%). Question keywords echoed in the answer: `nazaj`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/4 = 25%** (weight 20%). Echoed: `nazaj`. **Missing** question keyword(s): `gledam`, `ogledom`, `vsebine`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.25 + 0.15×1 + 0.10×1` = **0.850 → 85.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5777,8 +5777,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `snema` / `posne`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `oddaje`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `oddaje`. **Missing** question keyword(s): `snemam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5799,8 +5799,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `3,90`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `dodatnega`, `najem`, `vsakega`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `dodatnega`, `najem`, `vsakega`. **Missing** question keyword(s): `komunikatorja`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5821,8 +5821,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `brezplač` / `vključen v naročnino` / `vključen v mesečno` / `vključen v ceno`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `komunikatorja`, `najem`, `prvega`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `komunikatorja`, `najem`, `prvega`. **Missing** question keyword(s): `brezplačen`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5847,8 +5847,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 2/2 = 100%** (weight 55%). Expected facts:
     - ✅ found: `aplikacij`
     - ✅ found: `pametn` / `televizor`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `lite`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `lite`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5869,8 +5869,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1,90`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `lite`, `napravo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `lite`, `napravo`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5891,8 +5891,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `5` / `pet`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `lite`, `pametnih`, `televizorjih`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `lite`, `pametnih`, `televizorjih`. **Missing** question keyword(s): `uporabljam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5928,8 +5928,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
     - ✅ found: `samsung` / `tizen`
     - ✅ found: `lg` / `webos`
     - ✅ found: `android` / `hisense` / `philips`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `deluje`, `lite`, `pametnih`, `televizorjih`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `deluje`, `lite`, `pametnih`, `televizorjih`. **Missing** question keyword(s): `katerih`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5959,8 +5959,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `smartbox`
-- **Relevance — 2/6 = 33%** (weight 20%). Question keywords echoed in the answer: `lite`, `uporabo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/6 = 33%** (weight 20%). Echoed: `lite`, `uporabo`. **Missing** question keyword(s): `kateri`, `napravo`, `pogoj`, `potrebujem`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.33 + 0.15×1 + 0.10×1` = **0.867 → 86.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -5981,8 +5981,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `neo.io` / `računalnik` / `splet`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `računalniku`, `vsebine`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `računalniku`, `vsebine`. **Missing** question keyword(s): `gledam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6016,8 +6016,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `voyo` / `youtube` / `pickbox` / `max` / `igre`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `interneta`, `niso`, `voljo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `interneta`, `niso`, `voljo`. **Missing** question keyword(s): `katere`, `vsebine`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.370 → 37.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -6038,8 +6038,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `otroš` / `otrok`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `otroke`, `otroški`, `park`, `ponuja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `otroke`, `otroški`, `park`, `ponuja`. **Missing** question keyword(s): `varno`, `vsebino`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6084,8 +6084,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `hbo` / `šport` / `sport` / `pink` / `balkan` / `filmbox`
-- **Relevance — 2/4 = 50%** (weight 20%). Question keywords echoed in the answer: `opcije`, `programske`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/4 = 50%** (weight 20%). Echoed: `opcije`, `programske`. **Missing** question keyword(s): `dodam`, `katere`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6106,8 +6106,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `naprav`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `hkrati`, `napravah`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `hkrati`, `napravah`. **Missing** question keyword(s): `gledam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6131,8 +6131,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `komunikator` / `predvaj` / `naprav` / `tv`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `smartbox`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `smartbox`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6154,8 +6154,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 2/2 = 100%** (weight 55%). Expected facts:
     - ✅ found: `30`
     - ✅ found: `garancij`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `garancija`, `pakete`, `voljo`, `zadovoljstva`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `garancija`, `pakete`, `voljo`, `zadovoljstva`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6176,8 +6176,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `32,99`
-- **Relevance — 0/4 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/4 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `akcijska`, `kakšna`, `mesečni`, `vezavi`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “prosim sporočite” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×1 + 0.10×0` = **0.150 → 15.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -6198,8 +6198,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `31.12.2026` / `31. 12. 2026` / `konca leta 2026` / `2026`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `izbranega`, `lite`, `nakupu`, `televizorja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `izbranega`, `lite`, `nakupu`, `televizorja`. **Missing** question keyword(s): `brezplačen`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “priporočam, da preverite” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.80 + 0.15×1 + 0.10×0` = **0.310 → 31.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -6223,8 +6223,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `150`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `programov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `programov`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6248,8 +6248,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `210`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `programov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `programov`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6273,8 +6273,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `255`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `programov`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `programov`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6298,8 +6298,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `osnovna`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `programsko`, `shemo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `programsko`, `shemo`. **Missing** question keyword(s): `katero`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6323,8 +6323,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `standard`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `programsko`, `shemo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `programsko`, `shemo`. **Missing** question keyword(s): `katero`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6348,8 +6348,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `mega hd` / `mega`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `programsko`, `shemo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `programsko`, `shemo`. **Missing** question keyword(s): `katero`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6370,8 +6370,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `41 eur` / `41,00` / `41 €`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `interneta`, `samostojni`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `interneta`, `samostojni`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **0.450 → 45.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -6392,8 +6392,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `210`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `programov`, `samostojni`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `programov`, `samostojni`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “povežem z mojim sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×1.00 + 0.15×1 + 0.10×0` = **0.350 → 35.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -6414,8 +6414,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `7 dni` / `7-dnev` / `7`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `nazaj`, `ogledom`, `vsebine`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `nazaj`, `ogledom`, `vsebine`. **Missing** question keyword(s): `gledam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “7 dni”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6439,8 +6439,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `snema` / `posne`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `oddaje`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `oddaje`. **Missing** question keyword(s): `snemam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6461,8 +6461,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `3,90`
-- **Relevance — 5/5 = 100%** (weight 20%). Question keywords echoed in the answer: `dodatnega`, `komunikatorja`, `najem`, `smartbox`, `vsakega`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/5 = 100%** (weight 20%). Echoed: `dodatnega`, `komunikatorja`, `najem`, `smartbox`, `vsakega`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6483,8 +6483,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `brezplač` / `vključen`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `komunikatorja`, `najem`, `prvega`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `komunikatorja`, `najem`, `prvega`. **Missing** question keyword(s): `brezplačen`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6505,8 +6505,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `29 eur` / `29,00` / `29 €`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `komunikatorja`, `smartbox`, `strošek`, `znaša`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `komunikatorja`, `smartbox`, `strošek`, `znaša`. **Missing** question keyword(s): `izdaje`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.410 → 41.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -6528,8 +6528,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 - **Fact recall — 2/2 = 100%** (weight 55%). Expected facts:
     - ✅ found: `aplikacij`
     - ✅ found: `pametn` / `televizor`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `lite`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `lite`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6550,8 +6550,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `1,90`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `lite`, `napravo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `lite`, `napravo`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6572,8 +6572,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `5` / `pet`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `lite`, `pametnih`, `televizorjih`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `lite`, `pametnih`, `televizorjih`. **Missing** question keyword(s): `uporabljam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6608,8 +6608,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
     - ✅ found: `samsung` / `tizen`
     - ✅ found: `lg` / `webos`
     - ✅ found: `android` / `hisense` / `philips`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `deluje`, `lite`, `pametnih`, `televizorjih`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `deluje`, `lite`, `pametnih`, `televizorjih`. **Missing** question keyword(s): `katerih`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6639,8 +6639,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `smartbox`
-- **Relevance — 2/6 = 33%** (weight 20%). Question keywords echoed in the answer: `lite`, `uporabo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/6 = 33%** (weight 20%). Echoed: `lite`, `uporabo`. **Missing** question keyword(s): `kateri`, `napravo`, `pogoj`, `potrebujem`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.33 + 0.15×1 + 0.10×1` = **0.867 → 86.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6664,8 +6664,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `31.12.2026` / `31. 12. 2026` / `konca leta 2026` / `2026`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `izbranega`, `lite`, `nakupu`, `televizorja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `izbranega`, `lite`, `nakupu`, `televizorja`. **Missing** question keyword(s): `brezplačen`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “priporočam, da preverite” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.80 + 0.15×1 + 0.10×0` = **0.310 → 31.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -6689,8 +6689,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `neo.io` / `računalnik`
-- **Relevance — 1/4 = 25%** (weight 20%). Question keywords echoed in the answer: `vsebine`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/4 = 25%** (weight 20%). Echoed: `vsebine`. **Missing** question keyword(s): `gledam`, `računalnik`, `spletu`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.25 + 0.15×1 + 0.10×1` = **0.850 → 85.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6714,8 +6714,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `7,99` / `8 eur` / `8,00`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `dodatek`, `igre`, `programski`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `dodatek`, `igre`, `programski`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6736,8 +6736,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `hbo max` / `hbo`
-- **Relevance — 1/5 = 20%** (weight 20%). Question keywords echoed in the answer: `prej`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 1/5 = 20%** (weight 20%). Echoed: `prej`. **Missing** question keyword(s): `2025`, `imenuje`, `opcija`, `znana`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “vas povežem s sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.20 + 0.15×0 + 0.10×0` = **0.040 → 4.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -6759,8 +6759,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `brezplač` / `da vinci`
-- **Relevance — 1/5 = 20%** (weight 20%). Question keywords echoed in the answer: `vinci`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/5 = 20%** (weight 20%). Echoed: `vinci`. **Missing** question keyword(s): `brezplačna`, `kids`, `opcija`, `programska`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “3.99 eur”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.20 + 0.15×1 + 0.10×1` = **0.840 → 84.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6787,8 +6787,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `šport` / `sport` / `arena` / `sport tv`
-- **Relevance — 0/5 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/5 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `dodam`, `katere`, `opcije`, `programske`, `športne`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “7 dni”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.00 + 0.15×1 + 0.10×1` = **0.800 → 80.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6812,8 +6812,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `hbo` / `pickbox` / `filmbox` / `cinestar` / `pink` / `balkan`
-- **Relevance — 0/6 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 0/6 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `dodam`, `filmske`, `katere`, `naštej`, `opcije`, `serijske`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.00 + 0.15×0 + 0.10×1` = **0.650 → 65.0/100**.
 - **Verdict:** Partial: some but not all expected facts were stated.
@@ -6842,8 +6842,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `voyo` / `youtube` / `pickbox` / `max` / `igre`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `interneta`, `niso`, `voljo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `interneta`, `niso`, `voljo`. **Missing** question keyword(s): `katere`, `vsebine`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1) (a redirect phrase “želite, da vas povežem” is present, but fact recall ≥ 34%, so it is *not* treated as a deflection).
 - **Weighted total:** `0.55×1.00 + 0.20×0.60 + 0.15×1 + 0.10×1` = **0.920 → 92.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6864,8 +6864,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `otroš` / `otrok`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `otroke`, `otroški`, `park`, `ponuja`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `otroke`, `otroški`, `park`, `ponuja`. **Missing** question keyword(s): `varno`, `vsebino`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6886,8 +6886,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `komunikator` / `predvaj` / `naprav` / `tv`
-- **Relevance — 1/1 = 100%** (weight 20%). Question keywords echoed in the answer: `smartbox`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/1 = 100%** (weight 20%). Echoed: `smartbox`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6908,8 +6908,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `chromecast` / `airplay`
-- **Relevance — 1/5 = 20%** (weight 20%). Question keywords echoed in the answer: `brezžično`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/5 = 20%** (weight 20%). Echoed: `brezžično`. **Missing** question keyword(s): `katerima`, `predvajam`, `protokoloma`, `vsebine`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.20 + 0.15×1 + 0.10×1` = **0.840 → 84.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6940,8 +6940,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `glasovn` / `mobitel` / `upravlja`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `daljinec`, `omogoča`, `virtualni`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `daljinec`, `omogoča`, `virtualni`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6962,8 +6962,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `30` / `garancij`
-- **Relevance — 4/4 = 100%** (weight 20%). Question keywords echoed in the answer: `garancija`, `pakete`, `voljo`, `zadovoljstva`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/4 = 100%** (weight 20%). Echoed: `garancija`, `pakete`, `voljo`, `zadovoljstva`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -6984,8 +6984,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `32,99`
-- **Relevance — 0/4 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/4 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `akcijska`, `kakšna`, `mesečni`, `vezavi`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “povežem z mojim sodelavcem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×1 + 0.10×0` = **0.150 → 15.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -7009,8 +7009,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `naprav`
-- **Relevance — 1/2 = 50%** (weight 20%). Question keywords echoed in the answer: `napravah`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/2 = 50%** (weight 20%). Echoed: `napravah`. **Missing** question keyword(s): `gledam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -7039,8 +7039,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `8` / `8,01`
-- **Relevance — 0/5 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/5 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `akcija`, `kolikšen`, `naročnino`, `popust`, `prinaša`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “mobi”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “ali vas zanima” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.00 + 0.15×1 + 0.10×0` = **0.150 → 15.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -7064,8 +7064,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `ne` / `brez internet` / `ni mogoč`
-- **Relevance — 5/6 = 83%** (weight 20%). Question keywords echoed in the answer: `internet`, `omogoča`, `opcij`, `potrebujejo`, `programskih`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/6 = 83%** (weight 20%). Echoed: `internet`, `omogoča`, `opcij`, `potrebujejo`, `programskih`. **Missing** question keyword(s): `ogled`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.83 + 0.15×1 + 0.10×1` = **0.967 → 96.7/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -7086,8 +7086,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `3,90`
-- **Relevance — 2/2 = 100%** (weight 20%). Question keywords echoed in the answer: `komunikatorja`, `najem`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/2 = 100%** (weight 20%). Echoed: `komunikatorja`, `najem`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “naj”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -7111,8 +7111,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `1,27`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `dodatna`, `fiksnem`, `telefonska`, `številka`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `dodatna`, `fiksnem`, `telefonska`, `številka`. **Missing** question keyword(s): `telefonija`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×0.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.410 → 41.0/100**.
 - **Verdict:** Risky: Maks answered confidently with a specific value that does **not** match the site — a candidate factual error.
@@ -7136,8 +7136,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `mega` / `255`
-- **Relevance — 2/4 = 50%** (weight 20%). Question keywords echoed in the answer: `programov`, `shemo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/4 = 50%** (weight 20%). Echoed: `programov`, `shemo`. **Missing** question keyword(s): `katero`, `najvišji`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -7158,8 +7158,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `lg` / `webos` / `da`
-- **Relevance — 2/3 = 67%** (weight 20%). Question keywords echoed in the answer: `lite`, `televizorju`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/3 = 67%** (weight 20%). Echoed: `lite`, `televizorju`. **Missing** question keyword(s): `uporabljam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×1 + 0.10×1` = **0.933 → 93.3/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -7183,8 +7183,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `samsung` / `tizen` / `da`
-- **Relevance — 3/4 = 75%** (weight 20%). Question keywords echoed in the answer: `lite`, `samsung`, `televizorju`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/4 = 75%** (weight 20%). Echoed: `lite`, `samsung`, `televizorju`. **Missing** question keyword(s): `uporabljam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.75 + 0.15×1 + 0.10×1` = **0.950 → 95.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -7205,8 +7205,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `snema` / `ogled nazaj` / `7 dni`
-- **Relevance — 5/5 = 100%** (weight 20%). Question keywords echoed in the answer: `lite`, `nazaj`, `ogled`, `omogoča`, `snemanje`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 5/5 = 100%** (weight 20%). Echoed: `lite`, `nazaj`, `ogled`, `omogoča`, `snemanje`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -7227,8 +7227,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `ne` / `ni na voljo` / `brez televiz`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `lite`, `televizije`, `voljo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `lite`, `televizije`, `voljo`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -7249,8 +7249,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `najbolj` / `uporabnik` / `izkušnj`
-- **Relevance — 0/4 = 0%** (weight 20%). Question keywords echoed in the answer: —
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 0/4 = 0%** (weight 20%). Echoed: —. **Missing** question keyword(s): `izkušnja`, `mnenju`, `najboljša`, `uporabnikov`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.00 + 0.15×1 + 0.10×1` = **0.800 → 80.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -7274,8 +7274,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `neo 5g` / `5g` / `brez optike`
-- **Relevance — 2/4 = 50%** (weight 20%). Question keywords echoed in the answer: `kjer`, `televizijo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 2/4 = 50%** (weight 20%). Echoed: `kjer`, `televizijo`. **Missing** question keyword(s): `optike`, `uporabljam`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.50 + 0.15×1 + 0.10×1` = **0.900 → 90.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -7299,8 +7299,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `210`
-- **Relevance — 4/6 = 67%** (weight 20%). Question keywords echoed in the answer: `programov`, `programska`, `shema`, `standard`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 4/6 = 67%** (weight 20%). Echoed: `programov`, `programska`, `shema`, `standard`. **Missing** question keyword(s): `ponuja`, `vsaj`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.67 + 0.15×0 + 0.10×1` = **0.783 → 78.3/100**.
 - **Verdict:** Partial: some but not all expected facts were stated.
@@ -7324,8 +7324,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `videotek` / `na zahtevo` / `vod`
-- **Relevance — 1/4 = 25%** (weight 20%). Question keywords echoed in the answer: `videoteke`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 1/4 = 25%** (weight 20%). Echoed: `videoteke`. **Missing** question keyword(s): `ponuja`, `vsebine`, `zahtevo`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.25 + 0.15×1 + 0.10×1` = **0.850 → 85.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -7349,8 +7349,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `mini` / `brska` / `hkrati`
-- **Relevance — 2/5 = 40%** (weight 20%). Question keywords echoed in the answer: `mini`, `spletu`
-- **Specificity — 0/1** (weight 15%): no concrete price/quantity/package token found.
+- **Relevance — 2/5 = 40%** (weight 20%). Echoed: `mini`, `spletu`. **Missing** question keyword(s): `brskam`, `gledanjem`, `predvajalnikom`
+- **Specificity — 0/1** (weight 15%): **missing** a concrete value — the answer states none of a price (`€`/`EUR`), a data amount (`GB`/`MB`/`TB`), a speed (`Mbit`/`Gbit`/`kbit`), a duration (`dni`), a channel count (`program`), a percentage, or a package name (`Naj`/`Mobi`/`NEO`/`SUPR`).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.40 + 0.15×0 + 0.10×1` = **0.730 → 73.0/100**.
 - **Verdict:** Partial: some but not all expected facts were stated.
@@ -7371,8 +7371,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 0/1 = 0%** (weight 55%). Expected facts:
     - ❌ missing: `29 eur` / `29,00` / `29 €`
-- **Relevance — 3/5 = 60%** (weight 20%). Question keywords echoed in the answer: `izdaje`, `smartbox`, `strošek`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/5 = 60%** (weight 20%). Echoed: `izdaje`, `smartbox`, `strošek`. **Missing** question keyword(s): `enkratno`, `kakšen`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — yes** (weight 10% → 0): matched redirect phrase “želite, da vas povežem” and fact recall < 34%, so this counts as a non-answer.
 - **Weighted total:** `0.55×0.00 + 0.20×0.60 + 0.15×1 + 0.10×0` = **0.270 → 27.0/100**.
 - **Verdict:** Weak: Maks deflected/redirected instead of giving the fact.
@@ -7393,8 +7393,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `osnovna`
-- **Relevance — 3/3 = 100%** (weight 20%). Question keywords echoed in the answer: `osnovna`, `programsko`, `shemo`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 3/3 = 100%** (weight 20%). Echoed: `osnovna`, `programsko`, `shemo`. **Missing:** none — every question keyword appeared.
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×1.00 + 0.15×1 + 0.10×1` = **1.000 → 100.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
@@ -7415,8 +7415,8 @@ Source of truth: telekom.si product pages and price lists (ceniki), July 2026.
 
 - **Fact recall — 1/1 = 100%** (weight 55%). Expected facts:
     - ✅ found: `5` / `pet`
-- **Relevance — 4/5 = 80%** (weight 20%). Question keywords echoed in the answer: `hkrati`, `lite`, `pametnih`, `različnih`
-- **Specificity — 1/1** (weight 15%): the answer contains a concrete price/quantity/package token.
+- **Relevance — 4/5 = 80%** (weight 20%). Echoed: `hkrati`, `lite`, `pametnih`, `različnih`. **Missing** question keyword(s): `podpira`
+- **Specificity — 1/1** (weight 15%): a concrete token is present (matched on “neo”).
 - **Deflection — no** (weight 10% → 1).
 - **Weighted total:** `0.55×1.00 + 0.20×0.80 + 0.15×1 + 0.10×1` = **0.960 → 96.0/100**.
 - **Verdict:** Strong: the answer states the published fact(s) and stays on topic.
