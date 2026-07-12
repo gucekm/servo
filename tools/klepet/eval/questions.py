@@ -223,3 +223,10 @@ QUESTIONS = [
     ("tv25", "iptv", "Do kdaj je NEO TV Lite brezplačen ob nakupu izbranega televizorja?",
      [["31.12.2026", "31. 12. 2026", "konca leta 2026", "2026"]]),
 ]
+
+# 200 more questions extending coverage to the price-list (cenik) items:
+# add-on services, TV programme options, device insurance, speed upgrades, etc.
+# Kept in a separate module to keep this file readable; total = 300.
+from questions_extra import QUESTIONS_EXTRA  # noqa: E402
+
+QUESTIONS = QUESTIONS + QUESTIONS_EXTRA
