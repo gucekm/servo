@@ -1,16 +1,16 @@
-// Profile template for the "klepet" chat on www.telekom.si
+// Annotated *template* for a generic poll-based web chat.
 //
-// The real endpoints CANNOT be shipped here: they are only visible from a
-// browser on the live site (this repo's build environment is firewalled off
-// from telekom.si). Fill the placeholders below from a browser capture -- the
-// easiest way is to let `import-har` generate most of it for you:
+// The working telekom.si profile ships separately as `telekom_si.json` (the
+// Boost.ai "Maks" assistant). Use THIS file as a starting point for a different
+// backend: fill the placeholders from a browser capture -- the easiest way is
+// to let `import-har` generate most of it for you:
 //
-//     python -m klepet import-har chat.har -o profiles/telekom_si.json
+//     python -m klepet import-har chat.har -o profiles/my_backend.json
 //
 // then hand-fix any field the importer marked "REVIEW:". See README.md.
 //
-// Everything below is a realistic *shape* for a poll-based web chat, not the
-// actual telekom.si contract. Lines starting with // are stripped on load.
+// Everything below is a realistic *shape*, not a real contract. Lines starting
+// with // are stripped on load.
 {
   "name": "telekom_si",
   "transport": "poll",

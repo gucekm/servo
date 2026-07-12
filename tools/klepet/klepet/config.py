@@ -37,14 +37,38 @@ class RequestSpec:
 
 
 @dataclass
-class PollSpec:
-    """How to receive messages when the backend uses HTTP long/short polling."""
+class ReplyShape:
+    """How to locate message text/author inside a JSON response.
 
-    request: RequestSpec
-    messages_path: str = "messages"          # array of message objects in the response
+    Shared by :class:`PollSpec` (async polling) and :class:`ReplySpec`
+    (replies that arrive synchronously in the send/session response).
+    ``message_text_path`` may end in ``*`` to gather a list of fragments
+    (e.g. ``elements.*.payload.html``); ``strip_html`` then flattens any
+    HTML those fragments contain into plain text.
+    """
+
+    messages_path: str = "messages"          # array (or object) of message(s) in the response
     message_text_path: str = "text"          # text field within a message object
     message_from_path: str = "from"          # author/role field within a message object
     bot_from_values: List[str] = field(default_factory=list)  # which authors are the bot
+    strip_html: bool = False                 # flatten HTML fragments into plain text
+
+    @classmethod
+    def fields_from_dict(cls, d: Dict[str, Any]) -> Dict[str, Any]:
+        return dict(
+            messages_path=d.get("messages_path", "messages"),
+            message_text_path=d.get("message_text_path", "text"),
+            message_from_path=d.get("message_from_path", "from"),
+            bot_from_values=list(d.get("bot_from_values", [])),
+            strip_html=bool(d.get("strip_html", False)),
+        )
+
+
+@dataclass
+class PollSpec(ReplyShape):
+    """How to receive messages when the backend uses HTTP long/short polling."""
+
+    request: RequestSpec = None  # type: ignore[assignment]
     interval_seconds: float = 2.0
 
     @classmethod
@@ -56,12 +80,26 @@ class PollSpec:
             raise ValueError("poll.request is required for a polling profile")
         return cls(
             request=req,
-            messages_path=d.get("messages_path", "messages"),
-            message_text_path=d.get("message_text_path", "text"),
-            message_from_path=d.get("message_from_path", "from"),
-            bot_from_values=list(d.get("bot_from_values", [])),
             interval_seconds=float(d.get("interval_seconds", 2.0)),
+            **ReplyShape.fields_from_dict(d),
         )
+
+
+@dataclass
+class ReplySpec(ReplyShape):
+    """How to read a reply that arrives *in* the send/session response.
+
+    Some backends are synchronous request/response: the bot's answer comes back
+    in the body of the POST that sent the user's message (and a greeting comes
+    back from the session request). When a profile has a ``reply`` section, the
+    client dispatches messages found in those responses using this shape.
+    """
+
+    @classmethod
+    def from_dict(cls, d: Optional[Dict[str, Any]]) -> Optional["ReplySpec"]:
+        if not d:
+            return None
+        return cls(**ReplyShape.fields_from_dict(d))
 
 
 @dataclass
@@ -107,6 +145,7 @@ class Profile:
     session: Optional[RequestSpec] = None   # opens the conversation, extracts ids
     send: Optional[RequestSpec] = None      # sends one user message
     poll: Optional[PollSpec] = None
+    reply: Optional[ReplySpec] = None       # replies that come back in send/session responses
     websocket: Optional[WebSocketSpec] = None
 
     @classmethod
@@ -121,6 +160,7 @@ class Profile:
             session=RequestSpec.from_dict(d.get("session")),
             send=RequestSpec.from_dict(d.get("send")),
             poll=PollSpec.from_dict(d.get("poll")),
+            reply=ReplySpec.from_dict(d.get("reply")),
             websocket=WebSocketSpec.from_dict(d.get("websocket")),
         )
         prof.validate()
@@ -131,8 +171,12 @@ class Profile:
             raise ValueError(f"unknown transport: {self.transport!r}")
         if self.send is None and self.transport != "websocket":
             raise ValueError("a 'send' request is required for the poll transport")
-        if self.transport == "poll" and self.poll is None:
-            raise ValueError("transport 'poll' requires a 'poll' section")
+        # A poll profile must have *some* way to receive: a poll loop, or a
+        # `reply` section (for synchronous backends that answer in the response).
+        if self.transport == "poll" and self.poll is None and self.reply is None:
+            raise ValueError(
+                "transport 'poll' requires a 'poll' section or a 'reply' section"
+            )
         if self.transport == "websocket" and self.websocket is None:
             raise ValueError("transport 'websocket' requires a 'websocket' section")
 

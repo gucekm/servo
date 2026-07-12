@@ -9,7 +9,10 @@ live values discovered at runtime (session ids, cursors, the user's message).
   can resolve to an int, list, etc.), otherwise normal string interpolation is
   used.
 * :func:`extract` reads a value out of a decoded JSON response using a dotted
-  path such as ``"data.session.id"`` or ``"messages.0.text"``.
+  path such as ``"data.session.id"`` or ``"messages.0.text"``. A ``*`` segment
+  maps the rest of the path over every item of an array, so
+  ``"elements.*.payload.html"`` collects the ``payload.html`` of each element
+  into a list (handy for backends whose reply is split across many fragments).
 """
 
 from __future__ import annotations
@@ -37,13 +40,21 @@ def render(obj: Any, ctx: Mapping[str, Any]) -> Any:
 
 
 def extract(data: Any, path: str, default: Any = None) -> Any:
-    """Read *path* (dotted, with numeric indices) out of decoded JSON *data*."""
+    """Read *path* (dotted, with numeric indices and ``*`` wildcards) out of *data*."""
     if not path:
         return data
-    cur = data
-    for part in path.split("."):
+    return _extract_parts(data, path.split("."), default)
+
+
+def _extract_parts(cur: Any, parts: list[str], default: Any) -> Any:
+    for i, part in enumerate(parts):
         if cur is None:
             return default
+        if part == "*":
+            if not isinstance(cur, (list, tuple)):
+                return default
+            rest = parts[i + 1 :]
+            return [_extract_parts(item, rest, default) for item in cur]
         if isinstance(cur, Mapping):
             cur = cur.get(part, default)
         elif isinstance(cur, (list, tuple)):

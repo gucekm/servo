@@ -1,7 +1,13 @@
 # klepet — chat-bot client for www.telekom.si
 
 A small, dependency-light Python client for talking to the **klepet** ("chat")
-assistant on `www.telekom.si` from the command line or from your own code.
+assistant — **Maks** — on `www.telekom.si` from the command line or from your
+own code. A ready-to-run profile ships in `profiles/telekom_si.json`, so it
+works out of the box:
+
+```bash
+python -m klepet chat profiles/telekom_si.json
+```
 
 The client is **profile-driven**: a chat backend is described by a JSON file
 (session / send / receive requests) rather than hard-coded. This is deliberate —
@@ -25,16 +31,19 @@ tools/klepet/
 
 ## Why a profile?
 
-The exact HTTP/WebSocket contract of the telekom.si klepet widget is **not
-public** and is only observable from a browser on the live site. The build
-environment this repo runs in is firewalled off from `telekom.si` (and the egress
-proxy does not pass WebSocket upgrades), so the real endpoints could not be
-captured and baked in here.
+The telekom.si klepet widget is powered by the [Boost.ai](https://www.boost.ai)
+platform. Its home-page config (`window.TS_VA_CONFIG`) points at the Boost
+server `telekom-slovenije`, i.e. `https://telekom-slovenije.boost.ai`, whose
+Chat API v2 is public and needs no authentication. That contract is captured in
+`profiles/telekom_si.json`, which is why `chat` works with no setup.
 
-Instead of guessing and shipping something that silently breaks, the client
-reads the contract from a **profile** you generate from a real session in about
-two minutes (below). Everything else — session handling, message sending,
-polling/streaming replies, de-duplication — is already implemented and tested.
+Keeping the contract in a **profile** rather than hard-coding it means the same
+client can talk to other backends (LivePerson, Genesys, Oracle DA, custom
+REST/WebSocket, …) just by dropping in another JSON file — and if telekom.si
+ever changes its widget, you can regenerate the profile from a browser capture
+in about two minutes (below) instead of editing code. Everything else — session
+handling, message sending, synchronous/polled/streamed replies,
+de-duplication — is already implemented and tested.
 
 ## Install
 
@@ -45,32 +54,7 @@ pip install -r requirements.txt      # just `requests`; WebSocket is stdlib
 
 ## Quick start
 
-**1. Verify the client works (offline, no network):**
-
-```bash
-python -m klepet demo
-# -> [demo] PASS - client drove the full session/send/poll flow.
-```
-
-**2. Capture the real klepet endpoints from your browser:**
-
-1. Open <https://www.telekom.si> and start the **klepet** chat.
-2. Open DevTools → **Network** tab (Chrome/Firefox/Edge). Tick *Preserve log*.
-3. Send one or two messages so the *start*, *send* and *receive* calls all fire.
-4. Right-click the request list → **Save all as HAR** → e.g. `chat.har`.
-
-**3. Generate a profile from the capture:**
-
-```bash
-python -m klepet import-har chat.har -o profiles/telekom_si.json
-```
-
-This prints the chat-like requests it found and writes a profile skeleton.
-Open the file and fix any field tagged `REVIEW:` / `REPLACE` — usually just the
-dotted paths (`session_id` location, `messages_path`). Compare with
-`profiles/telekom_si.example.json`, which is fully commented.
-
-**4. Chat:**
+**Chat with Maks right away** (uses the shipped `profiles/telekom_si.json`):
 
 ```bash
 python -m klepet chat profiles/telekom_si.json
@@ -78,11 +62,37 @@ python -m klepet chat profiles/telekom_si.json
 
 ```
 Connecting to 'telekom_si' (poll) ...
+
+bot: Hej, sem Maks, svetovalec iz digitalnega sveta✨ ...
 Connected. Type a message and press Enter. Ctrl-D or /quit to exit.
-> Pozdravljeni
-bot: Pozdravljeni! Kako vam lahko pomagam?
-> ...
+> Katere mobilne pakete ponujate?
+bot: ✨ Na voljo so naslednji mobilni paketi: ...
+> /quit
 ```
+
+**Verify the plumbing offline** (no network):
+
+```bash
+python -m klepet demo
+# -> [demo] PASS - client drove the full session/send/poll flow.
+```
+
+### Adapting to another backend (or re-capturing telekom.si)
+
+If you want to point the client at a different chat backend — or telekom.si
+changes its widget — capture the traffic from a browser and generate a profile:
+
+1. Open the site and start its chat. Open DevTools → **Network** (tick *Preserve
+   log*). Send a message or two so the *start*, *send* and *receive* calls fire.
+2. Right-click the request list → **Save all as HAR** → e.g. `chat.har`.
+3. Generate a profile skeleton and fix any field tagged `REVIEW:` / `REPLACE`
+   (usually just the dotted paths):
+
+   ```bash
+   python -m klepet import-har chat.har -o profiles/my_backend.json
+   ```
+
+`profiles/telekom_si.example.json` is a fully commented template you can copy.
 
 ## Use it from code
 
@@ -101,16 +111,24 @@ client.stop()
 
 | Section     | Purpose                                                              |
 |-------------|----------------------------------------------------------------------|
-| `transport` | `"poll"` (HTTP polling) or `"websocket"`                              |
+| `transport` | `"poll"` (HTTP) or `"websocket"`                                      |
 | `session`   | request that opens the conversation; `extract` pulls ids into context |
 | `send`      | request that posts a user message; `{{message}}` = the typed text     |
-| `poll`      | request + paths to read the reply array (poll transport)             |
+| `reply`     | paths to read replies that come back **in** the send/session response (synchronous backends) |
+| `poll`      | request + paths to read replies from a separate polling endpoint     |
 | `websocket` | url, opening frames, send template, reply paths (ws transport)       |
+
+A poll-transport profile needs at least one of `reply` or `poll`. telekom.si is
+synchronous (Boost answers in the POST response), so `telekom_si.json` uses
+`reply` and has no `poll` loop.
 
 Values support `{{var}}` templating; variables come from `vars`, from the
 `base_url`, and from anything a previous request's `extract` produced (e.g.
-`{{session_id}}`). Response fields are read with dotted paths that also index
-arrays: `data.messages.0.text`.
+`{{conversation_id}}`). Response fields are read with dotted paths that index
+arrays (`data.messages.0.text`) and support a `*` wildcard that maps the rest of
+the path over an array (`elements.*.payload.html`). In `reply`/`poll`, set
+`strip_html: true` to flatten HTML fragments — and join a list of them — into
+plain text.
 
 ## Tests
 

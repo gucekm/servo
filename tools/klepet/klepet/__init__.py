@@ -6,9 +6,10 @@ send a message, and how to receive replies. This lets the same client talk to
 different vendors (LivePerson, Genesys, Oracle DA, custom REST/WebSocket, ...)
 without code changes.
 
-The concrete endpoints for the "klepet" chat on www.telekom.si are not shipped
-here because they must be captured from a live browser session (see the README
-and ``klepet.harimport``). Once captured, drop them into a profile and run.
+A ready-to-run profile for the "klepet" chat on www.telekom.si (the Boost.ai
+assistant "Maks") ships in ``profiles/telekom_si.json``. To target a different
+backend, capture it from a browser session and generate a new profile (see the
+README and ``klepet.harimport``).
 """
 
 from .config import Profile, load_profile

@@ -12,6 +12,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from klepet import harimport
+from klepet.client import KlepetClient
 from klepet.config import Profile
 from klepet.template import extract, render
 
@@ -91,6 +92,56 @@ def test_harimport_classifies_poll_flow():
     assert "start" in profile["session"]["url"]
     assert profile["send"]["json"]["text"] == "{{message}}"
     assert "poll" in profile["poll"]["request"]["url"]
+
+
+def test_extract_wildcard_collects_fragments():
+    data = {"response": {"elements": [
+        {"payload": {"html": "<p>Hej</p>"}},
+        {"payload": {"html": "<p>Svet</p>"}},
+        {"type": "links", "payload": {"links": []}},  # no html -> dropped
+    ]}}
+    assert extract(data, "response.elements.*.payload.html") == [
+        "<p>Hej</p>", "<p>Svet</p>", None,
+    ]
+    # A wildcard over a non-list yields the default.
+    assert extract({"x": 1}, "x.*.y", default="d") == "d"
+
+
+def test_reply_only_profile_is_valid_without_poll():
+    # A synchronous backend receives via `reply`, so a `poll` section is optional.
+    prof = Profile.from_dict({
+        "transport": "poll",
+        "send": {"method": "POST", "url": "u"},
+        "reply": {"messages_path": "response"},
+    })
+    assert prof.poll is None and prof.reply is not None
+
+
+def test_reply_dispatch_flattens_boost_style_response():
+    prof = Profile.from_dict({
+        "name": "boost", "transport": "poll", "base_url": "https://x",
+        "session": {"method": "POST", "url": "{{base_url}}/s"},
+        "send": {"method": "POST", "url": "{{base_url}}/m",
+                 "json": {"value": "{{message}}"}},
+        "reply": {
+            "messages_path": "response",
+            "message_text_path": "elements.*.payload.html",
+            "message_from_path": "source",
+            "bot_from_values": ["bot"],
+            "strip_html": True,
+        },
+    })
+    got = []
+    client = KlepetClient(prof, on_message=lambda a, t: got.append((a, t)))
+    payload = {"response": {"source": "bot", "id": "1", "elements": [
+        {"type": "html", "payload": {"html": "<p>Pozdravljeni!</p>"}},
+        {"type": "html", "payload": {"html": "<p>Kako <b>pomagam</b>?</p>"}},
+    ]}}
+    client._dispatch(payload, prof.reply)
+    assert got == [("bot", "Pozdravljeni!\nKako pomagam?")]
+    # Re-dispatching the same response is de-duplicated.
+    client._dispatch(payload, prof.reply)
+    assert len(got) == 1
 
 
 def test_harimport_websocket():

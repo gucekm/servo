@@ -3,13 +3,30 @@
 from __future__ import annotations
 
 import json
+import re
 import threading
 import time
 from typing import Any, Callable, Dict, List, Optional
 
-from .config import Profile, RequestSpec
+from .config import Profile, ReplyShape, RequestSpec
 from .template import extract, render
 from .transport import WebSocketClient, new_http_session
+
+_TAG_RE = re.compile(r"<[^>]+>")
+_ENTITIES = {
+    "&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"',
+    "&#39;": "'", "&apos;": "'", "&nbsp;": " ",
+}
+
+
+def _strip_html(text: str) -> str:
+    """Flatten an HTML fragment into readable plain text."""
+    text = re.sub(r"<br\s*/?>", "\n", text, flags=re.IGNORECASE)
+    text = re.sub(r"</p\s*>", "\n", text, flags=re.IGNORECASE)
+    text = _TAG_RE.sub("", text)
+    for entity, char in _ENTITIES.items():
+        text = text.replace(entity, char)
+    return text.strip()
 
 # Callback invoked for every inbound message: (author, text) -> None
 MessageHandler = Callable[[str, str], None]
@@ -42,10 +59,13 @@ class KlepetClient:
     def start(self) -> None:
         """Open the conversation and start receiving replies in the background."""
         if self.profile.session is not None:
-            self._run_request(self.profile.session, extra={})
+            payload = self._run_request(self.profile.session, extra={})
+            # Synchronous backends greet us in the session response itself.
+            if self.profile.reply is not None:
+                self._dispatch(payload, self.profile.reply)
         if self.profile.transport == "websocket":
             self._start_websocket()
-        else:
+        elif self.profile.poll is not None:
             self._rx_thread = threading.Thread(target=self._poll_loop, daemon=True)
             self._rx_thread.start()
 
@@ -65,7 +85,10 @@ class KlepetClient:
         else:
             if self.profile.send is None:
                 raise RuntimeError("profile has no 'send' request configured")
-            self._run_request(self.profile.send, extra={"message": text})
+            payload = self._run_request(self.profile.send, extra={"message": text})
+            # Synchronous backends answer in the send response itself.
+            if self.profile.reply is not None:
+                self._dispatch(payload, self.profile.reply)
 
     # -- receiving: polling ------------------------------------------------- #
 
@@ -75,33 +98,46 @@ class KlepetClient:
         while not self._stop.is_set():
             try:
                 data = self._run_request(poll.request, extra={}, return_json=True)
-                self._dispatch_messages(
-                    data, poll.messages_path, poll.message_text_path,
-                    poll.message_from_path, poll.bot_from_values,
-                )
+                self._dispatch(data, poll)
             except Exception as exc:  # keep the loop alive on transient errors
                 self.on_message("_error", f"poll error: {exc}")
             self._stop.wait(poll.interval_seconds)
 
-    def _dispatch_messages(
-        self, data: Any, messages_path: str, text_path: str,
-        from_path: str, bot_values: List[str],
-    ) -> None:
-        msgs = extract(data, messages_path, []) or []
+    def _dispatch(self, data: Any, shape: ReplyShape) -> None:
+        """Surface every new message found in *data* according to *shape*."""
+        msgs = extract(data, shape.messages_path, []) or []
         if isinstance(msgs, dict):
             msgs = [msgs]
         for msg in msgs:
-            text = extract(msg, text_path)
-            if text is None:
+            text = self._read_text(msg, shape)
+            if not text:
                 continue
-            author = extract(msg, from_path, "bot") or "bot"
+            author = extract(msg, shape.message_from_path, "bot") or "bot"
             key = json.dumps(msg, sort_keys=True, default=str)
             if key in self._seen_ids:
                 continue
             self._seen_ids.add(key)
-            if bot_values and str(author) not in bot_values:
+            if shape.bot_from_values and str(author) not in shape.bot_from_values:
                 continue  # only surface configured bot authors
-            self.on_message(str(author), str(text))
+            self.on_message(str(author), text)
+
+    @staticmethod
+    def _read_text(msg: Any, shape: ReplyShape) -> str:
+        """Extract and normalise a message's text (list fragments + optional HTML)."""
+        raw = extract(msg, shape.message_text_path)
+        if raw is None:
+            return ""
+        fragments = raw if isinstance(raw, (list, tuple)) else [raw]
+        out: List[str] = []
+        for frag in fragments:
+            if frag is None:
+                continue
+            piece = str(frag)
+            if shape.strip_html:
+                piece = _strip_html(piece)
+            if piece:
+                out.append(piece)
+        return "\n".join(out)
 
     # -- receiving: websocket ---------------------------------------------- #
 
@@ -136,9 +172,14 @@ class KlepetClient:
                     self.on_message(str(author), str(text))
             else:
                 # A batch/envelope: let the shared dispatcher find the array.
-                self._dispatch_messages(
-                    data, "messages", ws_spec.message_text_path,
-                    ws_spec.message_from_path, ws_spec.bot_from_values,
+                self._dispatch(
+                    data,
+                    ReplyShape(
+                        messages_path="messages",
+                        message_text_path=ws_spec.message_text_path,
+                        message_from_path=ws_spec.message_from_path,
+                        bot_from_values=ws_spec.bot_from_values,
+                    ),
                 )
 
     def _ws_send(self, text: str) -> None:

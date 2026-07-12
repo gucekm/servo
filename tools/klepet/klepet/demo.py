@@ -1,8 +1,9 @@
 """Offline self-test: a local echo chat backend + the client talking to it.
 
 This never touches the network. It proves the profile engine, HTTP transport,
-session/send/poll flow and message de-duplication all work together, which is
-otherwise hard to verify without access to the real telekom.si endpoints.
+session/send/poll flow and message de-duplication all work together, so the
+plumbing can be checked in CI or offline without hitting the real telekom.si
+endpoints.
 """
 
 from __future__ import annotations

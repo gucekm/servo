@@ -1,0 +1,64 @@
+// Working profile for the "klepet" chat (assistant "Maks") on www.telekom.si.
+//
+// The widget on telekom.si is powered by the Boost.ai platform. Its config
+// (window.TS_VA_CONFIG on the home page) points at server "telekom-slovenije",
+// i.e. https://telekom-slovenije.boost.ai, and its public Chat API v2 needs no
+// authentication. This profile drives that API directly, so:
+//
+//     python -m klepet chat profiles/telekom_si.json
+//
+// works out of the box. Lines starting with // are stripped on load.
+{
+  "name": "telekom_si",
+  "transport": "poll",
+  "base_url": "https://telekom-slovenije.boost.ai",
+
+  "headers": {
+    "Origin": "https://www.telekom.si",
+    "Referer": "https://www.telekom.si/"
+  },
+
+  // Defaults mirrored from the live widget configuration.
+  "vars": {
+    "language": "sl-SI",
+    "filter_values": ["default"]
+  },
+
+  // 1) START the conversation; keep the returned conversation id for later.
+  "session": {
+    "method": "POST",
+    "url": "{{base_url}}/api/chat/v2",
+    "json": {
+      "command": "START",
+      "language": "{{language}}",
+      "filter_values": "{{filter_values}}"
+    },
+    "extract": {
+      "conversation_id": "conversation.id"
+    }
+  },
+
+  // 2) POST a user message. {{message}} is filled with what you type.
+  "send": {
+    "method": "POST",
+    "url": "{{base_url}}/api/chat/v2",
+    "json": {
+      "command": "POST",
+      "type": "text",
+      "conversation_id": "{{conversation_id}}",
+      "value": "{{message}}"
+    }
+  },
+
+  // 3) Boost answers *synchronously*: the greeting comes back in the START
+  //    response and each reply in the POST response, both under `response`
+  //    as a list of `elements` whose html we flatten to plain text. No
+  //    separate polling endpoint is needed, so there is no "poll" section.
+  "reply": {
+    "messages_path": "response",
+    "message_text_path": "elements.*.payload.html",
+    "message_from_path": "source",
+    "bot_from_values": ["bot"],
+    "strip_html": true
+  }
+}
