@@ -1,0 +1,7 @@
+# Core HTTP transport (poll-based backends). Standard library covers the rest,
+# including the built-in WebSocket client, so this is the only hard dependency.
+requests>=2.25
+
+# Optional: only if you prefer a battle-tested WebSocket implementation over the
+# bundled stdlib one. The client works without it.
+# websocket-client>=1.6

@@ -1,0 +1,61 @@
+// Profile template for the "klepet" chat on www.telekom.si
+//
+// The real endpoints CANNOT be shipped here: they are only visible from a
+// browser on the live site (this repo's build environment is firewalled off
+// from telekom.si). Fill the placeholders below from a browser capture -- the
+// easiest way is to let `import-har` generate most of it for you:
+//
+//     python -m klepet import-har chat.har -o profiles/telekom_si.json
+//
+// then hand-fix any field the importer marked "REVIEW:". See README.md.
+//
+// Everything below is a realistic *shape* for a poll-based web chat, not the
+// actual telekom.si contract. Lines starting with // are stripped on load.
+{
+  "name": "telekom_si",
+  "transport": "poll",
+  "base_url": "https://REPLACE.telekom.si",
+
+  // Sent on every request. Copy the request headers the widget uses
+  // (Origin, Referer, any x-api-key / authorization the JS sets).
+  "headers": {
+    "Origin": "https://www.telekom.si",
+    "Referer": "https://www.telekom.si/"
+  },
+
+  // 1) Open the conversation. `extract` copies ids out of the JSON response
+  //    into the runtime context so later requests can reference {{session_id}}.
+  "session": {
+    "method": "POST",
+    "url": "{{base_url}}/REPLACE/conversation/start",
+    "json": { "channel": "web", "lang": "sl" },
+    "extract": {
+      "session_id": "REPLACE.path.to.conversationId"
+    }
+  },
+
+  // 2) Send one user message. {{message}} is filled with what you type.
+  "send": {
+    "method": "POST",
+    "url": "{{base_url}}/REPLACE/message/send",
+    "json": {
+      "conversationId": "{{session_id}}",
+      "text": "{{message}}"
+    }
+  },
+
+  // 3) Receive replies by polling. `messages_path` points at the array of
+  //    message objects; the *_path fields locate text/author inside each one.
+  //    `bot_from_values` (optional) filters to only show the bot's turns.
+  "poll": {
+    "request": {
+      "method": "GET",
+      "url": "{{base_url}}/REPLACE/message/poll?conversationId={{session_id}}"
+    },
+    "messages_path": "REPLACE.path.to.messages",
+    "message_text_path": "text",
+    "message_from_path": "from",
+    "bot_from_values": ["bot", "agent", "system"],
+    "interval_seconds": 2.0
+  }
+}
