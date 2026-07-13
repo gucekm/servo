@@ -1,0 +1,202 @@
+[
+  {
+    "id": "hs01",
+    "name": "Total cost promo→regular (Mobi C)",
+    "type": "arithmetic",
+    "target": "Mobi C promo 6,99 € (6 mo) then 13,99 €. Yr1 = 6×6,99+6×13,99 = 125,88 €; Yr2 = 12×13,99 = 167,88 €; 24-mo avg ≈ 293,76/24 = 12,24 €/mo.",
+    "turns": [
+      {
+        "q": "Koliko plačam za Mobi C v prvem letu?",
+        "a": "✨ Paket Mobi C lahko do 31. 8. 2026 vključite po akcijski ceni 6,99 EUR/mesec za prvih 6 mesecev, nato 13,99 EUR/mesec za naslednjih 6 mesecev. Skupaj v enem letu: 6 x 6,99 EUR + 6 x 13,99 EUR = 125,88 EUR.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊"
+      },
+      {
+        "q": "In v drugem letu, ko akcija poteče?",
+        "a": "✨ V drugem letu je cena paketa Mobi C 13,99 EUR/mesec, torej za 12 mesecev skupaj 167,88 EUR. Če imate še kakšno vprašanje, sem vam na voljo!"
+      },
+      {
+        "q": "Kolikšna je povprečna mesečna cena čez 24 mesecev?",
+        "a": "✨ Povprečna mesečna cena paketa Mobi C v 24 mesecih je:\n\n\n(125,88 EUR + 167,88 EUR) / 24 = 12,24 EUR na mesec.\n\n\nVam lahko svetujem še pri čem?"
+      }
+    ]
+  },
+  {
+    "id": "hs02",
+    "name": "Bundle + Poveži in prihrani discount",
+    "type": "composition",
+    "target": "Naj B 27,99 € + Net 39 € = 66,99 €; Poveži in prihrani −5 € (needs fixed on same account) → mobile net 22,99 €; total 61,99 €.",
+    "turns": [
+      {
+        "q": "Imam Naj B in doma fiksni paket Net. Koliko skupaj plačam?",
+        "a": "✨ Če imate mobilni paket Naj B in fiksni paket Net, lahko kot novi naročnik za Net plačujete promocijsko ceno 24,99 EUR/mesec za 12 mesecev (velja na omrežjih OŠO, ne velja za RUNE). Redna cena paketa Net je 39 EUR/mesec. Cena paketa Naj B ostane nespremenjena. \n\n\nVas zanima še kaj glede kombinacij ali dodatnih ugodnosti?"
+      },
+      {
+        "q": "Se pri tem upošteva popust Poveži in prihrani?",
+        "a": "✨ Da, pri kombinaciji mobilnega paketa Naj B in fiksnega paketa Net se upošteva popust Poveži in prihrani. S tem popustom je mesečna naročnina za paket Net lahko še nižja. \n\n\nŽelite podrobnejši izračun ali vas zanima, kako pridobite ta popust?"
+      },
+      {
+        "q": "Kolikšna je torej neto mesečna cena mobilnega dela?",
+        "a": "✨ Neto mesečna cena za mobilni paket Naj B z ugodnostjo Poveži in prihrani znaša 19,66 EUR (brez DDV). Če potrebujete še izračun za fiksni del ali skupno ceno, mi sporočite!"
+      }
+    ]
+  },
+  {
+    "id": "hs03",
+    "name": "Shifting-constraint recommendation",
+    "type": "context-update",
+    "target": "Should update pick as constraints change: ~Naj A (20 GB) → weigh EU allowance → unlimited pushes to Naj B (41,71 GB EU) or Mobi C. Must reflect the delta.",
+    "turns": [
+      {
+        "q": "Porabim 15 GB, ne potujem. Kaj priporočaš?",
+        "a": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet."
+      },
+      {
+        "q": "Zdaj pa recimo, da mesečno potujem po EU. Se priporočilo spremeni?",
+        "a": "✨ Če pogosto potujete po EU, večina mobilnih paketov že vključuje podatke za EU brez dodatnih stroškov. Za več podatkov lahko dodate zakup. 👉 Več informacij."
+      },
+      {
+        "q": "In če želim še neomejene podatke doma?",
+        "a": "✨ Za neomejene podatke doma priporočamo mobilni paket z neomejenim prenosom podatkov, kot je Največ. Preverite podrobnosti 👉 Mobilni paketi."
+      }
+    ]
+  },
+  {
+    "id": "hs04",
+    "name": "Mobi C vs Naj B over a year",
+    "type": "comparison-math",
+    "target": "Mobi C ~125,88 €/yr (promo) vs Naj B 12×27,99=335,88 €/yr → Mobi C cheaper. EU data: Naj B 41,71 GB vs Mobi C 20,85 GB → Naj B +20,86 GB.",
+    "turns": [
+      {
+        "q": "Primerjaj Mobi C in Naj B za nekoga, ki veliko potuje po EU.",
+        "a": "Za tujino so za predplačnike na voljo različni zakupi.\nMi najprej poveste, ali imate predplačniško številko dodano v Moj Telekom?"
+      },
+      {
+        "q": "Kateri je cenejši čez eno leto, upoštevaj akcije?",
+        "a": "✨ Paket Naj B je cenejši za nove naročnike:\n\n\n\nNaj B: Akcijska cena 10,99 €/mesec (24-mesečna vezava). Po 12 mesecih: 131,88 €.\nMobi C: Stroški odvisni od porabe, brez vezave.\n\n\nNaj B vključuje neomejene klice, sporočila in 41,71 GB podatkov v EU. Mobi C zahteva dodatne zakupi za EU."
+      },
+      {
+        "q": "Kateri ima več GB v EU in za koliko?",
+        "a": "✨ Naj B ima več GB v EU:\n- Naj B: 41,71 GB v EU.\n- Mobi C: Zakupi so potrebni, količina odvisna od izbire.  \n\n\nRazlika: Naj B vključuje 41,71 GB več brez dodatnih stroškov."
+      }
+    ]
+  },
+  {
+    "id": "hs05",
+    "name": "Anaphora carryover",
+    "type": "anaphora",
+    "target": "Naj C (43,20 GB EU) → 28,99 € → with −5 € = 23,99 €. Must resolve 'ta paket'=Naj C.",
+    "turns": [
+      {
+        "q": "Kateri naročniški paket ima največ GB v EU?",
+        "a": "✨ Trenutno ne morem preveriti, kateri naročniški paket ima največ GB v EU. Ali vas zanima specifična ponudba za mobilne pakete pri Telekomu Slovenije? Lahko preverim podrobnosti za naše pakete!"
+      },
+      {
+        "q": "Koliko stane ta paket?",
+        "a": "✨ Ali vas zanima cena mobilnih paketov 📱 ali paketov za internet in TV 🏠? Tako vam lahko pomagam najti pravo ponudbo."
+      },
+      {
+        "q": "In koliko je cenejši z ugodnostjo Poveži in prihrani?",
+        "a": "✨ Ugodnost Poveži in prihrani zniža mesečno naročnino za:\n\n\n\n5 EUR pri paketih Naj A, Naj B, Naj C, Naj 5G in Naj Net,\n15 EUR pri fiksnem paketu Net, če ste naročnik paketa SUPR.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs06",
+    "name": "Rule composition / eligibility",
+    "type": "rules",
+    "target": "New subscriber = number not in a subscription in last 60 days → 30 days ago means NOT eligible. Penzion and Poveži in prihrani exclude each other (only the larger, Poveži 5 €, applies).",
+    "turns": [
+      {
+        "q": "Sem nov naročnik. Kdaj velja akcijska cena Naj?",
+        "a": "✨ Akcijska cena paketov Naj velja za nove naročnike ob sklenitvi naročniškega razmerja s 24-mesečno vezavo:\n- 10,99 €/mesec z ugodnostjo Poveži in prihrani (velja za naročnike mobilnih in fiksnih paketov s skupnim računom).\n- Trajanje ugodnosti:\n  - 36 mesecev ob sklenitvi v aplikaciji Moj Telekom.\n  - 24 mesecev ob sklenitvi prek drugih prodajnih kanalov.  \n\n\nPo izteku ugodnosti se zaračuna redna mesečna naročnina. Vas zanima še kaj? 😊"
+      },
+      {
+        "q": "Pred 30 dnevi sem imel Naj pri vas. Sem še upravičen?",
+        "a": "✨ Žal niste upravičeni do akcijske cene, saj je telefonska številka, ki je bila v naročniškem razmerju pri Telekomu Slovenije v zadnjih 60 dneh, izključena iz ugodnosti za nove naročnike.  \n\n\nAli potrebujete dodatne informacije? 😊"
+      },
+      {
+        "q": "Ali lahko hkrati uveljavim Penzion in Poveži in prihrani?",
+        "a": "✨ Ne, popusta Penzion in Poveži in prihrani se med seboj izključujeta. Na računu se upošteva tisti popust, ki prinaša večjo ugodnost — običajno Poveži in prihrani. \n\n\nVam lahko še kaj pojasnim? 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs07",
+    "name": "Two different data limits",
+    "type": "constraints",
+    "target": "SI: after 200 GB throttle to 64/64 kbit/s. EU cap = 20,85 GB, then charged per price list. Two distinct limits — must not conflate them.",
+    "turns": [
+      {
+        "q": "Imam Mobi C. Kaj se zgodi, ko presežem 200 GB doma?",
+        "a": "✨ Ko pri paketu Mobi C v Sloveniji presežete 200 GB prenosa podatkov, se hitrost zniža na 64/64 kbit/s do naslednjega zakupa. Ob novem zakupu se povrne običajna hitrost. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊"
+      },
+      {
+        "q": "In koliko od tega lahko porabim v EU?",
+        "a": "✨ Pri paketu Mobi C lahko v državah območja EU-tarife brezplačno porabite do 20,85 GB prenosa podatkov na mesec. Po tej količini se dodatni prenos podatkov zaračuna skladno s cenikom.\n\n\nVam lahko svetujem še pri čem?"
+      },
+      {
+        "q": "Če v EU porabim 25 GB, kaj se zgodi po 20,85 GB?",
+        "a": "✨ Ko v EU z Mobi C porabite 20,85 GB, se vsak dodatni MB zaračuna po ceniku za prenos podatkov nad vključeno količino. Hitrost ostane nespremenjena, le dodatna poraba je plačljiva.\n\n\nŽelite, da kaj dodatno razložim?"
+      }
+    ]
+  },
+  {
+    "id": "hs08",
+    "name": "Device + package + insurance total",
+    "type": "arithmetic",
+    "target": "Naj B 27,99 €/mo + Premium insurance tier 601–800 € = 9,95 €/mo → 37,94 €/mo (phone paid/subsidised separately).",
+    "turns": [
+      {
+        "q": "Kupim telefon za 700 € in vzamem Naj B. Kolikšna je mesečna cena?",
+        "a": "Vas zanimajo dodatni zakupi doma ali v tujini?"
+      },
+      {
+        "q": "Dodam še zavarovanje za ta telefon (Premium). Koliko to doda?",
+        "a": "✨ Cena mesečne premije za paket Premium je odvisna od redne cene naprave:\n\n\n\ndo 100 €: 1,95 €\n101–200 €: 3,45 €\n201–400 €: 5,95 €\n401–600 €: 7,45 €\n601–800 €: 9,95 €\n801–1000 €: 10,95 €\n1001–3000 €: 14,95 €\n\n\nZa natančen znesek potrebujem še vrednost vašega telefona. Potrebujete še kakšno informacijo? Kar povejte 😊"
+      },
+      {
+        "q": "Skupni mesečni strošek?",
+        "a": "✨ Za izračun skupnega mesečnega stroška potrebujem še podatek o vrednosti vašega telefona in ali imate že kakšna druga zavarovanja pri nas. Mi lahko to sporočite?"
+      }
+    ]
+  },
+  {
+    "id": "hs09",
+    "name": "Roaming scenario (EU vs Balkan)",
+    "type": "rules",
+    "target": "Croatia = EU-tariff (included, 41,71 GB). Serbia = Balkan (NOT EU) → needs a Balkan bundle. Must distinguish EU from Balkan.",
+    "turns": [
+      {
+        "q": "Z Naj B grem za teden na Hrvaško. Je poraba vključena?",
+        "a": "✨ Da, paket Naj B vključuje neomejeno količino prenosa podatkov v Sloveniji. Na Hrvaškem pa lahko brezplačno porabite do 41,71 GB podatkov v okviru EU-tarife. Po preseženi količini se dodatna poraba zaračuna skladno s cenikom. 😊\n\n\nSte še glede česa radovedni? Kar povejte!"
+      },
+      {
+        "q": "Nato nadaljujem v Srbijo. Kaj takrat?",
+        "a": "✨ V Srbiji paket Naj B ne vključuje brezplačne porabe. Priporočamo, da pred odhodom aktivirate zakup Balkan internet neomejeno za brezskrbno uporabo. \n\n\nBi želeli več informacij o tem? 😊"
+      },
+      {
+        "q": "Kateri zakup potrebujem in koliko stane?",
+        "a": "✨ Za Srbijo priporočamo zakup Balkan internet neomejeno, ki omogoča neomejeno uporabo podatkov v Bosni in Hercegovini, Srbiji, Črni Gori, Severni Makedoniji, Albaniji in na Kosovu. Cena zakupa je odvisna od trajanja in pogojev. \n\n\nBi želeli pomoč pri aktivaciji? 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs10",
+    "name": "False-premise correction",
+    "type": "robustness",
+    "target": "Must CORRECT the premise: Mobi has no binding and no monthly subscription (prepaid). Then compare unlimited-data options honestly.",
+    "turns": [
+      {
+        "q": "Mobi ima 24-mesečno vezavo, kajne?",
+        "a": "✨ Ne, predplačniški paket Mobi pri Telekomu Slovenije ne vključuje vezave ali pogodbenega obdobja. Uporabite ga lahko brez dolgoročnih obveznosti 😊 \n\n\nSte še glede česa radovedni? Kar povejte!"
+      },
+      {
+        "q": "Torej pri Mobi plačujem mesečno naročnino?",
+        "a": "✨ Ne, pri Mobi ne plačujete mesečne naročnine. Gre za predplačniški paket, kjer svoj račun polnite po potrebi. Porabite lahko le toliko, kolikor napolnite. 😊 \n\n\nVam lahko še kaj razložim?"
+      },
+      {
+        "q": "Kateri je cenejši za neomejene podatke — Mobi ali Naj?",
+        "a": "✨ Paket Mobi C nudi neomejen prenos podatkov v Sloveniji za 6,99 EUR/mesec (prvih 6 mesecev ob aktivaciji v času akcije, sicer 13,99 EUR/mesec). Paket Naj je naročniški in ima drugačne pogoje ter cene.\n\n\nŽelite podrobno primerjavo ali več informacij o paketu Naj?"
+      }
+    ]
+  }
+]
