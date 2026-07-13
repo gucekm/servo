@@ -31,7 +31,7 @@ import time
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE.parent))  # tools/klepet -> import klepet package
+sys.path.insert(0, str(HERE.parent))  # repo root -> import klepet package
 sys.path.insert(0, str(HERE))
 
 from klepet import KlepetClient, load_profile  # noqa: E402

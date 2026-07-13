@@ -1,6 +1,6 @@
 """Unit tests for the profile engine and HAR importer (no network required).
 
-Run from the tools/klepet directory:
+Run from the repo root:
 
     python -m pytest tests            # if pytest is installed
     python tests/test_klepet.py       # plain-stdlib fallback runner

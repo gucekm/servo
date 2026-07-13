@@ -227,7 +227,7 @@ clear most of the failures.
 ## 7. Reproduce
 
 ```bash
-cd tools/klepet && pip install -r requirements.txt      # requests, pymupdf optional
+pip install -r requirements.txt   # from repo root; requests, pymupdf optional
 cd eval
 python3 evaluate.py --rescore results.json              # recompute scores (no network)
 python3 make_scorecard.py && python3 make_llm_judge.py  # rebuild the docs

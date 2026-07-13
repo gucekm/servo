@@ -14,8 +14,8 @@ The client is **profile-driven**: a chat backend is described by a JSON file
 see [Why a profile?](#why-a-profile) below.
 
 ```
-tools/klepet/
-├── klepet/
+.
+├── klepet/            # the chat client package
 │   ├── client.py      # KlepetClient: session → send → receive orchestration
 │   ├── config.py      # Profile model (loads/validates the JSON)
 │   ├── transport.py   # requests session + a stdlib WebSocket client (no extra deps)
@@ -24,7 +24,13 @@ tools/klepet/
 │   ├── demo.py        # offline echo backend + self-test
 │   └── __main__.py    # CLI: chat / import-har / demo
 ├── profiles/
-│   └── telekom_si.example.json
+│   ├── telekom_si.json          # ready-to-run profile for Maks
+│   └── telekom_si.example.json  # annotated template for other backends
+├── eval/              # Maks answer-quality audit (start at eval/REPORT.md)
+│   ├── REPORT.md      # full audit report + file manifest
+│   ├── evaluate.py    # 300-question harness + rubric
+│   ├── hard_synthesis.py  # 30-scenario multi-turn synthesis test
+│   └── …              # results, transcripts, LLM-judge verdicts, dashboard
 ├── tests/test_klepet.py
 └── requirements.txt
 ```
@@ -48,7 +54,6 @@ de-duplication — is already implemented and tested.
 ## Install
 
 ```bash
-cd tools/klepet
 pip install -r requirements.txt      # just `requests`; WebSocket is stdlib
 ```
 
