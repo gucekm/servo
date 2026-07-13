@@ -1,0 +1,766 @@
+{
+  "runs": 5,
+  "captured": "2026-07-13 13:24 UTC",
+  "questions": [
+    {
+      "id": "naj10",
+      "category": "postpaid",
+      "question": "Koliko znaša priključna taksa ob sklenitvi paketa Naj?",
+      "baseline_verdict": "ZERO",
+      "runs": [
+        {
+          "answer": "✨ Priključna taksa ob sklenitvi paketa Naj znaša 29,99 €. Če imate še kakšno vprašanje, kar povejte! 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Ob sklenitvi paketa Naj se priključna taksa ne zaračuna. Če imate dodatna vprašanja, sem tukaj za vas! 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Ob sklenitvi paketa Naj je priključna taksa 29,99 €. Če imate še kakšno vprašanje, sem tukaj za vas! 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Ob sklenitvi paketa Naj je priključna taksa brezplačna. Če imate še kakšno vprašanje, sem tukaj za vas! 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Ob sklenitvi paketa Naj je priključna taksa 29,99 €. Če imate še kakšno vprašanje, sem tukaj za vas! 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        }
+      ]
+    },
+    {
+      "id": "naj32",
+      "category": "postpaid",
+      "question": "Kolikšna je priključna taksa za storitev Ena številka?",
+      "baseline_verdict": "DEFLECT",
+      "runs": [
+        {
+          "answer": "✨ Priključna taksa za sklenitev novega naročniškega razmerja, kot je storitev Ena številka, znaša 10,95 EUR z DDV. Če gre za spremembo obstoječega paketa, se ta znesek ne zaračuna. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Priključna taksa za storitev Ena številka znaša 10,95 EUR z DDV. Če potrebujete še kakšno informacijo, kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Priključna taksa za storitev Ena številka znaša 10,95 EUR z DDV. Če potrebujete še kakšno informacijo, kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Priključna taksa za storitev Ena številka znaša 10,95 EUR z DDV. Če želite, vam lahko dodatno razložim postopek vključitve ali pogoje uporabe. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Priključna taksa za storitev Ena številka znaša 10,95 EUR z DDV. Če želite, lahko razložim še kaj podrobneje ali pomagam pri drugih vprašanjih. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        }
+      ]
+    },
+    {
+      "id": "naj33",
+      "category": "postpaid",
+      "question": "Koliko stane mesečna naročnina storitve SIM 2 (Brezskrbni)?",
+      "baseline_verdict": "ZERO",
+      "runs": [
+        {
+          "answer": "✨ Mesečna naročnina za storitev SIM 2 Brezskrbni znaša 14,99 EUR. Cena velja za pakete Naj A, Naj B, Naj C in Naj 5G. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Mesečna naročnina za SIM 2 brezskrbni je 14,99 EUR. Ta cena velja za uporabo s paketi Naj A, Naj B, Naj C ali Naj 5G. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Mesečna naročnina za SIM 2 brezskrbni znaša 14,99 EUR, če jo uporabljate s paketi Naj A, Naj B, Naj C ali Naj 5G. Če imate enotni ali podatkovni paket, je mesečna naročnina 11,99 EUR. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Mesečna naročnina za SIM 2 brezskrbni znaša 14,99 EUR, če jo uporabljate s paketi Naj A, Naj B, Naj C ali Naj 5G. Če imate enotni ali podatkovni paket, je cena 11,99 EUR na mesec. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Mesečna naročnina za SIM 2 brezskrbni je 14,99 EUR, če jo dodate k paketom Naj A, Naj B, Naj C ali Naj 5G. Če imate enotni ali podatkovni paket, je mesečna naročnina 11,99 EUR. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        }
+      ]
+    },
+    {
+      "id": "naj46",
+      "category": "postpaid",
+      "question": "Koliko GB v EU-tarifi lahko brezplačno porabim s paketom Naj B?",
+      "baseline_verdict": "ZERO",
+      "runs": [
+        {
+          "answer": "✨ Za informacijo o količini podatkov, ki jih lahko brez doplačil porabite v EU-tarifi s paketom Naj B, prosim preverite pogoje vašega paketa ali obiščite 👉 eu-pribitki.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Trenutno nimam podatka o točno dovoljeni količini GB za paket Naj B v EU-tarifi. Priporočam, da preverite svoj paket ali me prosim dopolnite, če potrebujete podrobnosti o drugem paketu. Več informacij najdete tukaj 👉 eu-pribitki.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "✨ Trenutno nimam podatka o točno dovoljeni količini GB za brezplačno uporabo v EU-tarifi pri paketu Naj B. Priporočam, da preverite podrobnosti svojega paketa na naši spletni strani ali v Moj Telekom aplikaciji. Vas zanima še kaj drugega?",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "✨ Za točen podatek o količini brezplačnih GB v EU-tarifi pri paketu Naj B preverite pogoje vašega paketa, saj se lahko količina razlikuje glede na paket in morebitne spremembe. Več informacij najdete tukaj 👉 eu-pribitki.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Informacija o količini podatkov, ki jih lahko brezplačno porabite v EU-tarifi s paketom Naj B, ni navedena v moji bazi znanja. Priporočam, da preverite svoj paket v Moj Telekom ali vprašate mojega sodelavca za natančne podatke. Želite, da vas povežem z mojim sodelavcem za podrobnejše informacije? \n\n\nVeč o EU pribitkih 👉 eu-pribitki",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        }
+      ]
+    },
+    {
+      "id": "naj57",
+      "category": "postpaid",
+      "question": "Na kakšno hitrost pade prenos po limitu pri paketih Naj B in Naj C?",
+      "baseline_verdict": "ZERO",
+      "runs": [
+        {
+          "answer": "✨ Pri paketih Naj B in Naj C se hitrost prenosa podatkov po preseženem mesečnem limitu zmanjša na 64 kbps. Če potrebujete več podatkov, lahko vedno dokupite dodatne količine. \n\n\nVam lahko še kako pomagam? 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Pri paketih Naj B in Naj C se hitrost prenosa podatkov po preseženem mesečnem limitu zmanjša na 64 kbps. Če potrebujete več informacij ali želite preveriti dodatne možnosti, sem tukaj, da pomagam! 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Pri paketih Naj B in Naj C se hitrost prenosa podatkov po preseženem mesečnem limitu zmanjša na 64 kbps. Če potrebujete več podatkov, lahko dodate opcije za dodatni prenos. \n\n\nVam lahko še kako pomagam? 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Pri paketih Naj B in Naj C se hitrost prenosa podatkov po preseženem vključku zniža na 64 kbps za prenos v Sloveniji. Če potrebujete več informacij ali želite preveriti dodatne opcije, mi sporočite! 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Pri paketih Naj B in Naj C se hitrost prenosa podatkov po preseženem mesečnem limitu zmanjša na 64 kbps. Če potrebujete več podatkov, lahko vedno dokupite dodatne količine. \n\n\nVas zanima, kako to storiti? 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        }
+      ]
+    },
+    {
+      "id": "mobi05",
+      "category": "prepaid",
+      "question": "Po koliko GB se v paketu Mobi C zniža hitrost prenosa?",
+      "baseline_verdict": "ZERO",
+      "runs": [
+        {
+          "answer": "✨ V paketu Mobi C se hitrost prenosa podatkov zniža po porabljenih 200 GB v Sloveniji. Nato je hitrost omejena na 64/64 kbit/s do naslednjega zakupa. Vam lahko še kaj dodatno pojasnim?",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ V paketu Mobi C se hitrost prenosa podatkov zniža po porabljenih 200 GB v Sloveniji. Nato znaša hitrost 64/64 kbit/s do naslednjega zakupa. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Pri paketu Mobi C se hitrost prenosa podatkov zniža po porabljenih 200 GB v Sloveniji. Nato je hitrost omejena na 64/64 kbit/s do naslednjega zakupa. Vam lahko še kaj dodatno pojasnim?",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ V paketu Mobi C se hitrost prenosa podatkov zniža po porabljenih 200 GB v Sloveniji. Po tej meji je hitrost omejena na 64/64 kbit/s do naslednjega zakupa. Vam lahko še kaj dodatno pojasnim?",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ V paketu Mobi C se hitrost prenosa podatkov zniža po porabljenih 200 GB v Sloveniji. Po tem je hitrost omejena na 64/64 kbit/s do naslednjega zakupa. V tujini (EU-tarifa) velja enaka omejitev po doseženih 200 GB. Potrebujete še dodatna pojasnila? Kar vprašajte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        }
+      ]
+    },
+    {
+      "id": "mobi08",
+      "category": "prepaid",
+      "question": "Koliko stane aktivacija kartice SIM ali eSIM Mobi?",
+      "baseline_verdict": "ZERO",
+      "runs": [
+        {
+          "answer": "✨ Aktivacija kartice eSIM za Mobi uporabnike se zaračuna enako kot menjava klasične SIM-kartice, to je 2,95 €. Če potrebujete pomoč pri naročilu ali aktivaciji, z veseljem pomagam. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Aktivacija kartice eSIM za Mobi uporabnike je mogoča in se zaračuna enako kot menjava klasične SIM-kartice, torej 2,95 EUR. Če potrebujete pomoč pri naročilu ali aktivaciji, mi sporočite. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Aktivacija kartice eSIM za Mobi uporabnike je vključena v ceno priključne takse ob sklenitvi novega naročniškega razmerja. Zamenjava fizične SIM za eSIM stane 2,95 EUR. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Aktivacija eSIM kartice za Mobi uporabnike je mogoča in se zaračuna enako kot menjava klasične SIM kartice, torej 2,95 EUR. Če potrebujete pomoč pri naročilu ali aktivaciji, mi sporočite. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Aktivacija kartice eSIM za Mobi uporabnike je ob sklenitvi novega razmerja vključena v ceno priključne takse. Zamenjava fizične SIM za eSIM stane 2,95 EUR, enako kot menjava klasične SIM-kartice. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        }
+      ]
+    },
+    {
+      "id": "mobi41",
+      "category": "prepaid",
+      "question": "Koliko stane aktivacija kartice SIM ali eSIM Mobi?",
+      "baseline_verdict": "ZERO",
+      "runs": [
+        {
+          "answer": "✨ Aktivacija kartice eSIM za Mobi uporabnike je možna in stane enako kot menjava klasične SIM kartice, torej 2,95 €. Če potrebujete pomoč pri naročilu ali aktivaciji, mi sporočite. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Aktivacija kartice eSIM za Mobi uporabnike je mogoča, cena zamenjave fizične SIM za eSIM pa znaša 2,95 EUR. Če potrebujete več informacij ali pomoč pri postopku, sem vam na voljo. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Aktivacija kartice eSIM za uporabnike Mobi (predplacnisko) stane enako kot menjava klasicne SIM kartice, to je 2,95 EUR. Ce potrebujete navodila za zamenjavo ali aktivacijo, z veseljem pomagam. Potrebujete se kaksno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Aktivacija kartice eSIM za Mobi uporabnike znaša 2,95 EUR, kar je enako kot menjava klasične SIM-kartice. V določenih akcijskih obdobjih je menjava lahko brezplačna. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Aktivacija kartice eSIM za Mobi uporabnike je možna, cena zamenjave fizične SIM za eSIM pa je 2,95 EUR. V določenih akcijskih obdobjih je menjava lahko brezplačna. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        }
+      ]
+    },
+    {
+      "id": "tv07",
+      "category": "iptv",
+      "question": "Koliko stane samostojni TV paket NEO TV brez interneta?",
+      "baseline_verdict": "ZERO",
+      "runs": [
+        {
+          "answer": "✨ Ali vas zanima več o naših Internet in TV storitvah 🏠 ali pa morda o mobilnih storitvah 📱? Tako vam lahko natančneje pomagam!",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "✨ Ali vas zanima samo TV paket brez interneta 🏠 ali pa morda tudi mobilne storitve 📱? Tako vam lahko bolje pomagam!",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "✨ Ali vas zanima več o naših Internet in TV storitvah 🏠 ali pa zgolj o mobilnih storitvah 📱? Tako vam lahko bolje pomagam!",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "✨ Ali vas zanima več o naših Internet in TV storitvah 🏠 ali pa iščete informacije o mobilnih storitvah 📱? Prosim, sporočite, da vas lahko usmerim naprej!",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "✨ Za samostojne TV pakete, kot je NEO TV brez interneta, je najbolje, da preverimo možnosti v kategoriji Internet in TV storitev. \n\n\nAli želite, da nadaljujem z informacijami o teh paketih? 🏠",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        }
+      ]
+    },
+    {
+      "id": "tv32",
+      "category": "iptv",
+      "question": "Koliko stane samostojni TV paket NEO TV (brez interneta)?",
+      "baseline_verdict": "ZERO",
+      "runs": [
+        {
+          "answer": "✨ Za samostojni TV paket NEO TV (brez interneta) je najbolje, da preverim podrobnosti. Ali vas zanimajo Internet in TV storitve 🏠, da lahko nadaljujem?",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "✨ Na voljo imamo različne TV pakete, vključno s samostojnim paketom NEO TV. \n\n\nAli vas zanima več o Internet in TV storitvah 🏠 ali pa morda o mobilnih storitvah 📱? Tako vam lahko bolje pomagam! 😊",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "✨ Ali vas zanima več o naših 🏠 Internet in TV storitvah ali 📱 mobilnih storitvah? Tako vam lahko bolje pomagam!",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "✨ Na voljo imamo različne TV pakete, vključno s samostojnim paketom NEO TV. \n\n\nAli vas zanima več o Internet in TV storitvah 🏠 ali pa morda o mobilnih storitvah 📱? Tako vam lahko natančneje pomagam. 😊",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "✨ Ali vas zanima več o naših Internet in TV storitvah 🏠 ali morda o mobilnih storitvah 📱? Tako vam lahko bolje pomagam!",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        }
+      ]
+    },
+    {
+      "id": "tv38",
+      "category": "iptv",
+      "question": "Koliko znaša strošek izdaje TV-komunikatorja NEO Smartbox?",
+      "baseline_verdict": "ZERO",
+      "runs": [
+        {
+          "answer": "✨ Strošek najema dodatnega TV-komunikatorja NEO Smartbox znaša 3,90 € na mesec za vsak dodaten Smartbox. Na eno naročnino lahko najamete do 8 NEO Smartboxov. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Strošek najema dodatnega TV-komunikatorja NEO Smartbox znaša 3,90 EUR na mesec za vsak dodatni Smartbox. Na eno naročnino lahko najamete oziroma uporabljate do 8 NEO Smartboxov. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Strošek najema dodatnega TV-komunikatorja NEO Smartbox znaša 3,90 € na mesec za vsako dodatno napravo. Na eni naročnini lahko uporabljate oziroma najamete do 8 NEO Smartboxov. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Strošek najema dodatnega TV-komunikatorja NEO Smartbox znaša 3,90 € na mesec za vsak dodatni Smartbox. Na eno naročniško razmerje lahko najamete do 8 NEO Smartboxov. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Strošek najema dodatnega TV-komunikatorja NEO Smartbox znaša 3,90 EUR na mesec za vsak dodaten Smartbox. Na eno naročnino lahko najamete do 8 NEO Smartboxov. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        }
+      ]
+    },
+    {
+      "id": "tv62",
+      "category": "iptv",
+      "question": "Koliko stane dodatna telefonska številka pri fiksnem paketu (IP-telefonija)?",
+      "baseline_verdict": "ZERO",
+      "runs": [
+        {
+          "answer": "✨ Dodatna telefonska številka pri fiksnem paketu (IP-telefonija) znaša:\n\n\n\nRezidenčna IP-telefonija: 2 EUR/mesec (do 2 številki)\nPoslovna IP-telefonija: 3 EUR/mesec (do 24 številk)\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Mesečna naročnina za dodatno rezidenčno IP-telefonsko številko pri fiksnem paketu znaša 2 EUR, za poslovno IP-telefonijo pa 3 EUR. Želite še kaj dodatno izvedeti ali razložim postopek naročila? Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Mesečna naročnina za dodatno rezidenčno IP-telefonsko številko pri fiksnem paketu znaša 2 EUR, za poslovno številko pa 3 EUR. Lahko jih imate do 2 (rezidenčno) oziroma do 24 (poslovno). Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Mesečna naročnina za dodatno rezidenčno IP-telefonsko številko pri fiksnem paketu znaša 2 EUR, za poslovno številko pa 3 EUR. Lahko jih imate do največ 2 (rezidenčno) oziroma do 24 (poslovno). Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Mesečna naročnina za dodatno rezidenčno IP-telefonsko številko v fiksnem paketu znaša 2 EUR, za poslovno številko pa 3 EUR. Možno je naročiti do 2 rezidenčni ali do 24 poslovnih številk. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        }
+      ]
+    },
+    {
+      "id": "bb26",
+      "category": "broadband",
+      "question": "Kakšna je redna mesečna cena paketa NEO A?",
+      "baseline_verdict": "DEFLECT",
+      "runs": [
+        {
+          "answer": "✨ Redna mesečna cena paketa NEO A je 49 EUR. Če potrebujete še kakšno informacijo, kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Redna mesečna cena paketa NEO A je 49 EUR. Če potrebujete še kakšno informacijo, mi prosim sporočite 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Redna mesečna cena paketa NEO A znaša 49 EUR. Če potrebujete še kakšno informacijo, kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Redna mesečna cena paketa NEO A znaša 49 EUR. Če potrebujete še kakšno informacijo, kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Redna mesečna cena paketa NEO A je 49 EUR. Če potrebujete še kakšno informacijo, mi prosim sporočite 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        }
+      ]
+    },
+    {
+      "id": "mobi02",
+      "category": "prepaid",
+      "question": "Kakšna je redna cena paketa Mobi B?",
+      "baseline_verdict": "FULL",
+      "runs": [
+        {
+          "answer": "✨ Redna cena paketa Mobi B je 9,99 EUR na mesec. V času poletne akcije (1. 7.–31. 8. 2026) pa je prvih 6 mesecev cena 6,99 EUR/mesec. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Redna cena paketa Mobi B je 9,99 EUR na mesec. V času poletne akcije (1. 7.–31. 8. 2026) pa lahko paket vključite po znižani ceni 6,99 EUR za prvih 6 mesecev. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Redna cena paketa Mobi B je 9,99 EUR na mesec. V času poletne akcije (1. 7.–31. 8. 2026) pa je cena 6,99 EUR na mesec za prvih 6 mesecev. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Redna cena paketa Mobi B je 9,99 EUR na mesec. V času poletne akcije (1. 7.–31. 8. 2026) pa znaša 6,99 EUR na mesec za prvih 6 mesecev. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Redna cena paketa Mobi B je 9,99 EUR na mesec. V času poletne akcije (od 1. 7. do 31. 8. 2026) pa je cena 6,99 EUR na mesec za prvih 6 mesecev. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        }
+      ]
+    },
+    {
+      "id": "naj01",
+      "category": "postpaid",
+      "question": "Koliko stane paket Naj A na mesec in koliko podatkov vključuje?",
+      "baseline_verdict": "FULL",
+      "runs": [
+        {
+          "answer": "✨ Paket Naj A stane 20,99 € na mesec (redna cena). Vključuje 20 GB prenosa podatkov, od tega do 20 GB v državah EU-tarife.\n\n\nČe ste nov naročnik, je na voljo promocijska cena 10,99 € na mesec:\n- 36 mesecev ob sklenitvi v aplikaciji Moj Telekom.\n- 24 mesecev ob sklenitvi prek drugih kanalov.\n\n\nPo izteku ugodnosti velja redna cena. Potrebujete še kakšno informacijo? 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Paket Naj A stane 20,99 € na mesec (redna cena). Vključuje:\n- 20 GB prenosa podatkov (do 20 GB v državah EU-tarife).\n- Neomejene klice in SMS/MMS v Sloveniji in EU-tarifi.  \n\n\nZa nove naročnike je na voljo promocijska cena 10,99 € ob določenih pogojih. Po izteku ugodnosti velja redna cena.",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Paket Naj A stane 20,99 € na mesec (redna cena). Vključuje:\n- 20 GB prenosa podatkov (od tega do 20 GB v državah EU-tarife).\n- Neomejene klice in SMS/MMS v Sloveniji ter EU-tarifi.  \n\n\nČe potrebujete še kaj, kar povejte! 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Paket Naj A stane 20,99 € na mesec (redna cena). Vključuje:\n- 20 GB prenosa podatkov, od tega do 20 GB v državah EU-tarife.\n- Neomejene klice in SMS/MMS v Sloveniji in EU-tarifi.  \n\n\nOb sklenitvi novega razmerja so na voljo promocijske cene za nove naročnike. Vas zanima več? 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Paket Naj A stane 20,99 € na mesec (redna cena). Vključuje:\n- 20 GB podatkov (do 20 GB v državah EU-tarife).\n- Neomejene klice in SMS/MMS v Sloveniji in EU-tarifi.\n- Hitrost prenosa do 1 Gbit/s.  \n\n\nČe ste novi naročnik, je akcijska cena 10,99 € ob vezavi za 24 mesecev. Po izteku ugodnosti velja redna cena.  \n\n\nPotrebujete še kakšno informacijo? 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        }
+      ]
+    },
+    {
+      "id": "bb02",
+      "category": "broadband",
+      "question": "Do katere hitrosti lahko nadgradim optični internet NEO?",
+      "baseline_verdict": "FULL",
+      "runs": [
+        {
+          "answer": "✨ Optični internet v paketu NEO lahko nadgradite do hitrosti 5 Gbit/s. Osnovna hitrost je do 1 Gbit/s, višje hitrosti pa so na voljo z doplačilom. Več informacij najdete tukaj 👉 internet.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Optični internet v paketu NEO lahko nadgradite do hitrosti 5 Gbit/s. Osnovna hitrost je do 1 Gbit/s, višje hitrosti so na voljo za doplačilo. Več informacij najdete tukaj 👉 internet.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Optični internet v paketu NEO lahko nadgradite do hitrosti 5 Gbit/s. Osnovna hitrost je do 1 Gbit/s, nadgradnje pa so možne glede na vaše potrebe. Vas zanima še kaj ali želite več informacij o cenah nadgradenj? Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Optični internet v paketu NEO lahko nadgradite do hitrosti 5 Gbit/s. Na voljo so naslednje možnosti nadgradnje:\n\n\n\ndo 1 Gbit/s / 300 Mbit/s (doplačilo 10 €/mesec)\ndo 2 Gbit/s / 100 Mbit/s (doplačilo 15 €/mesec)\ndo 5 Gbit/s / 1 Gbit/s (doplačilo 99 €/mesec)\ndo 5 Gbit/s / 5 Gbit/s (samo NEO A, doplačilo 499 €/mesec)\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Optični internet na paketu NEO lahko nadgradite do hitrosti 5 Gbit/s. Osnovna hitrost je do 1 Gbit/s, nadgradnje pa so možne glede na vaše potrebe. \n\n\nVeč informacij najdete tukaj 👉 internet\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        }
+      ]
+    },
+    {
+      "id": "tv01",
+      "category": "iptv",
+      "question": "Koliko TV programov vključuje paket NEO A?",
+      "baseline_verdict": "FULL",
+      "runs": [
+        {
+          "answer": "✨ Paket NEO A vključuje osnovni nabor TV programov, ki se lahko občasno spreminja. Za točno število in seznam programov priporočamo ogled aktualne prodajne ponudbe na naši spletni strani ali v Moj Telekom. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Paket NEO A vključuje osnovni nabor TV programov, število pa se lahko občasno spreminja glede na ponudbo in pravice predvajanja. Za točno aktualno število programov priporočamo ogled uradne prodajne ponudbe ali povpraševanje pri našem sodelavcu. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Paket NEO A vključuje osnovni nabor TV programov, vendar točno število programov ni navedeno v razpoložljivi bazi znanja. Priporočam, da preverite aktualen seznam programov na naši uradni spletni strani ali me obvestite, če želite, da vas povežem s sodelavcem za podrobnejše informacije. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "✨ Paket NEO A vključuje osnovni nabor TV programov, ki jih lahko spremljate na NEO Smartboxu, v aplikaciji NEO in na drugih napravah. Točno število programov se lahko spreminja, zato priporočamo, da preverite aktualen seznam programov na naši spletni strani ali v Moj Telekom. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        },
+        {
+          "answer": "✨ Paket NEO A vključuje osnovni nabor TV programov, ki so prilagojeni za osnovno spremljanje televizije. Točno število programov se lahko spreminja, zato priporočamo, da preverite aktualen seznam programov na naši spletni strani ali v Moj Telekom. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 0.0,
+          "deflected": false,
+          "verdict": "ZERO"
+        }
+      ]
+    },
+    {
+      "id": "bb01",
+      "category": "broadband",
+      "question": "Kakšna je najvišja hitrost optičnega interneta pri paketih NEO?",
+      "baseline_verdict": "DEFLECT",
+      "runs": [
+        {
+          "answer": "✨ Najvišja hitrost optičnega interneta pri paketih NEO (A, B, C) je do 1 Gbit/s. Vsi paketi omogočajo tudi nadgradnjo hitrosti do 5 Gbit/s. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Najvišja hitrost optičnega interneta pri vseh paketih NEO (A, B, C) je do 1 Gbit/s. Vsi paketi omogočajo nadgradnjo hitrosti do 5 Gbit/s. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Najvišja hitrost optičnega interneta pri vseh paketih NEO (A, B, C) je do 1 Gbit/s. Vsi paketi omogočajo tudi nadgradnjo hitrosti do 5 Gbit/s. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Najvišja hitrost optičnega interneta pri paketih NEO (NEO A, NEO B, NEO C) je do 1 Gbit/s. Vsi paketi omogočajo tudi nadgradnjo hitrosti do 5 Gbit/s. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Najvišja hitrost optičnega interneta pri vseh paketih NEO (A, B, C) je do 1 Gbit/s. Vsi paketi omogočajo tudi nadgradnjo hitrosti do 5 Gbit/s. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        }
+      ]
+    },
+    {
+      "id": "bb03",
+      "category": "broadband",
+      "question": "Koliko stane paket Net (samo internet) na mesec?",
+      "baseline_verdict": "DEFLECT",
+      "runs": [
+        {
+          "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet.",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet.",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet.",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet.",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        },
+        {
+          "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet.",
+          "recall": 0.0,
+          "deflected": true,
+          "verdict": "DEFLECT"
+        }
+      ]
+    },
+    {
+      "id": "bb04",
+      "category": "broadband",
+      "question": "Kakšna je hitrost internetnega paketa Net na optiki?",
+      "baseline_verdict": "DEFLECT",
+      "runs": [
+        {
+          "answer": "✨ Paket Net na optiki omogoča hitrost do 1 Gbit/s za prenos k uporabniku in do 100 Mbit/s za prenos od uporabnika. Več informacij najdete tukaj 👉 internet.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Paket Net na optiki omogoča hitrosti do 1 Gbit/s za prenos k uporabniku in do 100 Mbit/s za prenos od uporabnika. Več informacij najdete tukaj 👉 internet.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Paket Net na optiki omogoča hitrosti do 1 Gbit/s za prenos k uporabniku in do 100 Mbit/s za prenos od uporabnika. Več informacij najdete tukaj 👉 internet.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Paket Net na optiki omogoča hitrost do 1 Gbit/s za prenos k uporabniku in do 100 Mbit/s za prenos od uporabnika. Več informacij najdete tukaj 👉 internet.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        },
+        {
+          "answer": "✨ Paket Net na optiki omogoča hitrost do 1 Gbit/s za prenos k uporabniku in do 100 Mbit/s za prenos od uporabnika. Več informacij najdete tukaj 👉 internet.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "recall": 1.0,
+          "deflected": false,
+          "verdict": "FULL"
+        }
+      ]
+    }
+  ]
+}
