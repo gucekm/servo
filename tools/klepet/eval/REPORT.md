@@ -35,6 +35,12 @@ postpaid 78.6 / 81.8 · **broadband 61.0 / 64.7** (weakest).
   contradicts Telekom's own pages/ceniki — see §4. These are the highest-risk
   failures: a wrong number misleads, whereas a hand-off does not.
 
+**Beyond single facts**, a separate **30-scenario multi-turn synthesis test**
+(§5) scored **64/100** — Maks reasons well across turns when the opener is
+concrete, but has systematic weak spots: an over-broad "no-math" guardrail that
+refuses cost/saving calculations, sycophancy on false numbers, and deflection on
+open-ended openers.
+
 ---
 
 ## 2. How to read this bundle
@@ -83,6 +89,20 @@ For each file: **purpose** · **what it contains** · **why it's included**.
   were found/missing, relevance (incl. missing keywords), specificity, deflection,
   and the weighted arithmetic.
 - *Why:* lets the recipient audit any individual score.
+
+**`hard_synthesis.md`** — multi-turn synthesis stress test (30 scenarios)
+- *Purpose:* test reasoning *across turns* (arithmetic, rules, tradeoffs,
+  anaphora, false-premise handling), which the single-fact set doesn't cover.
+- *Contains:* the 30 scenario transcripts, my per-scenario verdict, a root-cause
+  error analysis, and 4 confirmatory drill probes.
+- *Why:* the single-fact scores miss conversational failure modes; this is where
+  most real customer questions live.
+
+**`hard_synthesis.py`**, **`make_hard_synthesis.py`**, **`hard_synthesis_runs.json`**
+- *Purpose:* run and render the synthesis test.
+- *Contains:* the 30 scenario definitions + ground-truth targets, the live
+  multi-turn runner, the transcripts, and the report generator (with my verdicts).
+- *Why:* makes the multi-turn test reproducible and auditable.
 
 ### Evidence (raw data)
 
@@ -159,7 +179,40 @@ Cases where Maks stated a specific value contradicting Telekom's own source
 
 ---
 
-## 5. Caveats
+## 5. Multi-turn synthesis stress test
+
+30 scenarios, each a **single conversation** whose turns force Maks to *combine*
+facts rather than retrieve one — arithmetic, conditional rules, tradeoffs,
+anaphora, false-premise correction. Graded by LLM judge (see `hard_synthesis.md`).
+
+**Result: mean 64/100 — 14 PASS · 7 PARTIAL · 9 FAIL.** Built as A/B pairs (same
+task, one variable changed) so each failure isolates a cause:
+
+1. **Over-broad "no-math" guardrail** *(highest impact).* Bare calculations are
+   refused (`"24 × 27,99"` → "ne morem pomagati pri matematičnih izračunih"),
+   yet totals compute fine when the numbers are Maks's own product facts. Blocks
+   legitimate cost/saving questions.
+2. **Sycophancy on false numbers.** Corrects a false *structural* premise ("Mobi
+   has binding") but accepts a false *number* ("Naj A has 50 GB" → 20 GB) and
+   reasons on.
+3. **Open-opener deflection.** Open "which package / total cost" openers derail
+   into mobilni-vs-fiksni clarifying; the *same* task with "mobilni" stated up
+   front succeeds. Main driver of the recommendation/broadband failures.
+4. **Weak cross-turn state** (a value given earlier is re-requested),
+   **rule-limit blindness** (adds a 2nd Druga številka to Naj B though only 1 is
+   allowed), **fragile anaphora**, and **phrasing-dependent grounding** (gets the
+   Mobi C throttle right here but wrong as a single-shot question).
+
+**Holds up well:** in-domain arithmetic, conditional-rule composition, two-limit
+reasoning, budget/downgrade tracking, roaming EU-vs-Balkan, promo timelines.
+
+**Most actionable:** two narrow fixes — relaxing the math guardrail for
+cost/saving questions and grounding numeric premises before agreeing — would
+clear most of the failures.
+
+---
+
+## 6. Caveats
 
 - **Reference-matching, not live re-verification.** An answer is "correct" iff it
   agrees with a fact extracted from Telekom's pages/ceniki on 2026-07-12.
@@ -171,12 +224,13 @@ Cases where Maks stated a specific value contradicting Telekom's own source
 
 ---
 
-## 6. Reproduce
+## 7. Reproduce
 
 ```bash
 cd tools/klepet && pip install -r requirements.txt      # requests, pymupdf optional
 cd eval
 python3 evaluate.py --rescore results.json              # recompute scores (no network)
 python3 make_scorecard.py && python3 make_llm_judge.py  # rebuild the docs
-# a fresh live run (re-asks Maks):  python3 evaluate.py
+python3 make_hard_synthesis.py                          # rebuild the synthesis report
+# fresh live runs (re-ask Maks):  python3 evaluate.py  ·  python3 hard_synthesis.py
 ```
