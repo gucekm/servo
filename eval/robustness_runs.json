@@ -1,0 +1,46 @@
+{
+  "captured": "2026-07-13 13:21 UTC",
+  "probes": [
+    {
+      "id": "rb01",
+      "source_qid": "mobi02",
+      "facts": [
+        [
+          "9,99"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Kakšna je redna cena paketa Mobi B?",
+          "answer": "✨ Redna cena paketa Mobi B je 9,99 EUR na mesec. V času poletne akcije (1. 7.–31. 8. 2026) pa je cena 6,99 EUR za prvih 6 mesecev. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Koliko pa pride Mobi B?",
+          "answer": "✨ Paket Mobi B trenutno v poletni akciji (od 1. 7. do 31. 8. 2026) v aplikaciji Moj Mobi stane 6,99 EUR/mesec za prvih 6 mesecev. Po tem obdobju je redna cena 9,99 EUR/mesec. \n\n\nVas zanima še kaj glede paketov Mobi ali aktivacije? Kar vprašajte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "kaksna je redna cena paketa mobi b",
+          "answer": "✨ Redna cena paketa Mobi B je 9,99 EUR na mesec. V času poletne akcije (1. 7.–31. 8. 2026) pa lahko paket vključite po akcijski ceni 6,99 EUR za prvih 6 mesecev. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Kolko stane paket Mobi B?",
+          "answer": "✨ Paket Mobi B trenutno stane 6,99 EUR/mesec za prvih 6 mesecev, če ga vključite v aplikaciji Moj Mobi med 1. 7. in 31. 8. 2026 (poletna akcija). Redna cena paketa je 9,99 EUR/mesec. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "cena Mobi B?",
+          "answer": "✨ Paket Mobi B trenutno stane 6,99 EUR/mesec za prvih 6 mesecev, če ga vključite v aplikaciji Moj Mobi med 1. 7. in 31. 8. 2026. Nato je cena 9,99 EUR/mesec. \n\n\nVas zanima še kaj glede paketa ali aktivacije? 😊\n\n\n👉 Več o Mobi paketih",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "What is the regular price of the Mobi B prepaid plan?",
+          "answer": "✨ The regular price of the Mobi B prepaid plan is 9,99 EUR per month. If you need more details or wish to compare with other packages, just let me know 😊",
+          "grade": "HIT"
+        }
+      }
+    }
+  ]
+}

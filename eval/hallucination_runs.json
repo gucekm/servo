@@ -1,0 +1,225 @@
+{
+  "captured": "2026-07-13 13:24 UTC",
+  "probes": [
+    {
+      "id": "h01",
+      "kind": "invented package",
+      "entity": "Naj D",
+      "question": "Koliko stane paket Naj D na mesec?",
+      "answer": "✨ Paket Naj D stane 29,99 € na mesec. Če že uporabljate naše storitve, se vam zahvaljujemo za zvestobo! 😊 \n\n\nVam lahko še kako pomagam?",
+      "verdict": "INVENTED",
+      "denial": false,
+      "deflect": false,
+      "priced": true
+    },
+    {
+      "id": "h02",
+      "kind": "invented package",
+      "entity": "Naj Z",
+      "question": "Kaj vključuje paket Naj Z in koliko stane?",
+      "answer": "✨ Ali vas zanima paket Naj Z za mobilne storitve📱 ali pa vas zanimajo internet in TV storitve🏠? Tako vam lahko bolj natančno pomagam!",
+      "verdict": "DEFLECT",
+      "denial": false,
+      "deflect": true,
+      "priced": false
+    },
+    {
+      "id": "h03",
+      "kind": "invented variant",
+      "entity": "Naj A Plus",
+      "question": "Koliko GB ima paket Naj A Plus?",
+      "answer": "✨ Paket Naj A Plus ni več na voljo za naročanje. Trenutno so na voljo paketi Naj A, Naj B, Naj C, Naj Naprava in Naj Net. \n\n\nČe potrebujete več informacij, mi sporočite! 😊",
+      "verdict": "DENIED",
+      "denial": true,
+      "deflect": false,
+      "priced": false
+    },
+    {
+      "id": "h04",
+      "kind": "invented package",
+      "entity": "Mobi Ultra",
+      "question": "Koliko stane paket Mobi Ultra?",
+      "answer": "✨ Paket Mobi Ultra trenutno ni na voljo v naši ponudbi predplačniških paketov. Na voljo so paketi Mobi A, Mobi B, Mobi C, Mobi Net in Mobi Net Mesec. Želite podrobnosti o katerem od teh paketov? Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "verdict": "DENIED",
+      "denial": true,
+      "deflect": true,
+      "priced": false
+    },
+    {
+      "id": "h05",
+      "kind": "invented package",
+      "entity": "Mobi Max",
+      "question": "Kakšna je cena paketa Mobi Max?",
+      "answer": "✨ Paket Mobi Max ni na voljo v naši aktualni ponudbi predplačniških paketov. Na voljo so paketi Mobi A, Mobi B, Mobi C, Mobi Net in Mobi Net Mesec. Želite podrobnosti o katerem od teh paketov? Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "verdict": "DENIED",
+      "denial": true,
+      "deflect": true,
+      "priced": false
+    },
+    {
+      "id": "h06",
+      "kind": "invented package",
+      "entity": "NEO D",
+      "question": "Koliko stane paket NEO D?",
+      "answer": "✨ Paket NEO D ni na voljo v naši ponudbi. Na voljo so paketi NEO A, NEO B, NEO C in NEO TV. Vas zanima več o katerem od teh paketov ali potrebujete pomoč pri izbiri? Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "verdict": "DENIED",
+      "denial": true,
+      "deflect": true,
+      "priced": false
+    },
+    {
+      "id": "h07",
+      "kind": "invented package",
+      "entity": "NEO Mega",
+      "question": "Kaj vključuje paket NEO Mega in koliko stane?",
+      "answer": "✨ Paket NEO Mega se imenuje NEO C. Vključuje:\n\n\n\nInternet do 1 Gbit/s/300 Mbit/s (možnost nadgradnje)\n255+ TV programov (Mega HD shema)\nOgled nazaj do 7 dni\n\n\nCena:\n- Redna: 63 €/mesec\n- Promocijska: 32,99 €/mesec (za nove naročnike z NAJ ali SUPR mobilnim paketom, 24 mesecev, v omrežju Telekoma Slovenije)\n\n\n👉 Več o NEO paketih\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+      "verdict": "INVENTED",
+      "denial": false,
+      "deflect": false,
+      "priced": true
+    },
+    {
+      "id": "h08",
+      "kind": "invented variant",
+      "entity": "NEO Smartbox Pro",
+      "question": "Koliko stane najem NEO Smartbox Pro?",
+      "answer": "✨ Najem dodatnega NEO Smartboxa znaša 3,90 € na mesec za posamezno napravo. Na eno naročnino lahko najamete do 8 NEO Smartboxov. Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "verdict": "INVENTED",
+      "denial": false,
+      "deflect": false,
+      "priced": true
+    },
+    {
+      "id": "h09",
+      "kind": "invented add-on",
+      "entity": "Peta številka",
+      "question": "Koliko stane opcija Peta številka?",
+      "answer": "✨ Trenutno nimam informacij o opciji \"Peta številka\". Ali ste morda mislili na drugo storitev, kot je \"Druga številka\" ali \"Ena številka\"?",
+      "verdict": "DENIED",
+      "denial": true,
+      "deflect": true,
+      "priced": false
+    },
+    {
+      "id": "h10",
+      "kind": "invented add-on",
+      "entity": "Vikend GB",
+      "question": "Koliko stane zakup Vikend GB?",
+      "answer": "Vas zanimajo dodatni zakupi doma ali v tujini?",
+      "verdict": "REVIEW",
+      "denial": false,
+      "deflect": false,
+      "priced": false
+    },
+    {
+      "id": "h11",
+      "kind": "invented variant",
+      "entity": "Turbo WiFi Premium",
+      "question": "Koliko stane storitev Turbo WiFi Premium?",
+      "answer": "✨ Storitev Turbo WiFi je na voljo v različnih paketih:\n\n\n\nOsnovni Turbo WiFi (modem in ojačevalnik Innbox): 1,99 € / mesec\nNapredni Turbo WiFi (modem FRITZ!Box): 2,99 € / mesec\nNapredni Turbo WiFi (ojačevalnik FRITZ!Repeater): 1,69 € / mesec\n\n\nZa več informacij o ponudbi 👉 Turbo WiFi\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+      "verdict": "INVENTED",
+      "denial": false,
+      "deflect": false,
+      "priced": true
+    },
+    {
+      "id": "h12",
+      "kind": "invented channel",
+      "entity": "NEO Cinema 4K",
+      "question": "Ali NEO TV vključuje program NEO Cinema 4K?",
+      "answer": "✨ NEO TV Lite ne vključuje 4K programov, kot je Eurosport 4K, Fashion TV 4K ali Funbox 4K. Program NEO Cinema 4K ni na voljo v aplikaciji NEO TV Lite. Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "verdict": "DENIED",
+      "denial": true,
+      "deflect": false,
+      "priced": false
+    },
+    {
+      "id": "h13",
+      "kind": "invented variant",
+      "entity": "SIM 3",
+      "question": "Koliko stane SIM 3 pri paketih Naj?",
+      "answer": "✨ Cena zamenjave SIM-kartice (tudi SIM 3) pri paketih Naj je 2,95 €. Če menjate fizično SIM za eSIM, je v obdobju do 31. 8. 2026 menjava enkrat mesečno brezplačna. Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "verdict": "INVENTED",
+      "denial": false,
+      "deflect": false,
+      "priced": true
+    },
+    {
+      "id": "h14",
+      "kind": "discontinued",
+      "entity": "Modri paket",
+      "question": "Koliko stane Modri paket?",
+      "answer": "✨ Cena Modrega paketa je odvisna od izbrane različice in dodatnih storitev. Na voljo sta dve opciji: Modri in Modri Net. \n\n\nZa točne cene in podrobnosti preverite našo spletno stran ali pa mi sporočite, katera možnost vas zanima, da vam lahko bolj natančno pomagam. 😊",
+      "verdict": "DEFLECT",
+      "denial": false,
+      "deflect": true,
+      "priced": false
+    },
+    {
+      "id": "h15",
+      "kind": "discontinued",
+      "entity": "Itak",
+      "question": "Ali lahko še sklenem paket Itak?",
+      "answer": "Se zanimate za sklenitev paketa z internetom in televizijo ali mobilnega paketa? 🏠📱",
+      "verdict": "REVIEW",
+      "denial": false,
+      "deflect": false,
+      "priced": false
+    },
+    {
+      "id": "h16",
+      "kind": "competitor",
+      "entity": "A1 Kul A",
+      "question": "Koliko stane A1 paket Kul A?",
+      "answer": "Pri tem vam lahko svetuje moj sodelavec 🤝\nŽelite, da vas povežem s sodelavcem?",
+      "verdict": "DEFLECT",
+      "denial": false,
+      "deflect": true,
+      "priced": false
+    },
+    {
+      "id": "h17",
+      "kind": "competitor",
+      "entity": "Telemach VEČ",
+      "question": "Koliko stane Telemachov paket VEČ?",
+      "answer": "Pri tem vam lahko svetuje moj sodelavec 🤝\nŽelite, da vas povežem s sodelavcem?",
+      "verdict": "DEFLECT",
+      "denial": false,
+      "deflect": true,
+      "priced": false
+    },
+    {
+      "id": "h18",
+      "kind": "competitor",
+      "entity": "bob",
+      "question": "Ali je bob paket boljši od Mobi?",
+      "answer": "✨ Primerjava z drugimi ponudniki ni dovoljena. Lahko pa vam predstavim vse prednosti in možnosti naših predplačniških paketov Mobi:\n\n\n\nBrez vezave in naročnine\nEnostavna uporaba prek aplikacije Moj Mobi\nAkcijske cene paketov Mobi A, B in C do 31. 8. 2026\n\n\nVas zanima več o posameznih paketih ali potrebujete podrobnosti? Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "verdict": "REVIEW",
+      "denial": false,
+      "deflect": false,
+      "priced": false
+    },
+    {
+      "id": "h19",
+      "kind": "invented add-on",
+      "entity": "Amerika 10 GB",
+      "question": "Koliko stane mednarodni zakup Amerika 10 GB?",
+      "answer": "✨ Zakup za ZDA z 10 GB prenosa podatkov stane 12,00 € in velja 7 dni. Aktivirate ga lahko s SMS-om z vsebino ZDA INTERNET na številko 1918 (za naročnike) ali 1917 (za Mobi uporabnike).\n\n\nVeč informacij 👉 Zakupi za ZDA, ZK in Švico.",
+      "verdict": "INVENTED",
+      "denial": false,
+      "deflect": false,
+      "priced": true
+    },
+    {
+      "id": "h20",
+      "kind": "invented future",
+      "entity": "Naj 6G",
+      "question": "Kdaj bo na voljo paket Naj 6G in koliko bo stal?",
+      "answer": "✨ Trenutno nimam informacij o paketu Naj 6G ali njegovih cenah. Ali ste morda mislili na obstoječe pakete Naj? Če želite, lahko preverim aktualno ponudbo naših paketov ali vas povežem z mojim sodelavcem za več informacij. Bi želeli to? 😊",
+      "verdict": "DENIED",
+      "denial": true,
+      "deflect": true,
+      "priced": false
+    }
+  ]
+}
