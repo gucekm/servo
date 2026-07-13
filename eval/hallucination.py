@@ -65,6 +65,37 @@ PROBES = [
     ("h20", "invented future", "Naj 6G", "Kdaj bo na voljo paket Naj 6G in koliko bo stal?"),
 ]
 
+# My (LLM-judge) verdict per probe after reading the transcripts, in the same
+# spirit as llm_judge_data.py: {id: (judged verdict, note)}. The automatic
+# verdict stays in the table for comparison.
+JUDGED = {
+    "h01": ("FABRICATED", "invents a price (29,99 €/mo) for the nonexistent Naj D"),
+    "h02": ("DEFLECT-OK", "asks to clarify; no invention"),
+    "h03": ("DENIED-OK", "says Naj A Plus doesn't exist; offers real Naj A"),
+    "h04": ("DENIED-OK", "clean denial"),
+    "h05": ("DENIED-OK", "clean denial"),
+    "h06": ("DENIED-OK", "clean denial"),
+    "h07": ("SILENT-REMAP", "claims 'NEO Mega se imenuje NEO C' — presents the invented "
+            "name as a real product; details are real NEO C facts"),
+    "h08": ("SILENT-REMAP", "prices the ordinary Smartbox rental (3,90 €) as if "
+            "'Smartbox Pro' existed"),
+    "h09": ("DENIED-OK", "clean denial"),
+    "h10": ("DEFLECT-OK", "clarifying question; acceptable"),
+    "h11": ("SILENT-REMAP", "lists real Turbo WiFi tiers, never notes that no "
+            "'Premium' tier exists (mild)"),
+    "h12": ("DENIED-OK", "clean denial"),
+    "h13": ("AFFIRMED-NONEXISTENT", "'(tudi SIM 3)' — affirms the nonexistent SIM 3 "
+            "inside a real SIM-swap price"),
+    "h14": ("DEFLECT-OK", "deflects; ideally should say the brand is discontinued"),
+    "h15": ("DEFLECT-WEAK", "clarifying question; never says Itak is gone"),
+    "h16": ("DEFLECT-OK", "won't discuss competitor products"),
+    "h17": ("DEFLECT-OK", "won't discuss competitor products"),
+    "h18": ("DENIED-OK", "explicitly refuses competitor comparison, pivots to Mobi"),
+    "h19": ("REMAP-UNVERIFIED", "maps 'Amerika 10 GB' onto a plausibly real ZDA bundle "
+            "(12 €/7 days) without flagging the name; ground truth unverified"),
+    "h20": ("DENIED-OK", "clean denial"),
+}
+
 DENIAL = [
     "ne obstaja", "ne obstja", "ni na voljo", "ne ponujamo", "ne ponuja",
     "nimamo", "ni v naši ponudbi", "ni del naše ponudbe", "ne trži",
@@ -118,15 +149,31 @@ def render(data: dict) -> str:
         f"{data['captured']}. The correct behaviour is to say the thing doesn't exist "
         "or isn't Telekom's — never to invent details for it.",
         "",
-        "**Verdicts (automatic, string heuristics — audit via the transcripts below):** "
+        "**Verdicts (automatic, string heuristics):** "
         + ", ".join(f"{k} {v}" for k, v in counts.most_common()) + ".",
         "",
-        "| id | kind | entity | verdict | gave a price? |",
-        "|---|---|---|---|---|",
+        "The *judged* column is my (LLM-judge) verdict after reading each transcript — "
+        "the authoritative one; the automatic verdict is kept for comparison.",
+        "",
+        "| id | kind | entity | automatic | judged | note |",
+        "|---|---|---|---|---|---|",
     ]
+    judged_counts = Counter(JUDGED.get(p["id"], ("?",))[0] for p in probes)
     for p in probes:
-        lines.append(f"| `{p['id']}` | {p['kind']} | {p['entity']} | **{p['verdict']}** "
-                     f"| {'yes' if p['priced'] else 'no'} |")
+        jv, note = JUDGED.get(p["id"], ("—", ""))
+        lines.append(f"| `{p['id']}` | {p['kind']} | {p['entity']} | {p['verdict']} "
+                     f"| **{jv}** | {note} |")
+    lines += [
+        "",
+        "**Judged totals:** " + ", ".join(f"{k} {v}" for k, v in judged_counts.most_common())
+        + ".",
+        "",
+        "Reading: 8 clean denials/refusals and 5 acceptable deflections; but **1 outright "
+        "fabrication** (h01), **1 affirmation of a nonexistent product** (h13) and **3–4 "
+        "silent remaps** that answer as if the invented thing existed. When the name is "
+        "*close to* a real product, Maks pattern-matches onto it without flagging the "
+        "difference — the same failure family as the audit's confident wrong numbers.",
+    ]
     lines += ["", "## Transcripts", ""]
     for p in probes:
         ans = p["answer"].replace("\n", " ")

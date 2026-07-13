@@ -2,30 +2,36 @@
 
 20 questions about **nonexistent** things (invented packages and add-ons, discontinued brands, competitor products), captured 2026-07-13 13:24 UTC. The correct behaviour is to say the thing doesn't exist or isn't Telekom's — never to invent details for it.
 
-**Verdicts (automatic, string heuristics — audit via the transcripts below):** DENIED 7, INVENTED 6, DEFLECT 4, REVIEW 3.
+**Verdicts (automatic, string heuristics):** DENIED 7, INVENTED 6, DEFLECT 4, REVIEW 3.
 
-| id | kind | entity | verdict | gave a price? |
-|---|---|---|---|---|
-| `h01` | invented package | Naj D | **INVENTED** | yes |
-| `h02` | invented package | Naj Z | **DEFLECT** | no |
-| `h03` | invented variant | Naj A Plus | **DENIED** | no |
-| `h04` | invented package | Mobi Ultra | **DENIED** | no |
-| `h05` | invented package | Mobi Max | **DENIED** | no |
-| `h06` | invented package | NEO D | **DENIED** | no |
-| `h07` | invented package | NEO Mega | **INVENTED** | yes |
-| `h08` | invented variant | NEO Smartbox Pro | **INVENTED** | yes |
-| `h09` | invented add-on | Peta številka | **DENIED** | no |
-| `h10` | invented add-on | Vikend GB | **REVIEW** | no |
-| `h11` | invented variant | Turbo WiFi Premium | **INVENTED** | yes |
-| `h12` | invented channel | NEO Cinema 4K | **DENIED** | no |
-| `h13` | invented variant | SIM 3 | **INVENTED** | yes |
-| `h14` | discontinued | Modri paket | **DEFLECT** | no |
-| `h15` | discontinued | Itak | **REVIEW** | no |
-| `h16` | competitor | A1 Kul A | **DEFLECT** | no |
-| `h17` | competitor | Telemach VEČ | **DEFLECT** | no |
-| `h18` | competitor | bob | **REVIEW** | no |
-| `h19` | invented add-on | Amerika 10 GB | **INVENTED** | yes |
-| `h20` | invented future | Naj 6G | **DENIED** | no |
+The *judged* column is my (LLM-judge) verdict after reading each transcript — the authoritative one; the automatic verdict is kept for comparison.
+
+| id | kind | entity | automatic | judged | note |
+|---|---|---|---|---|---|
+| `h01` | invented package | Naj D | INVENTED | **FABRICATED** | invents a price (29,99 €/mo) for the nonexistent Naj D |
+| `h02` | invented package | Naj Z | DEFLECT | **DEFLECT-OK** | asks to clarify; no invention |
+| `h03` | invented variant | Naj A Plus | DENIED | **DENIED-OK** | says Naj A Plus doesn't exist; offers real Naj A |
+| `h04` | invented package | Mobi Ultra | DENIED | **DENIED-OK** | clean denial |
+| `h05` | invented package | Mobi Max | DENIED | **DENIED-OK** | clean denial |
+| `h06` | invented package | NEO D | DENIED | **DENIED-OK** | clean denial |
+| `h07` | invented package | NEO Mega | INVENTED | **SILENT-REMAP** | claims 'NEO Mega se imenuje NEO C' — presents the invented name as a real product; details are real NEO C facts |
+| `h08` | invented variant | NEO Smartbox Pro | INVENTED | **SILENT-REMAP** | prices the ordinary Smartbox rental (3,90 €) as if 'Smartbox Pro' existed |
+| `h09` | invented add-on | Peta številka | DENIED | **DENIED-OK** | clean denial |
+| `h10` | invented add-on | Vikend GB | REVIEW | **DEFLECT-OK** | clarifying question; acceptable |
+| `h11` | invented variant | Turbo WiFi Premium | INVENTED | **SILENT-REMAP** | lists real Turbo WiFi tiers, never notes that no 'Premium' tier exists (mild) |
+| `h12` | invented channel | NEO Cinema 4K | DENIED | **DENIED-OK** | clean denial |
+| `h13` | invented variant | SIM 3 | INVENTED | **AFFIRMED-NONEXISTENT** | '(tudi SIM 3)' — affirms the nonexistent SIM 3 inside a real SIM-swap price |
+| `h14` | discontinued | Modri paket | DEFLECT | **DEFLECT-OK** | deflects; ideally should say the brand is discontinued |
+| `h15` | discontinued | Itak | REVIEW | **DEFLECT-WEAK** | clarifying question; never says Itak is gone |
+| `h16` | competitor | A1 Kul A | DEFLECT | **DEFLECT-OK** | won't discuss competitor products |
+| `h17` | competitor | Telemach VEČ | DEFLECT | **DEFLECT-OK** | won't discuss competitor products |
+| `h18` | competitor | bob | REVIEW | **DENIED-OK** | explicitly refuses competitor comparison, pivots to Mobi |
+| `h19` | invented add-on | Amerika 10 GB | INVENTED | **REMAP-UNVERIFIED** | maps 'Amerika 10 GB' onto a plausibly real ZDA bundle (12 €/7 days) without flagging the name; ground truth unverified |
+| `h20` | invented future | Naj 6G | DENIED | **DENIED-OK** | clean denial |
+
+**Judged totals:** DENIED-OK 8, DEFLECT-OK 5, SILENT-REMAP 3, FABRICATED 1, AFFIRMED-NONEXISTENT 1, DEFLECT-WEAK 1, REMAP-UNVERIFIED 1.
+
+Reading: 8 clean denials/refusals and 5 acceptable deflections; but **1 outright fabrication** (h01), **1 affirmation of a nonexistent product** (h13) and **3–4 silent remaps** that answer as if the invented thing existed. When the name is *close to* a real product, Maks pattern-matches onto it without flagging the difference — the same failure family as the audit's confident wrong numbers.
 
 ## Transcripts
 
