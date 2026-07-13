@@ -1,5 +1,5 @@
 {
-  "captured": "2026-07-13 13:21 UTC",
+  "captured": "2026-07-13 13:32 UTC",
   "probes": [
     {
       "id": "rb01",
@@ -12,32 +12,823 @@
       "variants": {
         "formal": {
           "question": "Kakšna je redna cena paketa Mobi B?",
-          "answer": "✨ Redna cena paketa Mobi B je 9,99 EUR na mesec. V času poletne akcije (1. 7.–31. 8. 2026) pa je cena 6,99 EUR za prvih 6 mesecev. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "answer": "✨ Redna cena paketa Mobi B je 9,99 EUR na mesec. V času poletne akcije pa je cena 6,99 EUR na mesec za prvih 6 mesecev. Potrebujete še kakšno informacijo? Kar povejte 😊",
           "grade": "HIT"
         },
         "colloquial": {
           "question": "Koliko pa pride Mobi B?",
-          "answer": "✨ Paket Mobi B trenutno v poletni akciji (od 1. 7. do 31. 8. 2026) v aplikaciji Moj Mobi stane 6,99 EUR/mesec za prvih 6 mesecev. Po tem obdobju je redna cena 9,99 EUR/mesec. \n\n\nVas zanima še kaj glede paketov Mobi ali aktivacije? Kar vprašajte 😊",
+          "answer": "✨ Paket Mobi B v poletni akciji (od 1. 7. do 31. 8. 2026) stane 6,99 EUR/mesec za prvih 6 mesecev, nato 9,99 EUR/mesec. Vključuje:\n- Neomejene klice in sporočila v Sloveniji ali državah EU-tarife\n- 100 GB podatkov v Sloveniji (od tega do 14,89 GB v EU-tarifi)\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
           "grade": "HIT"
         },
         "nodiacritics": {
           "question": "kaksna je redna cena paketa mobi b",
-          "answer": "✨ Redna cena paketa Mobi B je 9,99 EUR na mesec. V času poletne akcije (1. 7.–31. 8. 2026) pa lahko paket vključite po akcijski ceni 6,99 EUR za prvih 6 mesecev. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "answer": "✨ Redna cena paketa Mobi B je 9,99 EUR na mesec. V času poletne akcije (1. 7.–31. 8. 2026) pa znaša 6,99 EUR za prvih 6 mesecev, če paket vključite v aplikaciji Moj Mobi. Potrebujete še kakšno informacijo? Kar povejte 😊",
           "grade": "HIT"
         },
         "typo": {
           "question": "Kolko stane paket Mobi B?",
-          "answer": "✨ Paket Mobi B trenutno stane 6,99 EUR/mesec za prvih 6 mesecev, če ga vključite v aplikaciji Moj Mobi med 1. 7. in 31. 8. 2026 (poletna akcija). Redna cena paketa je 9,99 EUR/mesec. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "answer": "✨ Paket Mobi B trenutno stane 6,99 EUR/mesec za prvih 6 mesecev, če ga vključite med 1. 7. in 31. 8. 2026 v aplikaciji Moj Mobi. Po tem obdobju je redna cena 9,99 EUR/mesec. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
           "grade": "HIT"
         },
         "terse": {
           "question": "cena Mobi B?",
-          "answer": "✨ Paket Mobi B trenutno stane 6,99 EUR/mesec za prvih 6 mesecev, če ga vključite v aplikaciji Moj Mobi med 1. 7. in 31. 8. 2026. Nato je cena 9,99 EUR/mesec. \n\n\nVas zanima še kaj glede paketa ali aktivacije? 😊\n\n\n👉 Več o Mobi paketih",
+          "answer": "✨ Cena paketa Mobi B je 9,99 EUR/mesec, vendar med 1. 7. in 31. 8. 2026 velja akcijska cena 6,99 EUR/mesec za prvih 6 mesecev ob vklopu v aplikaciji Moj Mobi. Po tem obdobju se paket podaljša po redni ceni.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
           "grade": "HIT"
         },
         "english": {
           "question": "What is the regular price of the Mobi B prepaid plan?",
-          "answer": "✨ The regular price of the Mobi B prepaid plan is 9,99 EUR per month. If you need more details or wish to compare with other packages, just let me know 😊",
+          "answer": "✨ The regular price of the Mobi B prepaid plan is 9,99 EUR per month. \n\n\nDo you need any more information? Just let me know 😊",
+          "grade": "HIT"
+        }
+      }
+    },
+    {
+      "id": "rb02",
+      "source_qid": "mobi04",
+      "facts": [
+        [
+          "13,99"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Kakšna je redna cena paketa Mobi C?",
+          "answer": "✨ Redna cena paketa Mobi C je 13,99 EUR na mesec. V času poletne akcije (1. 7.–31. 8. 2026) pa je prvih 6 mesecev cena znižana na 6,99 EUR/mesec ob vklopu v aplikaciji Moj Mobi. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Koliko me mesečno stane Mobi C?",
+          "answer": "✨ Paket Mobi C vas trenutno v poletni akciji (1. 7.–31. 8. 2026) stane 6,99 EUR/mesec za prvih 6 mesecev. Po tem obdobju je redna cena 13,99 EUR/mesec. Do dodatnih informacij lahko dostopate 👉 Predplačniški Mobi.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "kaksna je mesecna cena paketa mobi c",
+          "answer": "✨ Paket Mobi C je v poletni akciji (1. 7.–31. 8. 2026) na voljo za 6,99 EUR/mesec prvih 6 mesecev, nato 13,99 EUR/mesec. Vključuje neomejene klice in sporočila v Sloveniji ter EU-tarifi ter neomejen prenos podatkov v Sloveniji (do 20,85 GB v EU-tarifi).\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Kolko stane pakte Mobi C?",
+          "answer": "✨ Paket Mobi C trenutno stane 6,99 EUR/mesec za prvih 6 mesecev, če ga vključite v aplikaciji Moj Mobi med 1. 7. in 31. 8. 2026. Po tem obdobju je cena 13,99 EUR/mesec. \n\n\nPaket vključuje:\n- Neomejene klice in sporočila v Sloveniji in EU-tarifi\n- Neomejen prenos podatkov v Sloveniji (do 20,85 GB v EU-tarifi)\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "Mobi C cena?",
+          "answer": "✨ Paket Mobi C trenutno stane 6,99 EUR/mesec za prvih 6 mesecev, če ga vključite v aplikaciji Moj Mobi med 1. 7. in 31. 8. 2026 (akcijska cena). Po tem obdobju je redna cena 13,99 EUR/mesec. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "How much does the Mobi C plan cost per month?",
+          "answer": "✨ Mobi C paket trenutno stane 13,99 EUR na mesec, v času poletne akcije (1. 7.–31. 8. 2026) pa je cena 6,99 EUR na mesec za prvih 6 mesecev ob vklopu v aplikaciji Moj Mobi. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        }
+      }
+    },
+    {
+      "id": "rb03",
+      "source_qid": "mobi10",
+      "facts": [
+        [
+          "0,12"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Koliko stanejo klici in SMS po rednem ceniku Mobi brez paketa?",
+          "answer": "✨ Klici v vsa mobilna in fiksna omrežja v Sloveniji stanejo 0,12 €/minuto, SMS ali MMS 0,12 €/sporočilo, prenos podatkov pa 0,12 €/MB. Cene veljajo za uporabo v omrežju Telekoma Slovenije. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Če nimam nobenega Mobi paketa, koliko plačam za minuto klica?",
+          "answer": "✨ Če nimate vključenega nobenega Mobi paketa, se klici obračunavajo po rednem ceniku:\n\n\n\nKlic v vsa mobilna ali fiksna omrežja v Sloveniji: 0,12 € na minuto.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "cena klicev in sporocil pri mobi brez paketa",
+          "answer": "✨ Cena klicev in sporočil pri Mobi brez izbranega paketa je:\n\n\n\nKlici v vsa mobilna in fiksna omrežja v Sloveniji: 0,12 €/minuto\nSporočilo SMS/MMS: 0,12 €/sporočilo\n\n\nObračunska enota za klice je 60/60 (vsaka začeta minuta se obračuna v celoti).\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Kolik stanejo klici pri Mobi brez pakteov?",
+          "answer": "✨ Klici pri Mobi brez izbranega paketa se obračunajo po ceniku:\n\n\n\nKlici v vsa mobilna in fiksna omrežja v Sloveniji: 0,12 €/minuto\nSMS/MMS: 0,12 €/sporočilo\nPrenos podatkov: 0,12 €/MB\n\n\nZa poslani SMS v tujino se zaračuna 0,11 € dodatka na sporočilo. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "Mobi klic cena brez paketa?",
+          "answer": "✨ Cena klica z Mobi brez izbranega paketa je 0,12 EUR na minuto za klice v vsa mobilna in fiksna omrežja v Sloveniji. Obračunski interval je 60/60, kar pomeni, da se vsaka začeta minuta obračuna v celoti.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "How much do calls and SMS cost on Mobi without a bundle?",
+          "answer": "✨ Klici v vsa mobilna in fiksna omrežja v Sloveniji brez paketa Mobi stanejo 0,12 €/minuto. Sporočilo SMS ali MMS stane 0,12 €/sporočilo. Prenos podatkov je 0,12 €/MB. Cene vključujejo DDV.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        }
+      }
+    },
+    {
+      "id": "rb04",
+      "source_qid": "mobi12",
+      "facts": [
+        [
+          "29,99"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Koliko stane zakup Mobi Net?",
+          "answer": "✨ Paket Mobi Net stane 29,99 EUR in vključuje 100 GB prenosa podatkov v Sloveniji za obdobje 365 dni. Paket lahko vklopite prek SMS-a (MOBI NET na 1917) ali v aplikaciji Moj Mobi. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Koliko dam za Mobi Net?",
+          "answer": "✨ Paket Mobi Net stane 29,99 EUR in vključuje 100 GB prenosa podatkov v Sloveniji za 365 dni. Če vas zanima mesečna opcija, Mobi Net Mesec stane 9,99 EUR za 100 GB za en mesec. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "koliko stane zakup mobi net in koliko casa velja",
+          "answer": "✨ Paket Mobi Net stane 29,99 EUR in velja 365 dni od vklopa. Paket vključuje 100 GB prenosa podatkov v Sloveniji s hitrostjo do 300/100 Mbit/s. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Kolko stane Mobi Nett?",
+          "answer": "✨ Paket Mobi Net stane 29,99 EUR in vključuje 100 GB prenosa podatkov v Sloveniji za obdobje 365 dni od vklopa. Če potrebujete mesečno opcijo, je na voljo tudi Mobi Net Mesec za 9,99 EUR (100 GB za en mesec). Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "Mobi Net cena?",
+          "answer": "✨ Paket Mobi Net stane 29,99 EUR in vključuje 100 GB prenosa podatkov v Sloveniji za 365 dni. Hitrost je do 300/100 Mbit/s. Paket velja eno leto od vklopa. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "How much does the Mobi Net data bundle cost?",
+          "answer": "✨ The Mobi Net data bundle costs 29,99 EUR and includes 100 GB of data in Slovenia, valid for 365 days from activation. Would you like more details about other data bundles or activation options? Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        }
+      }
+    },
+    {
+      "id": "rb05",
+      "source_qid": "mobi16",
+      "facts": [
+        [
+          "90 dni",
+          "90 dneh",
+          "90-dnev",
+          "90 days"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Na koliko dni se samodejno podaljša veljavnost računa Mobi?",
+          "answer": "✨ Veljavnost vašega računa Mobi se samodejno podaljša za 90 dni, če imate na računu vsaj 1,99 EUR dobroimetja. Storitev je vključena samodejno. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Za koliko časa se mi Mobi račun sam podaljša?",
+          "answer": "✨ Veljavnost vašega Mobi računa se ob polnitvi ali uspešnem samodejnem podaljšanju podaljša za 90 dni. Če imate vklopljeno storitev samodejnega podaljšanja in dovolj dobroimetja (1,99 EUR), se veljavnost podaljša vsakih 89 dni za novih 90 dni.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "na koliko dni se samodejno podaljsa veljavnost racuna mobi",
+          "answer": "✨ Veljavnost računa Mobi se samodejno podaljša za 90 dni, če imate na dan podaljšanja vsaj 1,99 EUR dobroimetja na računu. Storitev je vključena samodejno. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Na kolko dni se podaljša veljavnst Mobi računa?",
+          "answer": "✨ Veljavnost vašega Mobi računa se ob vsakem polnjenju ali uspešnem podaljšanju podaljša za 90 dni. Če imate vključeno samodejno podaljšanje brez polnitve in dovolj dobroimetja, se prav tako podaljša za 90 dni.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "Mobi veljavnost računa?",
+          "answer": "✨ Veljavnost vašega Mobi računa traja 90 dni od zadnjega polnjenja ali podaljšanja. Vsako novo polnjenje ali podaljšanje začne novo 90-dnevno obdobje. Po 90 dneh se številka začasno zaklene, po 270 dneh pa trajno.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "By how many days is a Mobi account's validity automatically extended?",
+          "answer": "✨ Veljavnost računa Mobi se samodejno podaljša za 90 dni, če imate na računu vsaj 1,99 EUR dobroimetja. Potrebujete še kakšno dodatno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        }
+      }
+    },
+    {
+      "id": "rb06",
+      "source_qid": "naj01",
+      "facts": [
+        [
+          "20,99"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Kakšna je redna mesečna cena paketa Naj A?",
+          "answer": "✨ Redna mesečna cena paketa Naj A znaša 20,99 €.",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Koliko pride Naj A na mesec?",
+          "answer": "✨ Paket Naj A stane 20,99 € na mesec. Za nove naročnike je promocijska cena 15,99 €, oziroma 10,99 € z ugodnostjo Poveži in prihrani. \n\n\nPromocija traja:\n- 36 mesecev ob sklenitvi v aplikaciji Moj Telekom.\n- 24 mesecev ob sklenitvi prek drugih kanalov.\n\n\nPo izteku promocije velja redna cena. Vas zanima še kaj? 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "kaksna je redna mesecna cena paketa naj a",
+          "answer": "✨ Redna mesečna cena paketa Naj A znaša 20,99 €.",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Kolko stane pakt Naj A mesečno?",
+          "answer": "✨ Paket Naj A stane 20,99 € mesečno po redni ceni. Za nove naročnike je na voljo promocijska cena 10,99 €:\n- 36 mesecev ob sklenitvi v aplikaciji Moj Telekom.\n- 24 mesecev ob sklenitvi prek drugih kanalov.  \n\n\nPo izteku ugodnosti velja redna cena. Vas zanima še kaj? 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "cena Naj A?",
+          "answer": "✨ Paket Naj A stane 20,99 € na mesec.  \n\n\nPromocijska cena za nove naročnike je 10,99 € na mesec:\n- 36 mesecev ob sklenitvi v aplikaciji Moj Telekom.\n- 24 mesecev ob sklenitvi prek drugih kanalov.\n\n\nPo promocijskem obdobju velja redna cena. 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "What is the regular monthly price of the Naj A plan?",
+          "answer": "Would you like to continue the conversation with one of my colleagues?",
+          "grade": "MISS"
+        }
+      }
+    },
+    {
+      "id": "rb07",
+      "source_qid": "naj03",
+      "facts": [
+        [
+          "27,99"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Kakšna je redna mesečna cena paketa Naj B?",
+          "answer": "✨ Redna mesečna cena paketa Naj B znaša 27,99 € z DDV.",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Koliko pa me udari Naj B po žepu na mesec?",
+          "answer": "✨ Paket Naj B stane:\n\n\n\nRedna cena: 27,99 €/mesec.\nPromocijska cena: 10,99 €/mesec (za nove naročnike s popustom Poveži in prihrani).\n\n\nPromocija velja 36 mesecev ob sklenitvi prek Moj Telekom, nato velja redna cena.",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "kaksna je redna mesecna cena paketa naj b",
+          "answer": "✨ Redna mesečna cena paketa Naj B znaša 27,99 €. Če imate še kakšno vprašanje, kar povejte! 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Koliko stane paket Naj B na msec?",
+          "answer": "✨ Paket Naj B stane 27,99 € na mesec po redni ceni. Za nove naročnike je na voljo promocijska cena 10,99 € na mesec:\n- 36 mesecev ob sklenitvi v aplikaciji Moj Telekom.\n- 24 mesecev ob sklenitvi prek drugih kanalov.  \n\n\nPo promocijskem obdobju velja redna cena. 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "Naj B cena?",
+          "answer": "✨ Paket Naj B stane 27,99 € na mesec.  \n\n\nZa nove naročnike je na voljo promocijska cena:\n- 10,99 €/mesec z ugodnostjo Poveži in prihrani.\n- Trajanje ugodnosti:\n  - 36 mesecev, če sklenete v aplikaciji Moj Telekom.\n  - 24 mesecev, če sklenete prek drugih kanalov.  \n\n\nPo promocijskem obdobju velja redna cena.  \n\n\nVas zanima še kaj? 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "How much is the Naj B plan per month?",
+          "answer": "✨ The Naj B plan costs €25.99 per month. If you're already a subscriber, you might also benefit from additional discounts or promotions. 😊 \n\n\nWould you like more details about this plan?",
+          "grade": "MISS"
+        }
+      }
+    },
+    {
+      "id": "rb08",
+      "source_qid": "naj04",
+      "facts": [
+        [
+          "200 gb"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Po koliko GB se v paketu Naj B zniža hitrost prenosa podatkov?",
+          "answer": "✨ V paketu Naj B se hitrost prenosa podatkov zniža po porabi 200 GB na 2/1 Mbit/s. Hitrost se ponovno vzpostavi z začetkom novega obračunskega obdobja.",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Kdaj mi pri Naj B upočasnijo internet?",
+          "answer": "✨ Pri paketu Naj B se hitrost interneta upočasni, ko porabite vključeno količino prenosa podatkov. Če želite natančne informacije o omejitvah ali dodatnih opcijah, mi prosim sporočite, ali vas zanima več o mobilnih paketih 📱 ali internetnih in TV storitvah 🏠.",
+          "grade": "DEFLECT"
+        },
+        "nodiacritics": {
+          "question": "po koliko gb se v paketu naj b zniza hitrost prenosa",
+          "answer": "✨ V paketu Naj B se hitrost prenosa podatkov zniža na 2/1 Mbit/s po doseženih 200 GB prenosa podatkov v obračunskem obdobju.",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Po kolko GB se pri Naj B zmanjša hitorst?",
+          "answer": "✨ Pri paketu Naj B se hitrost prenosa podatkov zmanjša na 2/1 Mbit/s po doseženih 200 GB v obračunskem obdobju.",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "Naj B omejitev GB?",
+          "answer": "✨ Omejitev za prenos podatkov v tujini lahko nastavite v znesku od 0 do 1.000 EUR. Ko dosežete izbrani limit, se prenos podatkov samodejno ustavi in prejmete obvestilo. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "MISS"
+        },
+        "english": {
+          "question": "After how many GB does Naj B slow down the data speed?",
+          "answer": "Would you like to explore additional add-ons for home or abroad?",
+          "grade": "MISS"
+        }
+      }
+    },
+    {
+      "id": "rb09",
+      "source_qid": "naj13",
+      "facts": [
+        [
+          "5 eur"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Kolikšen je popust pri ugodnosti Poveži in prihrani?",
+          "answer": "✨ Popust Poveži in prihrani znaša:\n\n\n\n5,00 EUR na mesec za mobilne pakete Naj A, Naj B, Naj C, Naj 5G in Naj Net,\n15,00 EUR na mesec za fiksni paket Net, če ste naročnik paketa SUPR.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "MISS"
+        },
+        "colloquial": {
+          "question": "Koliko prišparam s Poveži in prihrani?",
+          "answer": "✨ Z ugodnostjo Poveži in prihrani lahko prihranite:\n\n\n\n5 EUR na mesec pri mobilnih paketih Naj A, Naj B, Naj C, Naj 5G ali Naj Net.\n15 EUR na mesec pri fiksnem paketu Net, če ste naročnik paketa SUPR.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "koliksen je popust pri ugodnosti povezi in prihrani",
+          "answer": "✨ Popust Poveži in prihrani znaša:\n\n\n\n5 EUR na mesec za mobilne pakete Naj A, Naj B, Naj C, Naj 5G in Naj Net,\n15 EUR na mesec za fiksni paket Net, če ste naročnik paketa SUPR.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Koliko znaša popust Povezi in prihani?",
+          "answer": "✨ Popust Poveži in prihrani znaša:\n\n\n\n5,00 EUR na mesec za mobilne pakete Naj A, Naj B, Naj C, Naj 5G in Naj Net.\n15,00 EUR na mesec za fiksni paket Net, če ste naročnik paketa SUPR.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "MISS"
+        },
+        "terse": {
+          "question": "Poveži in prihrani popust?",
+          "answer": "✨ Ugodnost Poveži in prihrani omogoča znižano mesečno naročnino, če ste hkrati naročnik izbranega mobilnega in fiksnega paketa ter imate skupni račun. Popust znaša 5 EUR pri paketih Naj A, Naj B, Naj C, Naj 5G in Naj Net. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "How big is the Poveži in prihrani discount?",
+          "answer": "✨ Hvala za vaše vprašanje! Višina popusta v okviru naše ponudbe Poveži in prihrani je odvisna od izbranih storitev in paketov, ki jih združite. Za natančne informacije glede višine popusta vam priporočam, da mi sporočite, katere storitve vas zanimajo, ali pa vas lahko povežem z mojim sodelavcem za podrobnejšo pomoč. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "DEFLECT"
+        }
+      }
+    },
+    {
+      "id": "rb10",
+      "source_qid": "naj14",
+      "facts": [
+        [
+          "1 eur"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Koliko stane storitev Ena številka?",
+          "answer": "✨ Storitev Ena številka stane 1 EUR na mesec. Mesečna naročnina se zaračunava le nosilni številki, dodatne številke imajo storitev brezplačno. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Koliko me stane, da imam eno številko na dveh SIM karticah?",
+          "answer": "✨ Ena telefonska številka ne more biti hkrati aktivna na dveh SIM-karticah. Lahko pa uporabite dve rešitvi:\n\n\n\nNaj naprava: omogoča dodatno SIM (ali eSIM) za uporabo podatkov in SMS/MMS na drugi napravi.\nEna številka: poveže do tri številke, da vse naprave zvonijo ob klicu na eno številko.\n\n\nPotrebujete še dodatno razlago katere izmed možnosti? Kar povejte 😊",
+          "grade": "MISS"
+        },
+        "nodiacritics": {
+          "question": "koliko stane storitev ena stevilka",
+          "answer": "✨ Storitev Ena številka stane 1,00 EUR na mesec. Mesečna naročnina se zaračuna le nosilni številki, dodatne številke imajo storitev brezplačno. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "MISS"
+        },
+        "typo": {
+          "question": "Kolko stane storitv Ena števlika?",
+          "answer": "✨ Storitev Ena številka stane 1 EUR na mesec. Ta znesek se zaračuna le nosilni številki, dodatne številke imajo storitev brezplačno. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "Ena številka cena?",
+          "answer": "✨ Paket Naj naprava stane 4,99 EUR na mesec in vključuje 1 GB podatkov, 500 SMS/MMS ter možnost uporabe na dodatni napravi (npr. uri ali tablici). Storitev Ena številka stane 1 EUR na mesec in omogoča združitev do treh številk v eno.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "How much does the Ena številka service cost per month?",
+          "answer": "✨ I’m not sure I understood your question fully. Are you asking about the cost of a specific Telekom Slovenije service? Could you clarify the name of the service or provide more details?",
+          "grade": "MISS"
+        }
+      }
+    },
+    {
+      "id": "rb11",
+      "source_qid": "bb05",
+      "facts": [
+        [
+          "13,99"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Koliko stane fiksni paket Naj Net na mesec?",
+          "answer": "✨ Paket Naj Net (mobilni internet) stane 13,99 EUR/mesec. Vključuje neomejen prenos podatkov v Sloveniji s hitrostjo do 2/1 Mbit/s. Možna je nadgradnja hitrosti za doplačilo. 👉 Več o Naj Net\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Koliko pride Naj Net mesečno?",
+          "answer": "✨ Ali vas zanima paket Naj Net za mobilne storitve 📱 ali za internet in TV storitve 🏠? Tako vam lahko bolje pomagam!",
+          "grade": "DEFLECT"
+        },
+        "nodiacritics": {
+          "question": "koliko stane paket naj net mesecno",
+          "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet.",
+          "grade": "DEFLECT"
+        },
+        "typo": {
+          "question": "Kolko stane pakt Naj Net?",
+          "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet.",
+          "grade": "DEFLECT"
+        },
+        "terse": {
+          "question": "Naj Net cena?",
+          "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet.",
+          "grade": "DEFLECT"
+        },
+        "english": {
+          "question": "What is the monthly price of the Naj Net fixed internet plan?",
+          "answer": "✨ The monthly price details for the Naj Net fixed internet plan are not provided here. Would you like me to guide you to more information about our 🏠 Internet and TV services?",
+          "grade": "MISS"
+        }
+      }
+    },
+    {
+      "id": "rb12",
+      "source_qid": "bb22",
+      "facts": [
+        [
+          "58 eur",
+          "58,00",
+          "58 €"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Kakšna je redna cena paketa NEO B?",
+          "answer": "✨ Redna cena paketa NEO B je 58 EUR na mesec. Za nove naročnike z izbranimi mobilnimi paketi velja akcijska cena 32,99 EUR/mesec do 24 mesecev. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Koliko pa je NEO B na mesec brez akcije?",
+          "answer": "✨ Cena paketa NEO B brez akcije je 56,99 € na mesec. Če potrebujete dodatne informacije ali želite preveriti trenutno ponudbo, mi sporočite! 😊",
+          "grade": "MISS"
+        },
+        "nodiacritics": {
+          "question": "kaksna je redna cena paketa neo b",
+          "answer": "✨ Redna cena paketa NEO B je 58 EUR na mesec. Za nove naročnike z izbranimi mobilnimi paketi velja promocijska cena 32,99 EUR do 24 mesecev (24-mesečna vezava). Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Koliko stane pakket NEO B?",
+          "answer": "✨ Paket NEO B ima redno ceno 58 EUR/mesec. Za nove naročnike z mobilnim paketom NAJ ali SUPR je akcijska cena 32,99 EUR/mesec do 24 mesecev (24-mesečna vezava). Po izteku ugodnosti velja redna cena. \n\n\n👉 Več informacij: neo\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "NEO B cena?",
+          "answer": "✨ Paket NEO B vključuje internet do 1 Gbit/s/100 Mbit/s in 210+ TV programov (Standard shema). Redna cena je 58 € mesečno. Za nove naročnike z mobilnim paketom NAJ ali SUPR je akcijska cena 32,99 €/mesec do 24 mesecev (24-mesečna vezava). Po izteku velja redna cena.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "What is the regular monthly price of the NEO B package?",
+          "answer": "✨ Redna mesečna naročnina paketa NEO B je 58 EUR. Za nove naročnike so na voljo tudi promocijske cene. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        }
+      }
+    },
+    {
+      "id": "rb13",
+      "source_qid": "bb23",
+      "facts": [
+        [
+          "63 eur",
+          "63,00",
+          "63 €"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Kakšna je redna cena paketa NEO C?",
+          "answer": "✨ Redna cena paketa NEO C znaša 63 EUR na mesec. Za nove naročnike so na voljo tudi promocijske cene. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Koliko odštejem za NEO C vsak mesec?",
+          "answer": "✨ Paket NEO C stane 63 EUR mesečno (redna cena). Za nove naročnike z mobilnim paketom NAJ ali SUPR je akcijska cena 32,99 EUR do 24 mesecev (v omrežju Telekoma Slovenije). Po izteku akcije velja redna cena. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "kaksna je redna mesecna cena paketa neo c",
+          "answer": "✨ Redna mesečna naročnina paketa NEO C znaša 63 EUR. Za nove naročnike so na voljo tudi promocijske cene. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Kolko stane NEO C mesečnoo?",
+          "answer": "✨ Paket NEO C stane 63 EUR mesečno (redna cena). Za nove naročnike z mobilnim paketom NAJ ali SUPR je akcijska cena 32,99 EUR do 24 mesecev (24-mesečna vezava). Po izteku ugodnosti velja redna cena. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "NEO C cena?",
+          "answer": "✨ Paket NEO C vključuje internet do 1 Gbit/s/300 Mbit/s in 255+ TV programov (Mega HD). Redna cena je 63 EUR/mesec. Za nove naročnike z mobilnim paketom NAJ ali SUPR je akcijska cena 32,99 EUR/mesec do 24 mesecev (24-mesečna vezava). Po izteku velja redna cena. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "How much does the NEO C package cost per month at the regular price?",
+          "answer": "✨ The regular monthly price for the NEO C package is €56.99. \n\n\nIf you're interested in additional details or promotions, feel free to ask! 😊",
+          "grade": "MISS"
+        }
+      }
+    },
+    {
+      "id": "rb14",
+      "source_qid": "bb17",
+      "facts": [
+        [
+          "150 mbit",
+          "150"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Do katere hitrosti lahko nadgradim paket Naj Net?",
+          "answer": "✨ Paket Naj Net omogoča osnovno hitrost do 2 Mbit/s proti uporabniku in do 1 Mbit/s od uporabnika. Možna je nadgradnja hitrosti do 150 Mbit/s (preko LTE/5G omrežja) z doplačilom. \n\n\nVeč informacij najdete tukaj 👉 internet\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Do kakšne hitrosti lahko pridem z Naj Net, če doplačam?",
+          "answer": "✨ Z doplačilom lahko pri paketih NEO Net dosežete naslednje hitrosti:\n\n\n\nDo 80 Mbit/s / 40 Mbit/s (VDSL) za 5 €/mesec.\nDo 1 Gbit/s / 300 Mbit/s (FTTH) za 10 €/mesec.\nDo 2 Gbit/s / 100 Mbit/s (FTTH) za 15 €/mesec.\n\n\nHitrost je odvisna od tehničnih zmogljivosti linije.",
+          "grade": "MISS"
+        },
+        "nodiacritics": {
+          "question": "do kaksne hitrosti gre paket naj net z nadgradnjo",
+          "answer": "✨ Paket Naj Net omogoča osnovno hitrost do 2 Mbit/s (prejemanje) in do 1 Mbit/s (pošiljanje). Z nadgradnjo lahko dosežete hitrosti do 150 Mbit/s (prejemanje) in do 50 Mbit/s (pošiljanje), odvisno od izbranega zakupa višje hitrosti.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Do ktere hitrosti lahko nadgradim Naj Net?",
+          "answer": "✨ Paket Naj Net omogoča osnovno hitrost do 2 Mbit/s (prejemanje) in do 1 Mbit/s (pošiljanje). Hitrost lahko nadgradite do 150 Mbit/s (prejemanje) in do 50 Mbit/s (pošiljanje) z dodatnimi zakupnimi opcijami. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "Naj Net max hitrost?",
+          "answer": "Hitrost interneta, ki je vključena v vašem paketu, lahko preverite spodaj 👇\n💡 Če dostopa do Mojega Telekoma še nimate, si ga čim prej zagotovite. Moj Telekom vam omogoča, da vsa svoja razmerja urejate sami 👇",
+          "grade": "DEFLECT"
+        },
+        "english": {
+          "question": "Up to what speed can the Naj Net plan be upgraded?",
+          "answer": "✨ The Naj Net plan can be upgraded to the following speeds:\n\n\n\nUp to 150 Mbit/s download \nUp to 50 Mbit/s upload\n\n\nWould you like assistance with upgrading? 😊",
+          "grade": "HIT"
+        }
+      }
+    },
+    {
+      "id": "rb15",
+      "source_qid": "bb02",
+      "facts": [
+        [
+          "5 gbit",
+          "5 gb/s"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Do katere hitrosti lahko nadgradim optični internet NEO?",
+          "answer": "✨ Optični internet v paketu NEO lahko nadgradite do hitrosti 5 Gbit/s. Na voljo so naslednje opcije nadgradnje:\n\n\n\ndo 1 Gbit/s / 300 Mbit/s (doplačilo 10 €/mesec)\ndo 2 Gbit/s / 100 Mbit/s (doplačilo 15 €/mesec)\ndo 5 Gbit/s (doplačilo od 99 €/mesec naprej)\n\n\nVeč informacij najdete tukaj 👉 internet. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Kako hiter je lahko največ optični internet pri vas?",
+          "answer": "✨ Največja hitrost optičnega interneta pri nas je do 5 Gbit/s. Osnovni NET paket omogoča hitrosti do 1 Gbit/s, z doplačilom pa lahko nadgradite hitrost do 5 Gbit/s. Več informacij najdete tukaj 👉 internet.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "do katere hitrosti lahko nadgradim opticni internet neo",
+          "answer": "✨ Opticni internet v paketu NEO lahko nadgradite do hitrosti 5 Gbit/s. Osnovna hitrost je do 1 Gbit/s, nadgradnje pa so možne na:\n\n\n\ndo 1 Gbit/s / 300 Mbit/s (doplačilo 10 €/mesec)\ndo 2 Gbit/s / 100 Mbit/s (doplačilo 15 €/mesec)\ndo 5 Gbit/s / 1 Gbit/s (doplačilo 99 €/mesec)\ndo 5 Gbit/s / 5 Gbit/s (samo NEO A, doplačilo 499 €/mesec)\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Do katre hitrosti gre optika NEO?",
+          "answer": "✨ Optika NEO omogoča hitrosti interneta do 1 Gbit/s v vseh paketih NEO (A, B, C). Pri določenih paketih je možna tudi nadgradnja hitrosti do 5 Gbit/s. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "NEO optika max hitrost?",
+          "answer": "✨ Na optičnem omrežju NEO lahko nadgradite hitrost do 2 Gbit/s / 100 Mbit/s za doplačilo. Največja hitrost je odvisna od tehničnih zmogljivosti linije.",
+          "grade": "MISS"
+        },
+        "english": {
+          "question": "What is the maximum speed I can upgrade NEO fiber internet to?",
+          "answer": "✨ The maximum speed you can upgrade your NEO fiber internet (FTTH) to is 5 Gbit/s. \n\n\nWould you like details on pricing or assistance with upgrading? 😊",
+          "grade": "HIT"
+        }
+      }
+    },
+    {
+      "id": "rb16",
+      "source_qid": "tv01",
+      "facts": [
+        [
+          "150"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Koliko TV programov vključuje paket NEO A?",
+          "answer": "✨ Paket NEO A vključuje osnovni nabor TV-programov, vendar točno število programov ni navedeno v razpoložljivih podatkih. Za podrobnejši seznam programov priporočamo, da preverite aktualno programsko shemo na naši spletni strani ali se obrnete na našega sodelavca. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "MISS"
+        },
+        "colloquial": {
+          "question": "Koliko programov sploh dobim v NEO A?",
+          "answer": "✨V paketu NEO A prejmete televizijo s programsko shemo Osnovna, ki vključuje več kot 150 TV-programov. Celoten seznam programov si lahko ogledate tukaj 👉 TV-programi v paketu NEO A.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "koliko tv programov vkljucuje paket neo a",
+          "answer": "✨ Paket NEO A vključuje osnovni nabor TV-programov, ki zajema več kot 120 TV-programov različnih žanrov. Točen seznam programov lahko preverite v naši aktualni programski shemi. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "MISS"
+        },
+        "typo": {
+          "question": "Kolko TV progrmov ima NEO A?",
+          "answer": "✨ Paket NEO A vključuje programsko shemo Osnovna, ki vsebuje več kot 150 TV programov. Celoten seznam programov si lahko ogledate tukaj 👉 TV-programi v paketu NEO A.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "NEO A št. programov?",
+          "answer": "✨ Paket NEO A vključuje programsko shemo Osnovna, ki vsebuje več kot 150 TV-programov. Celoten seznam programov si lahko ogledate tukaj 👉 TV-programi v paketu NEO A.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "How many TV channels are included in the NEO A package?",
+          "answer": "✨ The exact number of TV channels included in the NEO A package is not specified in the knowledge base. Would you like me to connect you with a colleague for more details?",
+          "grade": "MISS"
+        }
+      }
+    },
+    {
+      "id": "rb17",
+      "source_qid": "tv03",
+      "facts": [
+        [
+          "255"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Koliko TV programov vključuje paket NEO C?",
+          "answer": "✨Paket NEO C vključuje več kot 255 TV programov v programski shemi Mega HD. Če želite podrobnejši seznam programov, mi sporočite ali obiščite 👉 neo. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Koliko kanalov ima NEO C?",
+          "answer": "✨ Paket NEO C vključuje programsko shemo Mega HD, ki vsebuje več kot 255 TV programov. Celoten seznam programov si lahko ogledate tukaj 👉 TV-programi v paketu NEO C.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "koliko tv programov vkljucuje paket neo c",
+          "answer": "✨ Paket NEO C vključuje več kot 255 TV-programov v programski shemi Mega HD. Vključuje tudi ogled nazaj do 7 dni in najvišjo kakovost slike. Vas zanima še kaj? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Koliko programv ima paket NEO C?",
+          "answer": "✨ Paket NEO C vključuje programsko shemo Mega HD, ki vsebuje več kot 255 TV programov. Celoten seznam programov si lahko ogledate tukaj 👉 TV-programi v paketu NEO C.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "NEO C programi?",
+          "answer": "✨ Programska shema Mega HD, vključena v paket NEO C, vsebuje več kot 255 TV programov. Med njimi so:\n\n\n\nTV SLO 1, TV SLO 2, POP TV, Kanal A, Planet, Planet 2\nKino, Brio, Cinestar 1, Cinestar 2, CineStar Action & Thriller, BBC First, AMC, Diva, Epic Drama, SciFi, Dizi\nDiscovery Channel, National Geographic, Animal Planet, BBC Earth, History Channel, Viasat History, Viasat Nature, Crime+Investigation, Travelxp HD, Da Vinci\n24Kitchen, E!, TV3, Arte, RTL, Super RTL, Kabel 1, Pro7, SAT 1, 3sat\nMinimax, OTO, Baby TV, Nickelodeon, Cartoon, Disney Channel, Nick Jr., JimJam\nŠport TV 1, Šport TV 2, Arena Sport 1, Arena Sport 2, Eurosport 1, Eurosport 2, Extreme TV, Motorvision+\nCMC, Klape i tambure TV, Jugoton, Mezzo\n\n\nCeloten seznam najdete tukaj 👉 TV-programi v paketu NEO C.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "How many TV channels does NEO C include?",
+          "answer": "✨ The NEO C package includes over 255 TV programs as part of the Mega HD scheme. \n\n\nFor a detailed list of channels, you can check 👉 TV programs in the NEO C package.",
+          "grade": "HIT"
+        }
+      }
+    },
+    {
+      "id": "rb18",
+      "source_qid": "tv10",
+      "facts": [
+        [
+          "3,90"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Koliko stane najem vsakega dodatnega TV-komunikatorja?",
+          "answer": "✨ Najem vsakega dodatnega NEO Smartboxa znaša 3,90 € na mesec za posamezno napravo. Na eno naročnino lahko najamete do 8 NEO Smartboxov. Dodatni Smartbox lahko naročite preko Moj Telekom. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Koliko doplačam za še en TV box?",
+          "answer": "✨ Najem dodatnega NEO Smartboxa znaša 3,90 € na mesec za vsak dodaten TV box. Na eno naročnino lahko najamete do 8 NEO Smartboxov. Dodatni Smartbox lahko naročite prek Moj Telekom. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "koliko stane najem dodatnega tv komunikatorja",
+          "answer": "✨ Najem dodatnega NEO Smartboxa stane 3,90 € na mesec za vsak dodatni komunikator. Na eno naročniško razmerje lahko najamete do 8 NEO Smartboxov. Dodatni Smartbox lahko naročite prek Moj Telekom. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Kolko stane dodatni TV-komunikatr?",
+          "answer": "✨ Dodatni NEO Smartbox (TV-komunikator) znaša 3,90 € na mesec za vsak dodaten kos. Na eno naročnino lahko najamete do 8 NEO Smartboxov. Dodatni Smartbox lahko naročite prek Moj Telekom. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "dodatni komunikator cena?",
+          "answer": "✨ Cena najema dodatnega NEO Smartbox komunikatorja je 3,90 € na mesec za vsak dodaten kos. Na eno naročnino lahko najamete do 8 NEO Smartboxov. Dodatni komunikator lahko naročite preko Moj Telekom. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "How much does renting each additional TV set-top box cost?",
+          "answer": "✨ Renting each additional NEO Smartbox costs 3.90 EUR per month per device. You can rent up to 8 NEO Smartboxes on a single subscription. \n\n\nWould you like assistance with ordering one? 😊",
+          "grade": "HIT"
+        }
+      }
+    },
+    {
+      "id": "rb19",
+      "source_qid": "tv13",
+      "facts": [
+        [
+          "1,90"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Koliko stane NEO TV Lite na napravo mesečno?",
+          "answer": "✨ NEO TV Lite stane 1,90 € na mesec za posamezno napravo. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Koliko me pride NEO TV Lite na en televizor?",
+          "answer": "✨ NEO TV Lite stane 1,90 EUR na mesec za posamezen pametni televizor. Potrebujete še aktivno naročniško razmerje z internetom in televizijo ter vsaj en NEO Smartbox. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "koliko stane neo tv lite na napravo mesecno",
+          "answer": "✨ NEO TV Lite stane 1,90 € na napravo na mesec. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Koliko stne NEO TV Litte?",
+          "answer": "✨ NEO TV Lite stane 1,90 € na mesec za posamezno napravo. Če vas zanima več o aktivaciji ali možnostih, z veseljem pomagam. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "NEO TV Lite cena?",
+          "answer": "✨ NEO TV Lite stane 1,90 EUR na mesec za posamezno napravo. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "How much is NEO TV Lite per device per month?",
+          "answer": "✨ NEO TV Lite costs 1.90 € per month per device.",
+          "grade": "HIT"
+        }
+      }
+    },
+    {
+      "id": "rb20",
+      "source_qid": "tv08",
+      "facts": [
+        [
+          "7 dni",
+          "7-dnev",
+          "7 days",
+          "sedem dni"
+        ]
+      ],
+      "variants": {
+        "formal": {
+          "question": "Koliko dni nazaj lahko gledam vsebine z ogledom nazaj pri NEO?",
+          "answer": "✨ Z ogledom nazaj na NEO lahko gledate izbrane TV vsebine do 7 dni nazaj. Storitev je vključena v vse naše TV pakete. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "colloquial": {
+          "question": "Za koliko dni nazaj lahko zavrtim oddaje na NEO?",
+          "answer": "✨ Ogled nazaj na NEO omogoča ogled izbranih TV-programov do 7 dni nazaj. Storitev je vključena v vse naše TV pakete. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "nodiacritics": {
+          "question": "koliko dni nazaj lahko gledam vsebine pri neo",
+          "answer": "✨ Pri naši storitvi Ogled nazaj na NEO lahko izbrane TV-vsebine gledate do 7 dni nazaj. Storitev je vključena v vse naše TV-pakete. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "typo": {
+          "question": "Kolko dni nazja lahko gledam oddaje pri NEO?",
+          "answer": "✨ Pri NEO lahko z možnostjo Ogled nazaj spremljate TV vsebine do 7 dni nazaj na izbranih programih. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "terse": {
+          "question": "NEO ogled nazaj dni?",
+          "answer": "✨ Storitev Ogled nazaj na NEO vam omogoča ogled izbranih TV vsebin do 7 dni nazaj. Funkcija je vključena v vse TV pakete. Potrebujete še kakšno informacijo? Kar povejte 😊",
+          "grade": "HIT"
+        },
+        "english": {
+          "question": "How many days back can I watch content with NEO's catch-up TV?",
+          "answer": "✨ With NEO's catch-up TV, you can watch content up to 7 days back on selected programs. Would you like me to explain anything further? 😊",
           "grade": "HIT"
         }
       }

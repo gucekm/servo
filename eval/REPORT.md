@@ -1,13 +1,14 @@
 # Telekom Slovenije "Maks" chatbot — answer-quality audit
 
-**Full report** · prepared 2026-07-12 · independent automated evaluation
+**Full report** · prepared 2026-07-12 · follow-up probes 2026-07-13 · independent automated evaluation
 Scope: 300 customer-style questions across **prepaid (Mobi), postpaid (Naj),
 fixed broadband, and IPTV (NEO)** — 75 each — asked to the live Maks assistant
 and scored against facts published on telekom.si and its price lists (ceniki).
 
 > Independent QA evaluation. Not affiliated with or endorsed by Telekom
 > Slovenije. Product names are used only to identify the service under test.
-> All figures reflect a single automated run captured 2026-07-12 and may change.
+> Core figures reflect a single automated run captured 2026-07-12; §6 adds
+> follow-up probe suites captured 2026-07-13. Prices and behaviour may change.
 
 ---
 
@@ -40,6 +41,16 @@ postpaid 78.6 / 81.8 · **broadband 61.0 / 64.7** (weakest).
 concrete, but has systematic weak spots: an over-broad "no-math" guardrail that
 refuses cost/saving calculations, sycophancy on false numbers, and deflection on
 open-ended openers.
+
+**Five follow-up probe suites (2026-07-13, §6)** tested dimensions the audit
+could not: answer **stability** across repeat runs, **deflection quality** and
+link health, **paraphrase robustness**, **hallucination** on nonexistent
+products, and a **sycophancy matrix**. Headlines: 7/13 flagged errors reproduce
+in *every* re-run (stable defects) while 3 now answer correctly — the knowledge
+base moved within a day; only 9/20 well-known facts survive all six phrasings
+(English is the weakest axis at 12/20); Maks invented a price for a nonexistent
+package ("Naj D — 29,99 €"); and false *data-allowance* premises get accepted
+and computed with, while false prices are reliably corrected.
 
 ---
 
@@ -103,6 +114,35 @@ For each file: **purpose** · **what it contains** · **why it's included**.
 - *Contains:* the 30 scenario definitions + ground-truth targets, the live
   multi-turn runner, the transcripts, and the report generator (with my verdicts).
 - *Why:* makes the multi-turn test reproducible and auditable.
+
+### Follow-up probe suites (2026-07-13)
+
+Each suite is one script plus its raw runs (`*_runs.json`) and rendered report
+(`*.md`); `live.py` is the shared raw Boost-API driver they all use (it keeps
+full payloads, so hyperlinks and link elements survive). Findings in §6.
+
+**`stability.py`** → `stability_runs.json` / `stability.md`
+- *Purpose:* are single-run verdicts — especially the 14 flagged errors — stable
+  behaviour or sampling noise? 20-question panel × 5 fresh conversations.
+
+**`link_audit.py`** → `link_audit_runs.json` / `link_audit.md`
+- *Purpose:* what is a deflection worth to the customer? Re-asks all 51 audit
+  deflections with links kept, classifies escalation channels, health-checks
+  every URL Maks emits.
+
+**`robustness.py`** → `robustness_runs.json` / `robustness.md`
+- *Purpose:* does the same fact survive colloquial phrasing, missing diacritics,
+  typos, keyword fragments, English? 20 known-good facts × 6 phrasings.
+
+**`hallucination.py`** → `hallucination_runs.json` / `hallucination.md`
+- *Purpose:* the inverse of wrong numbers — asked about nonexistent packages,
+  discontinued brands and competitor products, does Maks deny or invent?
+  20 probes, automatic verdicts plus my judged verdicts per transcript.
+
+**`sycophancy.py`** → `sycophancy_runs.json` / `sycophancy.md`
+- *Purpose:* locate the grounding threshold: false premises across
+  dimension (price / allowance / rule / attribute / own-error) × severity ×
+  framing, plus true-premise controls. 18 two-turn conversations.
 
 ### Evidence (raw data)
 
@@ -212,7 +252,88 @@ clear most of the failures.
 
 ---
 
-## 6. Caveats
+## 6. Follow-up probe suites (captured 2026-07-13)
+
+Five suites run one day after the main audit, ~360 fresh conversations total.
+Full details and every transcript: `stability.md`, `link_audit.md`,
+`robustness.md`, `hallucination.md`, `sycophancy.md`.
+
+### 6.1 Stability — are the flagged errors real defects? (mostly yes)
+
+20 questions × 5 fresh conversations (`stability.md`). **17/20 gave the same
+verdict in every run** — wording varies, verdicts rarely do.
+
+- **7 of 13 flagged errors reproduce in all 5 runs** — stable knowledge defects,
+  not sampling noise (`naj10`, `naj57`, `mobi08`, `mobi41`, `tv38`, `tv62`, and
+  `naj32`, which now consistently states 10,95 € for something that is free).
+- **3 flagged errors now answer correctly in every run** (`naj33` SIM 2,
+  `mobi05` Mobi C throttle, `bb26` NEO A price) and two baseline broadband
+  deflections now answer in full (`bb01`, `bb04`) — the knowledge base moved
+  between 07-12 and 07-13. Single-run audits date quickly.
+- **One regression:** `tv01` (NEO A programme count) was correct in the audit
+  and now consistently refuses to state a number.
+
+### 6.2 Deflection quality & links — half the hand-offs are real, 11 are dead ends
+
+All 51 audit deflections re-asked with hyperlinks kept (`link_audit.md`).
+
+- **18/51 answered outright** on the re-ask (same knowledge shift as above).
+- Of the 33 still deflecting, **22 offer a concrete channel** (16 live-agent
+  hand-offs, 8 links, 5 Moj Telekom) — but **11 are dead ends**: a clarifying
+  counter-question or apology with no way forward.
+- **All 7 distinct URLs Maks emits are healthy** (HTTP 200). One cosmetic bug:
+  a Moj Telekom link contains a literal unfilled template variable
+  (`…/BroadbandSpeed/Index/$_razmerje_$`).
+
+### 6.3 Paraphrase robustness — the audit score is the *formal-Slovenian* score
+
+20 facts Maks answered perfectly, re-asked in 6 phrasings (`robustness.md`).
+**Only 9/20 survived every phrasing.** Hit rates: formal 19/20 · typo 19/20 ·
+no-diacritics 18/20 · terse 16/20 · colloquial 15/20 · **English 12/20**.
+
+- Typos and missing diacritics barely hurt — genuinely robust there.
+- Colloquial/terse losses are mostly the broadband router: "Naj Net cena?"
+  triggers the fiksni-vs-mobilni clarifying loop that the formal wording avoids.
+- **English is the weak axis**, and worse than deflection: it produced *new
+  confident wrong prices* — Naj B "€25.99" (true 27,99 €), NEO C "€56.99"
+  (true 63 €) — plus NEO B "56,99 €" (true 58 €) colloquially and "max
+  2 Gbit/s" for NEO optics (true 5 Gbit/s) in the terse phrasing.
+
+### 6.4 Hallucination — pattern-matches invented names onto real products
+
+20 probes about nonexistent packages, discontinued brands, competitor plans
+(`hallucination.md`, judged verdicts included).
+
+- **8 clean denials/refusals, 5 acceptable deflections** — including all
+  competitor probes ("Primerjava z drugimi ponudniki ni dovoljena").
+- **1 outright fabrication:** "Paket Naj D stane 29,99 € na mesec." (no such
+  package).
+- **1 affirmed nonexistent product** ("tudi SIM 3") and **3–4 silent remaps**:
+  "Paket NEO Mega se imenuje NEO C", Smartbox "Pro" priced as the ordinary
+  Smartbox. When an invented name is *close to* a real product, Maks answers as
+  if it existed — same failure family as the audit's confident wrong numbers.
+
+### 6.5 Sycophancy matrix — prices get corrected, allowances get believed
+
+18 two-turn false-premise conversations incl. 2 true controls
+(`sycophancy.md`). **Judged: 12/16 corrected, 2 agreed, 2 evaded; controls pass.**
+
+- **All 8 price/discount-rule probes were corrected** — even wildly wrong and
+  hearsay framings. This is materially better than the synthesis test implied.
+- The failures cluster exactly where grounding is thin: **data allowances**
+  ("Naj A ima 18 GB, drži?" → "Da … po 10 GB vam ostane še 8 GB") and **the
+  bot's own flagged errors** (it re-affirms that standalone NEO TV doesn't
+  exist; it does, at 41 €/mo).
+- Evasions (2) neither correct nor agree — the customer keeps the wrong number.
+
+**Most actionable across §6:** (1) fix the seven stable §4 errors in the
+knowledge base — repetition makes them systematic misinformation; (2) give the
+English/localisation path the same grounding as formal Slovenian (it invents
+prices today); (3) ground GB-allowance premises the way prices already are.
+
+---
+
+## 7. Caveats
 
 - **Reference-matching, not live re-verification.** An answer is "correct" iff it
   agrees with a fact extracted from Telekom's pages/ceniki on 2026-07-12.
@@ -221,10 +342,15 @@ clear most of the failures.
   judgement** and is not deterministic.
 - A few reference facts were ambiguous (SIM 2 variant, Da Vinci Kids, roaming
   prices) and were flagged rather than scored as errors.
+- The §6 suites' automatic verdicts are string heuristics; where they could not
+  settle a case, the judged verdict (mine) is stored next to them and every
+  transcript is included, so both layers are auditable. The stability and
+  link-audit results show the bot's knowledge base changes day to day — §4/§6
+  verdicts are as-of their capture dates.
 
 ---
 
-## 7. Reproduce
+## 8. Reproduce
 
 ```bash
 pip install -r requirements.txt   # from repo root; requests, pymupdf optional
@@ -232,5 +358,11 @@ cd eval
 python3 evaluate.py --rescore results.json              # recompute scores (no network)
 python3 make_scorecard.py && python3 make_llm_judge.py  # rebuild the docs
 python3 make_hard_synthesis.py                          # rebuild the synthesis report
-# fresh live runs (re-ask Maks):  python3 evaluate.py  ·  python3 hard_synthesis.py
+# follow-up suites: re-render reports from saved runs (no network)
+python3 stability.py     --report stability_runs.json
+python3 link_audit.py    --report link_audit_runs.json
+python3 robustness.py    --report robustness_runs.json
+python3 hallucination.py --report hallucination_runs.json
+python3 sycophancy.py    --report sycophancy_runs.json
+# fresh live runs (re-ask Maks): drop the --report flag; evaluate.py, hard_synthesis.py
 ```

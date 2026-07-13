@@ -99,14 +99,14 @@ PROBES = [
         "typo": "Po kolko GB se pri Naj B zmanjša hitorst?",
         "terse": "Naj B omejitev GB?",
         "english": "After how many GB does Naj B slow down the data speed?"}),
-    ("rb09", "naj13", [["5 eur"]], {
+    ("rb09", "naj13", [["5 eur", "5,00"]], {
         "formal": "Kolikšen je popust pri ugodnosti Poveži in prihrani?",
         "colloquial": "Koliko prišparam s Poveži in prihrani?",
         "nodiacritics": "koliksen je popust pri ugodnosti povezi in prihrani",
         "typo": "Koliko znaša popust Povezi in prihani?",
         "terse": "Poveži in prihrani popust?",
         "english": "How big is the Poveži in prihrani discount?"}),
-    ("rb10", "naj14", [["1 eur"]], {
+    ("rb10", "naj14", [["1 eur", "1,00"]], {
         "formal": "Koliko stane storitev Ena številka?",
         "colloquial": "Koliko me stane, da imam eno številko na dveh SIM karticah?",
         "nodiacritics": "koliko stane storitev ena stevilka",
@@ -234,6 +234,14 @@ def run_live(limit: int, delay: float) -> dict:
 
 def render(data: dict) -> str:
     probes = data["probes"]
+    # Re-grade from the stored answers so fact-group fixes propagate to
+    # --report re-renders without a new live run.
+    facts_by_pid = {pid: facts for pid, _qid, facts, _v in PROBES}
+    for p in probes:
+        facts = facts_by_pid.get(p["id"], p["facts"])
+        p["facts"] = facts
+        for rec in p["variants"].values():
+            rec["grade"] = grade(rec["answer"], facts)
     mark = {"HIT": "✓", "MISS": "✗", "DEFLECT": "D", "ERROR": "!"}
     lines = [
         "# Maks paraphrase-robustness test",
