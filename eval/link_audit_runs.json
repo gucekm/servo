@@ -1,0 +1,696 @@
+{
+  "captured": "2026-07-13 13:29 UTC",
+  "questions": [
+    {
+      "id": "naj08",
+      "category": "postpaid",
+      "question": "Kakšna je najvišja hitrost prenosa do uporabnika pri paketih Naj?",
+      "answer": "✨ Najvišja hitrost prenosa do uporabnika pri paketu Naj Net je 2 Mbit/s, z možnostjo nadgradnje do 150 Mbit/s v mobilnem omrežju. Za več informacij o paketih Naj Net obiščite 👉 internet.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [
+        "https://www.telekom.si/internet"
+      ],
+      "phones": [],
+      "channels": [
+        "web"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "naj11",
+      "category": "postpaid",
+      "question": "Koliko stane sprememba naročniškega paketa?",
+      "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali želite spremeniti mobilni paket 📱 ali paket s televizijo in internetom 🏠",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": false,
+      "actionable": false
+    },
+    {
+      "id": "naj12",
+      "category": "postpaid",
+      "question": "Kje lahko spremenim svoj naročniški paket Naj?",
+      "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali želite spremeniti mobilni paket 📱 ali paket s televizijo in internetom 🏠",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": false,
+      "actionable": false
+    },
+    {
+      "id": "naj23",
+      "category": "postpaid",
+      "question": "Katera telefonska številka je za informacije o paketih Naj?",
+      "answer": "Svoje trenutne pakete preverite spodaj, v sklopu Moja razmerja 👇\nČe vas zanima, kaj vključujejo in kateri paketi so še na voljo, pa kliknite spodaj 👇",
+      "urls": [
+        "https://moj.telekom.si/"
+      ],
+      "phones": [],
+      "channels": [
+        "web"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "mobi21",
+      "category": "prepaid",
+      "question": "Ali lahko svojo obstoječo telefonsko številko prenesem na Mobi?",
+      "answer": "Prehod iz naročniškega razmerja v Mobi ali obratno lahko uredi moj sodelavec 😊👍\nŽelite, da vas povežem s sodelavcem?",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb01",
+      "category": "broadband",
+      "question": "Kakšna je najvišja hitrost optičnega interneta pri paketih NEO?",
+      "answer": "✨ Najvišja hitrost optičnega interneta pri vseh paketih NEO (NEO A, NEO B, NEO C) je do 1 Gbit/s. Vsi paketi omogočajo tudi nadgradnjo hitrosti do 5 Gbit/s. Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "bb03",
+      "category": "broadband",
+      "question": "Koliko stane paket Net (samo internet) na mesec?",
+      "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet.",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": false,
+      "actionable": false
+    },
+    {
+      "id": "bb04",
+      "category": "broadband",
+      "question": "Kakšna je hitrost internetnega paketa Net na optiki?",
+      "answer": "✨ Paket Net na optiki omogoča hitrost do 1 Gbit/s za prenos k uporabniku in do 100 Mbit/s za prenos od uporabnika. Več informacij najdete tukaj 👉 internet.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [
+        "https://www.telekom.si/internet"
+      ],
+      "phones": [],
+      "channels": [
+        "web"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb06",
+      "category": "broadband",
+      "question": "Kakšna je akcijska cena fiksnih paketov NEO ob 24-mesečni vezavi?",
+      "answer": "✨ Akcijska cena fiksnih paketov NEO ob 24-mesečni vezavi za nove naročnike z mobilnim paketom Naj ali SUPR je 32,99 EUR/mesec. Ta cena velja 24 mesecev v omrežju Telekoma Slovenije ali 12 mesecev v omrežjih alternativnih ponudnikov (OŠO). Brez mobilnega paketa velja 32,99 EUR/mesec 6 mesecev. Po izteku ugodnosti se zaračuna redna cena paketa.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "bb07",
+      "category": "broadband",
+      "question": "Kaj lahko naredim, če na mojem naslovu še ni optike?",
+      "answer": "Pokritost optičnega omrežja na želeni lokaciji preverite spodaj 👇\nZa dodatne informacije o optičnem omrežju ali oddajo naročila vas lahko povežem s sodelavcem 🤝💬\nŽelite, da vas povežem s sodelavcem?",
+      "urls": [
+        "https://www.telekom.si/neo/optika"
+      ],
+      "phones": [],
+      "channels": [
+        "agent",
+        "web"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb09",
+      "category": "broadband",
+      "question": "Ali je priklop optike lahko brezplačen?",
+      "answer": "Podatkov o statusu gradnje nimam, ampak brez skrbi, lahko vas povežem s sodelavcem 🏗️🚧\nŽelite, da vas povežem s sodelavcem?",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb10",
+      "category": "broadband",
+      "question": "Za koliko gospodinjstev bo optika priključena brezplačno?",
+      "answer": "Podatkov o statusu gradnje nimam, ampak brez skrbi, lahko vas povežem s sodelavcem 🏗️🚧\nŽelite, da vas povežem s sodelavcem?",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb12",
+      "category": "broadband",
+      "question": "Kakšna je hitrost do uporabnika pri paketu NEO A na optiki?",
+      "answer": "✨ Pri paketu NEO A na optiki (FTTH) je hitrost do uporabnika do 1 Gbit/s, hitrost od uporabnika pa do 40 Mbit/s. Želite izvedeti še kaj o vsebini paketa ali cenah? Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "bb15",
+      "category": "broadband",
+      "question": "Ali priklop NEO 5G zahteva vrtanje ali posege v dom?",
+      "answer": "✨ Priklop NEO 5G ne zahteva vrtanja ali posegov v vaš dom. Modem preprosto priklopite sami, brez dodatnih del v stanovanju ali hiši. Želite še kaj dodatno izvedeti? Kar vprašajte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": false,
+      "actionable": false
+    },
+    {
+      "id": "bb16",
+      "category": "broadband",
+      "question": "Kakšna je hitrost paketa Naj Net in ali je prenos neomejen?",
+      "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet.",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": false,
+      "actionable": false
+    },
+    {
+      "id": "bb19",
+      "category": "broadband",
+      "question": "Na katero številko pokličem za priklop internetne opreme?",
+      "answer": "✨ Za priklop internetne opreme vam ni treba klicati. Če potrebujete pomoč pri priklopu ali imate tehnične težave, lahko to uredimo tukaj. Ali želite, da vas povežem s sodelavcem za nadaljnjo pomoč?",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb21",
+      "category": "broadband",
+      "question": "Kakšna je redna mesečna cena paketa NEO A?",
+      "answer": "✨ Redna mesečna cena paketa NEO A je 49 EUR. Za nove naročnike so na voljo promocijske cene. Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "tv24",
+      "category": "iptv",
+      "question": "Kakšna je akcijska cena paketa NEO TV ob 24-mesečni vezavi?",
+      "answer": "✨ Žal nimam neposrednih informacij o trenutnih akcijskih cenah paketa NEO TV. Za natančne podatke o cenah in pogojih vam priporočam, da preverite našo spletno stran ali pa vas lahko povežem z mojim sodelavcem, ki vam bo z veseljem pomagal. Bi želeli, da vas povežem? 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "tv25",
+      "category": "iptv",
+      "question": "Do kdaj je NEO TV Lite brezplačen ob nakupu izbranega televizorja?",
+      "answer": "✨ NEO TV Lite je ob nakupu izbranega televizorja brezplačen do 31. 12. 2026, če ga aktivirate do 31. 8. 2026. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "naj32",
+      "category": "postpaid",
+      "question": "Kolikšna je priključna taksa za storitev Ena številka?",
+      "answer": "✨ Priključna taksa za storitev Ena številka znaša 10,95 EUR z DDV. Če potrebujete še kakšno informacijo, kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "naj48",
+      "category": "postpaid",
+      "question": "Kolikšen dodatek se zaračuna za SMS iz Slovenije v tuja omrežja?",
+      "answer": "✨ Za SMS sporočila, poslana iz Slovenije v tuja omrežja, se obračuna dodatek v višini 0,15 EUR na sporočilo. Ta cena velja za uporabnike naših mobilnih storitev.\n\n\nČe potrebujete dodatne informacije ali imate še kakšno vprašanje, kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "naj50",
+      "category": "postpaid",
+      "question": "Katera je telefonska številka za informacije o paketih Naj?",
+      "answer": "Svoje trenutne pakete preverite spodaj, v sklopu Moja razmerja 👇\nČe vas zanima, kaj vključujejo in kateri paketi so še na voljo, pa kliknite spodaj 👇",
+      "urls": [
+        "https://moj.telekom.si/"
+      ],
+      "phones": [],
+      "channels": [
+        "web"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "naj52",
+      "category": "postpaid",
+      "question": "Koliko časa velja enotna akcijska cena Naj v aplikaciji Moj Telekom?",
+      "answer": "✨ Akcijska cena paketa Naj v aplikaciji Moj Telekom velja do preklica ali do zaključka promocijske akcije. Za natančne informacije o trajanju določene akcije priporočamo, da preverite podrobnosti v aplikaciji Moj Telekom ali nas kontaktirate. \n\n\nVam lahko še kako pomagam? 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "moj_telekom"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "naj60",
+      "category": "postpaid",
+      "question": "Kolikšna je priključna taksa ob sklenitvi paketa Naj?",
+      "answer": "✨ Priključna taksa ob sklenitvi paketa Naj znaša 29,99 €. Če imate še kakšno vprašanje, sem tukaj, da pomagam! 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "naj65",
+      "category": "postpaid",
+      "question": "Kje lahko spremenim naročniški paket Naj?",
+      "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali želite spremeniti mobilni paket 📱 ali paket s televizijo in internetom 🏠",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": false,
+      "actionable": false
+    },
+    {
+      "id": "naj74",
+      "category": "postpaid",
+      "question": "Kolikšna je cena minute klica iz Slovenije v EU po ceniku (Naj naprava)?",
+      "answer": "Vas zanimajo dodatni zakupi doma ali v tujini?",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": false,
+      "actionable": false
+    },
+    {
+      "id": "mobi52",
+      "category": "prepaid",
+      "question": "Ali lahko obstoječo telefonsko številko prenesem na Mobi?",
+      "answer": "Prehod iz naročniškega razmerja v Mobi ali obratno lahko uredi moj sodelavec 😊👍\nŽelite, da vas povežem s sodelavcem?",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "mobi61",
+      "category": "prepaid",
+      "question": "Ali je za ZDA na voljo zakup podatkov pri Mobi?",
+      "answer": "Za tujino so za predplačnike na voljo različni zakupi.\nMi najprej poveste, ali imate predplačniško številko dodano v Moj Telekom?",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "moj_telekom"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb26",
+      "category": "broadband",
+      "question": "Kakšna je redna mesečna cena paketa NEO A?",
+      "answer": "✨ Redna mesečna cena paketa NEO A je 49 EUR. Če potrebujete še kakšno informacijo, kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "bb29",
+      "category": "broadband",
+      "question": "Koliko stane paket Net (samo internet) na mesec?",
+      "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet.",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": false,
+      "actionable": false
+    },
+    {
+      "id": "bb30",
+      "category": "broadband",
+      "question": "Kakšna je akcijska cena fiksnih paketov NEO ob 24-mesečni vezavi?",
+      "answer": "✨ Akcijska cena za pakete NEO A, NEO B, NEO C in NEO TV ob 24-mesečni vezavi je 32,99 EUR/mesec za nove naročnike z mobilnim paketom Naj ali SUPR. Brez mobilnega paketa velja akcijska cena 6 mesecev, nato redna cena. Redne cene: NEO A 49 EUR, NEO B 58 EUR, NEO C 63 EUR, NEO TV 41 EUR. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "bb36",
+      "category": "broadband",
+      "question": "Koliko stane fiksni paket Naj Net na mesec?",
+      "answer": "✨ Paket Naj Net je mobilni internet in stane 13,99 EUR na mesec. Vključuje neomejen prenos podatkov v omrežju Telekoma Slovenije s hitrostjo do 2/1 Mbit/s. Možna je nadgradnja hitrosti z doplačilom. 👉 Več o Naj Net\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [
+        "https://www.telekom.si/internet/naj-net"
+      ],
+      "phones": [],
+      "channels": [
+        "web"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb40",
+      "category": "broadband",
+      "question": "Kaj je rešitev, če na mojem naslovu še ni optike?",
+      "answer": "Pokritost optičnega omrežja na želeni lokaciji preverite spodaj 👇\nZa dodatne informacije o optičnem omrežju ali oddajo naročila vas lahko povežem s sodelavcem 🤝💬\nŽelite, da vas povežem s sodelavcem?",
+      "urls": [
+        "https://www.telekom.si/neo/optika"
+      ],
+      "phones": [],
+      "channels": [
+        "agent",
+        "web"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb41",
+      "category": "broadband",
+      "question": "Ali priklop NEO 5G zahteva vrtanje ali posege v dom?",
+      "answer": "✨ Priklop NEO 5G ne zahteva vrtanja ali posegov v vaš dom. Modem preprosto priklopite v nekaj korakih in že ste povezani. Namestitev je hitra in enostavna. Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "bb43",
+      "category": "broadband",
+      "question": "Za koliko gospodinjstev bo optika priključena brezplačno?",
+      "answer": "Podatkov o statusu gradnje nimam, ampak brez skrbi, lahko vas povežem s sodelavcem 🏗️🚧\nŽelite, da vas povežem s sodelavcem?",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb50",
+      "category": "broadband",
+      "question": "Na katero številko pokličem za priklop internetne opreme?",
+      "answer": "✨ Za priklop internetne opreme vam ni treba klicati. Najprej preverite, ali lahko težavo rešite sami:\n\n\n\nUporabite aplikacijo Moj Telekom za navodila in podporo.\nČe potrebujete pomoč, lahko uredimo, da vas povežem s sodelavcem, ki vam bo pomagal.\n\n\nAli želite, da vas povežem s sodelavcem? 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent",
+        "moj_telekom"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb51",
+      "category": "broadband",
+      "question": "Ali lahko internet dobim prek mobilnega omrežja, če ni optike?",
+      "answer": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet.",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": false,
+      "actionable": false
+    },
+    {
+      "id": "bb52",
+      "category": "broadband",
+      "question": "Kakšna je hitrost do uporabnika pri paketu Net na optiki?",
+      "answer": "Hitrost interneta, ki je vključena v vašem paketu, lahko preverite spodaj 👇\n💡 Če dostopa do Mojega Telekoma še nimate, si ga čim prej zagotovite. Moj Telekom vam omogoča, da vsa svoja razmerja urejate sami 👇",
+      "urls": [
+        "https://moj.telekom.si/sl/BroadbandDashboard/BroadbandSpeed/Index/$_razmerje_$"
+      ],
+      "phones": [],
+      "channels": [
+        "moj_telekom",
+        "web"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb55",
+      "category": "broadband",
+      "question": "Ali je priklop optike lahko brezplačen?",
+      "answer": "Podatkov o statusu gradnje nimam, ampak brez skrbi, lahko vas povežem s sodelavcem 🏗️🚧\nŽelite, da vas povežem s sodelavcem?",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb56",
+      "category": "broadband",
+      "question": "Kolikšen popust na naročnino NEO A prinaša akcija (16 EUR)?",
+      "answer": "Ali že imate pri nas kakšno naročniko razmerje ali se zanimate za sklenitev novega? 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "bb61",
+      "category": "broadband",
+      "question": "Kakšna je hitrost oddajanja pri paketu Net na optiki?",
+      "answer": "Hitrost interneta, ki je vključena v vašem paketu, lahko preverite spodaj 👇\n💡 Če dostopa do Mojega Telekoma še nimate, si ga čim prej zagotovite. Moj Telekom vam omogoča, da vsa svoja razmerja urejate sami 👇",
+      "urls": [
+        "https://moj.telekom.si/sl/BroadbandDashboard/BroadbandSpeed/Index/$_razmerje_$"
+      ],
+      "phones": [],
+      "channels": [
+        "moj_telekom",
+        "web"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb64",
+      "category": "broadband",
+      "question": "Kje naročim opremo za priklop, če ni optike?",
+      "answer": "✨ Oprema za priklop NEO Smartboxa je priložena ob naročilu storitve pri Telekomu Slovenije. Če še niste naročili storitve ali potrebujete dodatno opremo, vas lahko povežem z mojim sodelavcem za pomoč pri naročilu. Želite, da vas povežem? Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb65",
+      "category": "broadband",
+      "question": "Kakšna je cena minute klica iz Slovenije v EU po ceniku NEO?",
+      "answer": "Cene klicev iz fiksne telefonije lahko preverite spodaj 👇\nObračun mobilnih klicev in SMS-ov je odvisen od območja, kjer se nahajate. Mi poveste, kje nameravate opraviti klic ali poslati sporočilo?",
+      "urls": [
+        "https://www.telekom.si/media/i5rbkfz3/cenik_klasi%C4%8Dne_storitve_cene_klicev.pdf"
+      ],
+      "phones": [],
+      "channels": [
+        "web"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb69",
+      "category": "broadband",
+      "question": "Ali lahko fiksni internet dobim tudi na omrežju OŠO (alternativni)?",
+      "answer": "Želite, da vas povežem s sodelavcem?",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "bb74",
+      "category": "broadband",
+      "question": "Katera telefonska številka je za pomoč pri internetu?",
+      "answer": "Telefonska številka CPU Telekoma Slovenije je +386 41 700 700.",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": false,
+      "actionable": false
+    },
+    {
+      "id": "tv33",
+      "category": "iptv",
+      "question": "Koliko programov ima samostojni paket NEO TV?",
+      "answer": "✨ Samostojni paket NEO TV omogoča spremljanje televizijskih programov, vendar nimam podatka o točnem številu programov v tem paketu. Če vas zanima uporaba NEO TV Lite, lahko na njem spremljate vse TV-programe, ki so na voljo na mobilnih napravah, razen 4K programov. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "tv44",
+      "category": "iptv",
+      "question": "Do kdaj je NEO TV Lite brezplačen ob nakupu izbranega televizorja?",
+      "answer": "✨ NEO TV Lite je ob nakupu izbranega televizorja brezplačen do 31. 12. 2026. Potrebna je aktivacija na izbranem televizorju do 31. 8. 2026. Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "tv47",
+      "category": "iptv",
+      "question": "Kako se od 1. 8. 2025 imenuje TV-opcija, prej znana kot Max?",
+      "answer": "✨ Trenutno v naši bazi nimam podatka o spremembi imena TV-opcije, prej znane kot Max, od 1. 8. Prosimo, sporočite, če želite, da vas povežem s sodelavcem za podrobnejše informacije. Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "tv57",
+      "category": "iptv",
+      "question": "Kakšna je akcijska cena paketa NEO TV ob 24-mesečni vezavi?",
+      "answer": "✨ Za informacije o akcijskih cenah paketa NEO TV ob 24-mesečni vezavi je najbolje preveriti trenutno veljavne ponudbe na naši spletni strani ali v aplikaciji Moj Telekom. Cene se lahko spreminjajo glede na promocije.\n\n\nBi želeli, da vas povežem s sodelavcem za natančne informacije? 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent",
+        "moj_telekom",
+        "web"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    },
+    {
+      "id": "tv59",
+      "category": "iptv",
+      "question": "Kolikšen popust na naročnino prinaša akcija pri paketu NEO TV?",
+      "answer": "Ali že imate pri nas kakšno naročniko razmerje ali se zanimate za sklenitev novega? 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [],
+      "clarify_only": true,
+      "actionable": false
+    },
+    {
+      "id": "tv73",
+      "category": "iptv",
+      "question": "Kakšen je strošek izdaje za NEO Smartbox (enkratno)?",
+      "answer": "✨ Enkratni strošek izdaje za NEO Smartbox ni naveden v razpoložljivi bazi znanja. Če želite natančne informacije o enkratnem strošku izdaje, vam lahko moj sodelavec pomaga. Želite, da vas povežem? Potrebujete še kakšno informacijo? Kar povejte 😊",
+      "urls": [],
+      "phones": [],
+      "channels": [
+        "agent"
+      ],
+      "clarify_only": false,
+      "actionable": true
+    }
+  ],
+  "url_checks": [
+    {
+      "url": "https://moj.telekom.si/",
+      "status": 200,
+      "final_url": "https://prijava.telekom.si/prijava/realms/telekom/protocol/openid-connect/auth?client_id=mojtelekom-prod-mvc&redirect_uri=https%3A%2F%2Fmoj.telekom.si%3A443%2Fsignin-oidc&response_type=code&scope=openid&code_challenge=k877sZT0G80L-fszBbAWIWcUHUPspZgShLSHsCUzXDE&code_challenge_method=S256&nonce=639195463870598306.YTIzZGIxYzMtOTg0My00ZTU3LTk0NDEtZDk3NWFhNGJhNjM4Nzc2YjlmN2QtNzdkMC00YmMxLTk5M2EtMzExMWE4MmIxNmRm&state=CfDJ8AuekMRTL8BPpw6dvGq1gPzUW0bjhDR7K60PRzQozKkQ7UCZRaeXcD72agdR-yDdIumbhOxZWZltzyJKEfE6mtIJa4cdIMR_HfAyqNKmNnhBEi-3YyTYnPbhr7lriqh2aWCcfdX8fs2evduSf-ChDlwToKhtXXY5-xw3wDkdn-srchNbqgmHg-EFGhmTOrOmp_pNZ9IoiMVg1qYMBXWVwaLjd9e4yW3fpIidrtz2iuvDL6Bji8-NJ-VbL5S1svcW2x0Q_cRXC1ZflgUnHKShzFON1-6xna1g13_bh48ILk1avONpjyWT-Aa0kGo6Hu5Gv2N83GG3ZB6FZCjkusZ2tQLL9SkkRqfnqEdlEFbTEL1dY8W6w_UTR0O4O9A_OPi0qg&x-client-SKU=ID_NET8_0&x-client-ver=8.17.0.0",
+      "ok": true,
+      "redirected": true
+    },
+    {
+      "url": "https://moj.telekom.si/sl/BroadbandDashboard/BroadbandSpeed/Index/$_razmerje_$",
+      "status": 200,
+      "final_url": "https://prijava.telekom.si/prijava/realms/telekom/protocol/openid-connect/auth?client_id=mojtelekom-prod-mvc&redirect_uri=https%3A%2F%2Fmoj.telekom.si%3A443%2Fsignin-oidc&response_type=code&scope=openid&code_challenge=SAFb6mEPcYiMq9cXmDPGGp4peU5VfnnPkPfB2B4wsd4&code_challenge_method=S256&nonce=639195463895012508.OGEwZDBjMTctNzdjMy00MjQxLThlNzgtYmI0NDRmODNjY2NlZWE1YzYyZTgtYTVlOC00Zjg0LTk4NDMtNjFlMDM0NTM1ODJm&state=CfDJ8AuekMRTL8BPpw6dvGq1gPxX-heSdHMuqic4glGPFngrZfdA_sGm1Fw1fTeknV-QF12ENr9IxFpAR2AmZ6OiTaeJRd9-blarqMXmVOAjAZCtwPVBfKuVEAH7nCLY3Chmc3GEaDmCTFhA2l3bxFF94Z0jFUACR1VX7EC-KV7ieS3Q786fId8kq-IJa5rD2pDY-dIcHrjaeBhr_BN8AaIv85tLtrJJZ5epblgNePEgREe3y63r5ej7jN5QiRkBZX0Gk9txdOYvr4e-ui9pJcqd5C-PLeW25hGLOwoaNyoqf1NUi7mFWgrmGCT3fTjPaBgqQxm59gQjYwDlTQdLkjFqaa15WshoLHoxt2Fu0LBqjsIJowrxOKvpfnP9rnQ-1uZLDETibw2XsCQ_YVT8-DA_haNNEb_uVwADDkgA6UAvYLfZERSYkjtM0PSC1XNQGm0BVw&x-client-SKU=ID_NET8_0&x-client-ver=8.17.0.0",
+      "ok": true,
+      "redirected": true
+    },
+    {
+      "url": "https://www.telekom.si/internet",
+      "status": 200,
+      "final_url": "https://www.telekom.si/internet",
+      "ok": true,
+      "redirected": false
+    },
+    {
+      "url": "https://www.telekom.si/internet/naj-net",
+      "status": 200,
+      "final_url": "https://www.telekom.si/internet/naj-net",
+      "ok": true,
+      "redirected": false
+    },
+    {
+      "url": "https://www.telekom.si/media/i5rbkfz3/cenik_klasi%C4%8Dne_storitve_cene_klicev.pdf",
+      "status": 200,
+      "final_url": "https://www.telekom.si/media/i5rbkfz3/cenik_klasi%C4%8Dne_storitve_cene_klicev.pdf",
+      "ok": true,
+      "redirected": false
+    },
+    {
+      "url": "https://www.telekom.si/mobilno/pokritost-mobilnega-omrezja",
+      "status": 200,
+      "final_url": "https://www.telekom.si/mobilno/pokritost-mobilnega-omrezja",
+      "ok": true,
+      "redirected": false
+    },
+    {
+      "url": "https://www.telekom.si/neo/optika",
+      "status": 200,
+      "final_url": "https://www.telekom.si/neo/optika",
+      "ok": true,
+      "redirected": false
+    }
+  ]
+}

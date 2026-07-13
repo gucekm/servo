@@ -34,6 +34,7 @@ sys.path.insert(0, str(HERE.parent))
 
 import requests  # noqa: E402
 
+from evaluate import DEFLECTION  # noqa: E402
 from live import ask_fresh  # noqa: E402
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -62,21 +63,29 @@ def classify(reply: dict) -> dict:
     if reply["phones"] and "phone" not in offered:
         offered.append("phone")
     clarify = any(p in low for p in CLARIFY)
+    # The bot may simply answer this time (its knowledge shifts between runs);
+    # such replies are not deflections at all any more.
+    answered_now = not any(p in low for p in DEFLECTION)
     # actionable = the customer got at least one concrete way forward
     actionable = bool(offered)
     return {"channels": offered, "clarify_only": clarify and not offered,
-            "actionable": actionable}
+            "actionable": actionable, "answered_now": answered_now}
 
 
-def check_url(url: str) -> dict:
-    try:
-        r = requests.get(url, headers={"User-Agent": UA}, timeout=20, allow_redirects=True)
-        return {"url": url, "status": r.status_code, "final_url": r.url,
-                "ok": r.status_code < 400,
-                "redirected": r.url.rstrip("/") != url.rstrip("/")}
-    except Exception as exc:  # noqa: BLE001
-        return {"url": url, "status": None, "final_url": None, "ok": False,
-                "error": str(exc)[:200]}
+def check_url(url: str, retries: int = 1) -> dict:
+    last = None
+    for _ in range(retries + 1):
+        try:
+            r = requests.get(url, headers={"User-Agent": UA}, timeout=20,
+                             allow_redirects=True)
+            return {"url": url, "status": r.status_code, "final_url": r.url,
+                    "ok": r.status_code < 400,
+                    "redirected": r.url.rstrip("/") != url.rstrip("/")}
+        except Exception as exc:  # noqa: BLE001 — retry once (CDN timeouts happen)
+            last = exc
+            time.sleep(2)
+    return {"url": url, "status": None, "final_url": None, "ok": False,
+            "error": str(last)[:200]}
 
 
 def run_live(delay: float) -> dict:
@@ -116,9 +125,16 @@ def run_live(delay: float) -> dict:
 def render(data: dict) -> str:
     qs = data["questions"]
     checks = data["url_checks"]
-    n_act = sum(1 for q in qs if q["actionable"])
-    channel_counts = Counter(ch for q in qs for ch in q["channels"])
-    dead = [q for q in qs if not q["actionable"]]
+    # Recompute the classification from the stored answers so that --report
+    # re-renders pick up classifier improvements.
+    for q in qs:
+        q.update(classify({"text": q["answer"], "urls": q["urls"],
+                           "phones": q["phones"]}))
+    answered = [q for q in qs if q["answered_now"]]
+    still = [q for q in qs if not q["answered_now"]]
+    n_act = sum(1 for q in still if q["actionable"])
+    channel_counts = Counter(ch for q in still for ch in q["channels"])
+    dead = [q for q in still if not q["actionable"]]
     broken = [c for c in checks if not c["ok"]]
 
     lines = [
@@ -130,10 +146,12 @@ def render(data: dict) -> str:
         "",
         "## What a deflection offers the customer",
         "",
-        f"- **{n_act}/{len(qs)} deflections are *actionable*** — they hand the customer at "
-        "least one concrete channel (agent, app, link, phone, shop).",
-        f"- **{len(dead)}/{len(qs)} are dead ends** — only a clarifying counter-question or "
-        "a generic apology, with no way forward.",
+        f"- **{len(answered)}/{len(qs)} answered outright on the re-ask** — no deflection "
+        "phrasing at all; the bot's knowledge/coverage shifted since the audit run.",
+        f"- Of the {len(still)} that still deflect, **{n_act} are *actionable*** — they hand "
+        "the customer at least one concrete channel (agent, app, link, phone, shop) —",
+        f"- and **{len(dead)} are dead ends** — only a clarifying counter-question or a "
+        "generic apology, with no way forward.",
         "",
         "| channel offered | count |",
         "|---|---|",
@@ -158,6 +176,14 @@ def render(data: dict) -> str:
             note = f"redirects to {c['final_url']}"
         lines.append(f"| {'OK ' + str(c['status']) if c['ok'] else 'BROKEN ' + str(c.get('status'))} "
                      f"| {c['url']} | {note} |")
+    if answered:
+        lines += ["", "## Answered outright on the re-ask (deflection in the audit)", ""]
+        for q in answered:
+            ans = q["answer"].replace("\n", " ")
+            if len(ans) > 220:
+                ans = ans[:220] + "…"
+            lines.append(f"- **`{q['id']}`** ({q['category']}) — {q['question']}")
+            lines.append(f"  - Maks: {ans}")
     if dead:
         lines += ["", "## Dead-end deflections (no channel offered)", ""]
         for q in dead:
@@ -167,9 +193,10 @@ def render(data: dict) -> str:
             lines.append(f"- **`{q['id']}`** ({q['category']}) — {q['question']}")
             lines.append(f"  - Maks: {ans}")
     lines += ["", "## Per-question detail", "",
-              "| id | channels | urls | phones |", "|---|---|---|---|"]
+              "| id | answered now? | channels | urls | phones |", "|---|---|---|---|---|"]
     for q in qs:
-        lines.append(f"| `{q['id']}` | {', '.join(q['channels']) or '—'} "
+        lines.append(f"| `{q['id']}` | {'yes' if q['answered_now'] else 'no'} "
+                     f"| {', '.join(q['channels']) or '—'} "
                      f"| {len(q['urls'])} | {', '.join(q['phones']) or '—'} |")
     return "\n".join(lines) + "\n"
 
