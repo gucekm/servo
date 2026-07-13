@@ -7,15 +7,15 @@
     "turns": [
       {
         "q": "Koliko plačam za Mobi C v prvem letu?",
-        "a": "✨ Paket Mobi C lahko do 31. 8. 2026 vključite po akcijski ceni 6,99 EUR/mesec za prvih 6 mesecev, nato 13,99 EUR/mesec za naslednjih 6 mesecev. Skupaj v enem letu: 6 x 6,99 EUR + 6 x 13,99 EUR = 125,88 EUR.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊"
+        "a": "✨ Paket Mobi C je v poletni akciji (1. 7.–31. 8. 2026) prvih 6 mesecev 6,99 EUR/mesec, nato 13,99 EUR/mesec. Skupaj v prvem letu:\n- 6 x 6,99 EUR = 41,94 EUR\n- 6 x 13,99 EUR = 83,94 EUR\n- Skupaj: 125,88 EUR\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊"
       },
       {
         "q": "In v drugem letu, ko akcija poteče?",
-        "a": "✨ V drugem letu je cena paketa Mobi C 13,99 EUR/mesec, torej za 12 mesecev skupaj 167,88 EUR. Če imate še kakšno vprašanje, sem vam na voljo!"
+        "a": "✨ V drugem letu, ko akcija poteče, je cena paketa Mobi C vsak mesec 13,99 EUR. Skupaj za 12 mesecev:\n- 12 x 13,99 EUR = 167,88 EUR\n\n\nVas zanima še kaj?"
       },
       {
         "q": "Kolikšna je povprečna mesečna cena čez 24 mesecev?",
-        "a": "✨ Povprečna mesečna cena paketa Mobi C v 24 mesecih je:\n\n\n(125,88 EUR + 167,88 EUR) / 24 = 12,24 EUR na mesec.\n\n\nVam lahko svetujem še pri čem?"
+        "a": "✨ Povprečna mesečna cena čez 24 mesecev je:\n(125,88 EUR + 167,88 EUR) / 24 = 12,24 EUR na mesec.\n\n\nVam lahko svetujem še pri čem?"
       }
     ]
   },
@@ -27,15 +27,15 @@
     "turns": [
       {
         "q": "Imam Naj B in doma fiksni paket Net. Koliko skupaj plačam?",
-        "a": "✨ Če imate mobilni paket Naj B in fiksni paket Net, lahko kot novi naročnik za Net plačujete promocijsko ceno 24,99 EUR/mesec za 12 mesecev (velja na omrežjih OŠO, ne velja za RUNE). Redna cena paketa Net je 39 EUR/mesec. Cena paketa Naj B ostane nespremenjena. \n\n\nVas zanima še kaj glede kombinacij ali dodatnih ugodnosti?"
+        "a": "✨ Če ste novi naročnik in imate mobilni paket Naj B ter fiksni paket Net, je akcijska cena za Net 24,99 EUR/mesec za 12 mesecev (ob vezavi 24 mesecev na omrežju OŠO). Redna cena paketa Net je 39 EUR/mesec. Cena paketa Naj B ostane nespremenjena po vašem ceniku. \n\n\nVas zanima še kaj glede kombinacije paketov ali dodatnih ugodnosti?"
       },
       {
         "q": "Se pri tem upošteva popust Poveži in prihrani?",
-        "a": "✨ Da, pri kombinaciji mobilnega paketa Naj B in fiksnega paketa Net se upošteva popust Poveži in prihrani. S tem popustom je mesečna naročnina za paket Net lahko še nižja. \n\n\nŽelite podrobnejši izračun ali vas zanima, kako pridobite ta popust?"
+        "a": "✨ Akcijska cena 24,99 EUR/mesec za paket Net že vključuje popust Poveži in prihrani, če imate hkrati aktiviran mobilni paket Naj ali SUPR. Po preteku promocije se zaračuna redna cena 39 EUR/mesec.\n\n\nVam lahko še kaj dodatno pojasnim ali preverim?"
       },
       {
         "q": "Kolikšna je torej neto mesečna cena mobilnega dela?",
-        "a": "✨ Neto mesečna cena za mobilni paket Naj B z ugodnostjo Poveži in prihrani znaša 19,66 EUR (brez DDV). Če potrebujete še izračun za fiksni del ali skupno ceno, mi sporočite!"
+        "a": "✨ Neto mesečna cena za mobilni paket Naj B znaša 24,58 EUR (brez DDV). Če potrebujete še bruto znesek ali podrobnosti o vsebini paketa, sporočite. \n\n\nVam lahko še pri čem svetujem?"
       }
     ]
   },
@@ -47,15 +47,15 @@
     "turns": [
       {
         "q": "Porabim 15 GB, ne potujem. Kaj priporočaš?",
-        "a": "Da bom lažje našel najboljšo rešitev, mi povejte, ali se zanimate za fiksni 🏠 ali mobilni 📱 internet."
+        "a": "Vas zanimajo dodatni zakupi doma ali v tujini?"
       },
       {
         "q": "Zdaj pa recimo, da mesečno potujem po EU. Se priporočilo spremeni?",
-        "a": "✨ Če pogosto potujete po EU, večina mobilnih paketov že vključuje podatke za EU brez dodatnih stroškov. Za več podatkov lahko dodate zakup. 👉 Več informacij."
+        "a": "✨ Če potujete po EU, lahko uporabljate vključene količine podatkov iz vašega mobilnega paketa brez dodatnih stroškov. Če potrebujete več podatkov, so na voljo dodatni zakupi. Več informacij 👉 tukaj."
       },
       {
         "q": "In če želim še neomejene podatke doma?",
-        "a": "✨ Za neomejene podatke doma priporočamo mobilni paket z neomejenim prenosom podatkov, kot je Največ. Preverite podrobnosti 👉 Mobilni paketi."
+        "a": "Zakupe za tujino lahko urejate spodaj 👇\n💡Če dostopa do Mojega Telekoma še nimate, si ga čim prej zagotovite. Moj Telekom vam omogoča, da vsa svoja razmerja urejate sami 👇"
       }
     ]
   },
@@ -71,11 +71,11 @@
       },
       {
         "q": "Kateri je cenejši čez eno leto, upoštevaj akcije?",
-        "a": "✨ Paket Naj B je cenejši za nove naročnike:\n\n\n\nNaj B: Akcijska cena 10,99 €/mesec (24-mesečna vezava). Po 12 mesecih: 131,88 €.\nMobi C: Stroški odvisni od porabe, brez vezave.\n\n\nNaj B vključuje neomejene klice, sporočila in 41,71 GB podatkov v EU. Mobi C zahteva dodatne zakupi za EU."
+        "a": "✨ Paket Naj B je cenejši za nove naročnike z akcijsko ceno 10,99 €/mesec ob vezavi za 24 mesecev. Mobi C nima mesečne naročnine, a zahteva zakup storitev. Za pogoste EU potovanja je Naj B ugodnejši."
       },
       {
         "q": "Kateri ima več GB v EU in za koliko?",
-        "a": "✨ Naj B ima več GB v EU:\n- Naj B: 41,71 GB v EU.\n- Mobi C: Zakupi so potrebni, količina odvisna od izbire.  \n\n\nRazlika: Naj B vključuje 41,71 GB več brez dodatnih stroškov."
+        "a": "✨ Paket Naj B vključuje 41,71 GB v EU-tarifi, medtem ko Mobi C nima vključenih GB, ampak zahteva zakup. Naj B zagotavlja bistveno več podatkov za EU."
       }
     ]
   },
@@ -87,11 +87,11 @@
     "turns": [
       {
         "q": "Kateri naročniški paket ima največ GB v EU?",
-        "a": "✨ Trenutno ne morem preveriti, kateri naročniški paket ima največ GB v EU. Ali vas zanima specifična ponudba za mobilne pakete pri Telekomu Slovenije? Lahko preverim podrobnosti za naše pakete!"
+        "a": "✨ Na voljo sta naslednji opciji z največ podatkovnimi količinami v EU:\n\n\n\nNajvečji paket: Ta običajno vključuje največ prenosa podatkov v EU.\nPoslovni paketi: Nekateri poslovni paketi imajo višje količine podatkov.\n\n\nZa natančne informacije o količinah podatkov v EU in primerjavo paketov, priporočam, da preverite našo ponudbo na 👉 Telekom Slovenije. \n\n\nPotrebujete še kakšno informacijo? 😊"
       },
       {
         "q": "Koliko stane ta paket?",
-        "a": "✨ Ali vas zanima cena mobilnih paketov 📱 ali paketov za internet in TV 🏠? Tako vam lahko pomagam najti pravo ponudbo."
+        "a": "✨ Ali vas zanimajo mobilni paketi 📱 ali paketi za internet in TV 🏠? Tako vam lahko posredujem ustrezne informacije."
       },
       {
         "q": "In koliko je cenejši z ugodnostjo Poveži in prihrani?",
@@ -107,15 +107,15 @@
     "turns": [
       {
         "q": "Sem nov naročnik. Kdaj velja akcijska cena Naj?",
-        "a": "✨ Akcijska cena paketov Naj velja za nove naročnike ob sklenitvi naročniškega razmerja s 24-mesečno vezavo:\n- 10,99 €/mesec z ugodnostjo Poveži in prihrani (velja za naročnike mobilnih in fiksnih paketov s skupnim računom).\n- Trajanje ugodnosti:\n  - 36 mesecev ob sklenitvi v aplikaciji Moj Telekom.\n  - 24 mesecev ob sklenitvi prek drugih prodajnih kanalov.  \n\n\nPo izteku ugodnosti se zaračuna redna mesečna naročnina. Vas zanima še kaj? 😊"
+        "a": "✨ Akcijska cena za pakete Naj velja za nove naročnike, ki sklenejo naročniško razmerje s 24-mesečno vezavo. \n\n\n\nV aplikaciji Moj Telekom: 10,99 €/mesec za 36 mesecev.\nPrek drugih kanalov: 10,99 €/mesec za 24 mesecev.\n\n\nPo izteku ugodnosti velja redna cena. \n\n\nPotrebujete še kakšno informacijo? 😊"
       },
       {
         "q": "Pred 30 dnevi sem imel Naj pri vas. Sem še upravičen?",
-        "a": "✨ Žal niste upravičeni do akcijske cene, saj je telefonska številka, ki je bila v naročniškem razmerju pri Telekomu Slovenije v zadnjih 60 dneh, izključena iz ugodnosti za nove naročnike.  \n\n\nAli potrebujete dodatne informacije? 😊"
+        "a": "✨ Na žalost niste upravičeni do akcijske cene, če je bila vaša številka v zadnjih 60 dneh v naročniškem razmerju pri Telekomu Slovenije. \n\n\nVam lahko še kako pomagam? 😊"
       },
       {
         "q": "Ali lahko hkrati uveljavim Penzion in Poveži in prihrani?",
-        "a": "✨ Ne, popusta Penzion in Poveži in prihrani se med seboj izključujeta. Na računu se upošteva tisti popust, ki prinaša večjo ugodnost — običajno Poveži in prihrani. \n\n\nVam lahko še kaj pojasnim? 😊"
+        "a": "✨ Popusta Penzion in Poveži in prihrani se med seboj izključujeta. Na računu se upošteva tisti popust, ki prinaša večjo ugodnost. \n\n\nVam lahko še kaj pojasnim? 😊"
       }
     ]
   },
@@ -127,15 +127,15 @@
     "turns": [
       {
         "q": "Imam Mobi C. Kaj se zgodi, ko presežem 200 GB doma?",
-        "a": "✨ Ko pri paketu Mobi C v Sloveniji presežete 200 GB prenosa podatkov, se hitrost zniža na 64/64 kbit/s do naslednjega zakupa. Ob novem zakupu se povrne običajna hitrost. \n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊"
+        "a": "✨ Ko pri paketu Mobi C v Sloveniji porabite 200 GB podatkov, se hitrost prenosa zniža na 64/64 kbit/s do konca obračunskega obdobja. Z naslednjim zakupom se običajna hitrost ponovno vzpostavi.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊"
       },
       {
         "q": "In koliko od tega lahko porabim v EU?",
-        "a": "✨ Pri paketu Mobi C lahko v državah območja EU-tarife brezplačno porabite do 20,85 GB prenosa podatkov na mesec. Po tej količini se dodatni prenos podatkov zaračuna skladno s cenikom.\n\n\nVam lahko svetujem še pri čem?"
+        "a": "✨ V državah območja EU-tarife lahko pri paketu Mobi C porabite do 20,85 GB podatkov mesečno. Po doseženi količini se dodatna poraba zaračuna po ceniku. Za uporabo enot v EU je potrebna registracija v aplikaciji Moj Mobi.\n\n\nVam lahko svetujem še pri čem?"
       },
       {
         "q": "Če v EU porabim 25 GB, kaj se zgodi po 20,85 GB?",
-        "a": "✨ Ko v EU z Mobi C porabite 20,85 GB, se vsak dodatni MB zaračuna po ceniku za prenos podatkov nad vključeno količino. Hitrost ostane nespremenjena, le dodatna poraba je plačljiva.\n\n\nŽelite, da kaj dodatno razložim?"
+        "a": "✨ Ko v državah območja EU-tarife pri paketu Mobi C porabite 20,85 GB, se dodatna poraba podatkov zaračuna po veljavnem ceniku za prenos podatkov nad vključeno količino. Hitrost ostane nespremenjena, dokler ne dosežete 200 GB skupne porabe v Sloveniji.\n\n\nŽelite, da kaj dodatno razložim?"
       }
     ]
   },
@@ -151,11 +151,11 @@
       },
       {
         "q": "Dodam še zavarovanje za ta telefon (Premium). Koliko to doda?",
-        "a": "✨ Cena mesečne premije za paket Premium je odvisna od redne cene naprave:\n\n\n\ndo 100 €: 1,95 €\n101–200 €: 3,45 €\n201–400 €: 5,95 €\n401–600 €: 7,45 €\n601–800 €: 9,95 €\n801–1000 €: 10,95 €\n1001–3000 €: 14,95 €\n\n\nZa natančen znesek potrebujem še vrednost vašega telefona. Potrebujete še kakšno informacijo? Kar povejte 😊"
+        "a": "✨ Za paket Premium je mesečna premija odvisna od redne cene naprave:\n\n\n\ndo 100 €: 1,95 €\n101–200 €: 3,45 €\n201–400 €: 5,95 €\n401–600 €: 7,45 €\n601–800 €: 9,95 €\n801–1000 €: 10,95 €\n1001–3000 €: 14,95 €\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊"
       },
       {
         "q": "Skupni mesečni strošek?",
-        "a": "✨ Za izračun skupnega mesečnega stroška potrebujem še podatek o vrednosti vašega telefona in ali imate že kakšna druga zavarovanja pri nas. Mi lahko to sporočite?"
+        "a": "✨ Skupni mesečni strošek vključuje vašo obstoječo naročnino ter izbrano premijo za zavarovanje Premium (glede na vrednost telefona). Če mi zaupate ceno naprave in vaš trenutni paket, lahko izračunam natančneje. \n\n\nVam lahko svetujem še pri čem?"
       }
     ]
   },
@@ -167,15 +167,15 @@
     "turns": [
       {
         "q": "Z Naj B grem za teden na Hrvaško. Je poraba vključena?",
-        "a": "✨ Da, paket Naj B vključuje neomejeno količino prenosa podatkov v Sloveniji. Na Hrvaškem pa lahko brezplačno porabite do 41,71 GB podatkov v okviru EU-tarife. Po preseženi količini se dodatna poraba zaračuna skladno s cenikom. 😊\n\n\nSte še glede česa radovedni? Kar povejte!"
+        "a": "✨ Da, paket Naj B vključuje uporabo v državah EU-tarife, vključno s Hrvaško. Na voljo imate 41,71 GB prenosa podatkov, neomejene klice in sporočila. 😊"
       },
       {
         "q": "Nato nadaljujem v Srbijo. Kaj takrat?",
-        "a": "✨ V Srbiji paket Naj B ne vključuje brezplačne porabe. Priporočamo, da pred odhodom aktivirate zakup Balkan internet neomejeno za brezskrbno uporabo. \n\n\nBi želeli več informacij o tem? 😊"
+        "a": "✨ V Srbiji poraba ni vključena v paket Naj B. Priporočamo zakup Balkan internet neomejeno za brezskrbno gostovanje. Več informacij 👉 Zakupi za tujino."
       },
       {
         "q": "Kateri zakup potrebujem in koliko stane?",
-        "a": "✨ Za Srbijo priporočamo zakup Balkan internet neomejeno, ki omogoča neomejeno uporabo podatkov v Bosni in Hercegovini, Srbiji, Črni Gori, Severni Makedoniji, Albaniji in na Kosovu. Cena zakupa je odvisna od trajanja in pogojev. \n\n\nBi želeli pomoč pri aktivaciji? 😊"
+        "a": "✨ Za Srbijo priporočamo Neomejeni zakup za Balkan, ki omogoča neomejen prenos podatkov. Cena je odvisna od trajanja zakupa. Bi želeli več informacij ali pomoč pri aktivaciji? 😊"
       }
     ]
   },
@@ -187,15 +187,415 @@
     "turns": [
       {
         "q": "Mobi ima 24-mesečno vezavo, kajne?",
-        "a": "✨ Ne, predplačniški paket Mobi pri Telekomu Slovenije ne vključuje vezave ali pogodbenega obdobja. Uporabite ga lahko brez dolgoročnih obveznosti 😊 \n\n\nSte še glede česa radovedni? Kar povejte!"
+        "a": "✨ Mobi storitev pri Telekomu Slovenije nima vezave. Gre za predplačniško storitev, kjer obveznosti ali mesečne naročnine ni. Če pa govorite o paketu z vezavo, mi prosim sporočite več podrobnosti, da vam lahko bolje svetujem 😊."
       },
       {
         "q": "Torej pri Mobi plačujem mesečno naročnino?",
-        "a": "✨ Ne, pri Mobi ne plačujete mesečne naročnine. Gre za predplačniški paket, kjer svoj račun polnite po potrebi. Porabite lahko le toliko, kolikor napolnite. 😊 \n\n\nVam lahko še kaj razložim?"
+        "a": "✨ Pri Mobi ni mesečne naročnine, saj gre za predplačniško storitev. Porabo enostavno napolnite po potrebi. Če pa govorite o drugačnem paketu, mi prosim sporočite več, da preverim 😊."
       },
       {
         "q": "Kateri je cenejši za neomejene podatke — Mobi ali Naj?",
-        "a": "✨ Paket Mobi C nudi neomejen prenos podatkov v Sloveniji za 6,99 EUR/mesec (prvih 6 mesecev ob aktivaciji v času akcije, sicer 13,99 EUR/mesec). Paket Naj je naročniški in ima drugačne pogoje ter cene.\n\n\nŽelite podrobno primerjavo ali več informacij o paketu Naj?"
+        "a": "✨ Za neomejene podatke je pri Mobi na voljo paket Mobi C (6,99 EUR/mesec za prvih 6 mesecev v akciji, nato 13,99 EUR/mesec). Paket Naj je naročniški in ni predplačniški. \n\n\nČe želite podrobno primerjavo ali več informacij o paketu Naj, prosim sporočite, ali vas zanima naročniška ali predplačniška opcija."
+      }
+    ]
+  },
+  {
+    "id": "hs11",
+    "name": "Family: Naj B + Druga številka limit",
+    "type": "rules+math",
+    "target": "Naj B allows only 1 Druga številka — a 2nd is NOT possible on Naj B (Naj C/5G allow 4). Should refuse the 2nd, not just add cost.",
+    "turns": [
+      {
+        "q": "Vzamem Naj B in dodam eno Druga številka. Koliko približno na mesec?",
+        "a": "✨ Pri paketu Naj B je redna mesečna naročnina 27,99 EUR. Če dodate storitev Druga številka, ta stane od 16,99 EUR/mesec. Skupaj bi torej plačevali približno 44,98 EUR/mesec. \n\n\nOb sklenitvi z vezavo in izbranimi ugodnostmi je lahko cena nižja. Več informacij najdete tukaj 👉 druga-stevilka.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊"
+      },
+      {
+        "q": "In če dodam še eno Druga številka?",
+        "a": "✨ Če poleg paketa Naj B dodate dve storitvi Druga številka, je skupni mesečni strošek približno 27,99 EUR (Naj B) + 2 x 16,99 EUR (Druga številka), skupaj 61,97 EUR/mesec. \n\n\nZa akcijske cene in dodatne ugodnosti preverite pogoje na 👉 druga-stevilka.\n\n\nVam lahko svetujem še pri čem?"
+      },
+      {
+        "q": "Kolikšen je skupni mesečni strošek?",
+        "a": "✨ Skupni mesečni strošek za paket Naj B z dvema storitvama Druga številka je približno 61,97 EUR (27,99 EUR + 2 x 16,99 EUR). \n\n\nČe vas zanimajo akcijske cene ali vezave, priporočam ogled podrobnosti na 👉 druga-stevilka.\n\n\nSte še glede česa radovedni? Kar povejte 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs12",
+    "name": "Mid-month proration",
+    "type": "arithmetic",
+    "target": "First month is prorated (sorazmerni del by active days); next month full 20,99 €.",
+    "turns": [
+      {
+        "q": "Sklenem Naj A sredi meseca, 15. dne. Koliko plačam prvi mesec?",
+        "a": "Naročnina se vedno zaračuna za celoten koledarski mesec, ne glede na datum vklopa ali izklopa storitve."
+      },
+      {
+        "q": "In naslednji mesec polno?",
+        "a": "✨ Vidim, da je vaše vprašanje zelo podobno prejšnjemu. Da vam bolje pomagam, lahko dodatno pojasnite, kaj natančno želite izvedeti? Na primer, zanima vas razlika v znesku med prvim in naslednjim mesecem, ali kako se obračunava naročnina? 😊"
+      },
+      {
+        "q": "Kako se obračuna prvi delni mesec?",
+        "a": "✨ Prvi delni mesec se naročnina obračuna sorazmerno glede na dneve, ko je bila storitev aktivna. \n\n\nČe imate še kakšno vprašanje, sem tukaj za vas! 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs13",
+    "name": "Insurance arithmetic, values inline",
+    "type": "arithmetic",
+    "target": "500 €→7,45 €; 900 €→10,95 €; sum 18,40 €/mo. Retest of hs08 with values given inline.",
+    "turns": [
+      {
+        "q": "Zavarujem telefon vreden 500 € (Premium). Kolikšna premija?",
+        "a": "✨ Mesečna premija za zavarovanje telefona v vrednosti 500 € v paketu Premium znaša 7,45 €. Soudeležba ob škodnem primeru je 60 €. Potrebujete še kakšno informacijo? Kar povejte 😊"
+      },
+      {
+        "q": "In če telefon stane 900 €?",
+        "a": "✨ Za telefon vreden 900 € je mesečna premija v paketu Premium 10,95 €. Soudeležba ob škodnem primeru znaša 100 €. Vam lahko svetujem še pri čem?"
+      },
+      {
+        "q": "Za oba telefona skupaj na mesec?",
+        "a": "✨ Skupna mesečna premija za oba telefona (500 € in 900 €) v paketu Premium znaša 7,45 € + 10,95 € = 18,40 €. Ste še glede česa radovedni? Kar povejte 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs14",
+    "name": "Delim GB budget",
+    "type": "constraints",
+    "target": "Max 50 GB per share; 3×50 = 150 GB; sharing draws from the SI allowance, separate from the EU-tariff cap.",
+    "turns": [
+      {
+        "q": "Imam Naj C. Po koliko GB lahko največ delim naenkrat?",
+        "a": "✨ Pri paketu Naj C lahko naenkrat delite 5, 10, 20 ali 50 GB svojim najbližjim. Delitev opravite v Mojem Telekomu ali s SMS-om na 1918 (npr. DELIM 10GB številka prejemnika). Potrebujete še kakšno informacijo? Kar povejte 😊"
+      },
+      {
+        "q": "Če trikrat delim po 50 GB, koliko GB skupaj razdelim?",
+        "a": "✨ Če trikrat delite po 50 GB, skupaj razdelite 150 GB (3 x 50 GB = 150 GB). Vam lahko svetujem še pri čem?"
+      },
+      {
+        "q": "Ali deljenje vpliva na mojo EU-tarifo?",
+        "a": "✨ Deljenje GB v paketu Naj C vpliva le na količino podatkov v domačem omrežju, ne vpliva pa na količino GB, ki jih imate na voljo za uporabo v državah območja EU-tarife. Vas zanima še kaj?"
+      }
+    ]
+  },
+  {
+    "id": "hs15",
+    "name": "24-mo total + promo saving",
+    "type": "arithmetic",
+    "target": "Regular 24×27,99 = 671,76 €; promo 24×15,99 = 383,76 €; saving 288,00 €.",
+    "turns": [
+      {
+        "q": "Naj B z 24-mesečno vezavo — kolikšna je skupna naročnina po redni ceni?",
+        "a": "✨ Za izračun skupne naročnine paketa Naj B z 24-mesečno vezavo potrebujem nekaj dodatnih informacij:\n\n\n\nAli vas zanima samo osnovna mesečna naročnina ali tudi morebitni dodatki (npr. naprave, opcije)?\nAli želite izračun za obstoječe ali nove naročnike?\n\n\nProsim, sporočite več podrobnosti, da vam lahko natančno pomagam! 😊"
+      },
+      {
+        "q": "In s promocijsko ceno 15,99 € vseh 24 mesecev?",
+        "a": "✨ Če je promocijska cena paketa Naj B na voljo za celotno obdobje 24 mesecev, lahko skupno naročnino izračunate tako:\n\n\nPromocijska cena (€) × 24 mesecev.\n\n\nNa primer, če je promocijska cena 20 €, bi bil izračun:\n20 € × 24 = 480 €.\n\n\nČe potrebujete dodatne informacije ali želite preveriti točno ponudbo, mi sporočite! 😊"
+      },
+      {
+        "q": "Koliko prihranim s promocijo?",
+        "a": "✨ Za izračun prihranka potrebujemo redno mesečno ceno paketa Naj B in promocijsko ceno. Formula je:\n\n\n(Redna cena − Promocijska cena) × 24 mesecev.\n\n\nNa primer, če je redna cena 30 € in promocijska 20 €:\n(30 € − 20 €) × 24 = 240 € prihranka.\n\n\nČe poznate redno ceno, mi jo sporočite, da izračunava skupaj! 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs16",
+    "name": "Anaphora: cheapest unlimited",
+    "type": "anaphora",
+    "target": "Cheapest unlimited = Mobi C (13,99 €, promo 6,99 €). ‘Ta paket’ → Mobi C: 20,85 GB EU, no binding. Retest of hs05 anaphora.",
+    "turns": [
+      {
+        "q": "Kateri paket ima neomejene podatke najceneje?",
+        "a": "✨ Najcenejši paket z neomejenimi podatki je Naj A za 20,99 € mesečno.  \n\n\nČe ste novi naročnik, lahko izkoristite akcijsko ceno:\n- 10,99 €/mesec (36 mesecev ob sklenitvi v aplikaciji Moj Telekom).  \n\n\nPo izteku ugodnosti velja redna cena. Vas zanima še kaj? 😊"
+      },
+      {
+        "q": "Koliko GB v EU ima ta paket?",
+        "a": "✨ Paket Naj A vključuje 20 GB podatkov, ki jih lahko brezplačno porabite v državah območja EU-tarife. 😊"
+      },
+      {
+        "q": "Ima ta paket vezavo?",
+        "a": "✨ Da, akcijska cena paketa Naj A zahteva 24-mesečno vezavo. Brez vezave velja redna cena 20,99 €/mesec. 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs17",
+    "name": "Anaphora: the pricier one",
+    "type": "anaphora",
+    "target": "Naj C (28,99 €) dearer than Naj A (20,99 €) by 8,00 €/mo. Must resolve ‘dražji’.",
+    "turns": [
+      {
+        "q": "Primerjaj paketa Naj A in Naj C.",
+        "a": "✨ Tukaj je primerjava paketov Naj A in Naj C:\n\n\nNaj A:\n- Cena: 20,99 €/mesec (10,99 € s promocijo in ugodnostjo Poveži in prihrani).\n- Prenos podatkov: 20 GB (do 20 GB v EU).\n- Hitrost: Do 1 Gbit/s (200 Mbit/s od uporabnika).\n- Klici in SMS: Neomejeno v Sloveniji in EU.\n\n\nNaj C:\n- Cena: 28,99 €/mesec (10,99 € s promocijo in ugodnostjo Poveži in prihrani).\n- Prenos podatkov: Neomejeno (500 GB pri polni hitrosti, nato 2/1 Mbit/s; 43,2 GB v EU).\n- Hitrost: Do 1 Gbit/s (200 Mbit/s od uporabnika).\n- Klici in SMS: Neomejeno v Sloveniji in EU.\n\n\nNaj C ponuja več podatkov in višje omejitve za EU. Vas zanima še kaj? 😊"
+      },
+      {
+        "q": "Kateri je dražji?",
+        "a": "✨ Paket Naj C je dražji s ceno 28,99 €/mesec, medtem ko je cena paketa Naj A 20,99 €/mesec."
+      },
+      {
+        "q": "Za koliko evrov na mesec je dražji?",
+        "a": "✨ Paket Naj C je dražji za 8 € na mesec v primerjavi s paketom Naj A."
+      }
+    ]
+  },
+  {
+    "id": "hs18",
+    "name": "Anaphora: it (Ena številka)",
+    "type": "anaphora",
+    "target": "Ena številka 1 €/mo; requires VoLTE (so ‘no’). Pronoun ‘jo’ must stay bound.",
+    "turns": [
+      {
+        "q": "Kaj je storitev Ena številka?",
+        "a": "✨ Storitev Ena številka omogoča, da do tri vaše obstoječe telefonske številke združite v eno. Ko vas nekdo kliče, zvonijo vse povezane naprave hkrati, vi pa lahko klic sprejmete na kateri koli izmed njih. Pri odhodnih klicih je vedno prikazana ista, nosilna številka. Storitev deluje na napravah, ki podpirajo VoLTE in omogočajo uporabo SIM ali eSIM.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊"
+      },
+      {
+        "q": "Koliko stane?",
+        "a": "✨ Storitev Ena številka stane 1 EUR na mesec. Mesečna naročnina se zaračuna le nosilni številki, dodatne številke pa imajo storitev brezplačno.\n\n\nVas zanima še kaj?"
+      },
+      {
+        "q": "Ali jo lahko uporabljam brez VoLTE?",
+        "a": "✨ Storitev VoWiFi lahko uporabljate tudi brez VoLTE, čeprav sta storitvi pogosto aktivirani skupaj. VoWiFi omogoča klicanje prek WiFi-ja, ne glede na to, ali je VoLTE vključen. Potrebujete še kakšno informacijo? Kar povejte 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs19",
+    "name": "Shift-constraint, mobilni stated",
+    "type": "context-update",
+    "target": "Should recommend and then REVISE as constraints change. Retest of hs03 but with ‘mobilni’ stated up front (does that avoid the opener deflection?).",
+    "turns": [
+      {
+        "q": "Priporoči mobilni paket za 25 GB brez potovanj.",
+        "a": "✨ Priporočam paket Naj A, ki vključuje:\n- 20 GB prenosa podatkov v Sloveniji,\n- neomejene klice in sporočila v Sloveniji.  \n\n\nCena: 20,99 €/mesec (brez popustov).\nZa dodatnih 5 GB lahko zakupite dodatne količine.  \n\n\nVam lahko še kako pomagam? 😊"
+      },
+      {
+        "q": "Zdaj potujem po EU 10 GB mesečno. Se spremeni?",
+        "a": "✨ Paket Naj A vključuje 20 GB podatkov, od tega lahko v državah EU-tarife porabite do 20 GB brezplačno. Vaša uporaba v EU bi torej ostala enaka ali boljša. 😊"
+      },
+      {
+        "q": "In želim neomejene podatke doma.",
+        "a": "✨ Za neomejene podatke doma priporočam paket Naj B ali Naj C:  \n\n\n\nNaj B:  \n\n\n\nNeomejeni podatki (po 200 GB se hitrost zniža).  \nCena: 27,99 €/mesec.  \n\nNaj C:  \n\n\n\nNeomejeni podatki (po 500 GB se hitrost zniža).  \nCena: 28,99 €/mesec.  \n\n\n\nOba vključujeta tudi uporabo v EU. 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs20",
+    "name": "Budget-bounded pick",
+    "type": "optimization",
+    "target": "≤20 € → Naj A (20,99 is just over; promo 15,99 fits). ≤30 € → Naj B/C. Most EU data within 30 € = Naj C (43,20 GB).",
+    "turns": [
+      {
+        "q": "Kateri mobilni naročniški paket je najboljši do 20 € na mesec?",
+        "a": "✨ Na voljo je paket Naj A za 20,99 € na mesec. Vključuje:\n- 20 GB podatkov (v EU do 20 GB),\n- neomejene klice in SMS/MMS v Sloveniji in EU.  \n\n\nČe ste novi naročnik, lahko izkoristite promocijo: 10,99 € na mesec za 24–36 mesecev (odvisno od sklenitve).  \n\n\nVas zanima več? 😊"
+      },
+      {
+        "q": "In če proračun dvignem na 30 €?",
+        "a": "✨ Če dvignete proračun na 30 €, priporočam paket Naj B za 27,99 € na mesec. Vključuje:\n- Neomejene podatke (200 GB pri polni hitrosti, nato 2/1 Mbit/s),\n- 41,71 GB v EU,\n- Neomejene klice in SMS/MMS v Sloveniji in EU.  \n\n\nZa nove naročnike je promocijska cena 10,99 € na mesec za 24–36 mesecev.  \n\n\nVam lahko še kaj razložim? 😊"
+      },
+      {
+        "q": "Kateri ima največ EU-podatkov znotraj tega proračuna?",
+        "a": "✨ Paket Naj C za 28,99 € na mesec vključuje največ EU-podatkov:\n- 43,20 GB v EU,\n- Neomejene podatke (500 GB pri polni hitrosti, nato 2/1 Mbit/s),\n- Neomejene klice in SMS/MMS v Sloveniji in EU.  \n\n\nPromocijska cena za nove naročnike je 10,99 € na mesec za 24–36 mesecev.  \n\n\nBi želeli več informacij? 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs21",
+    "name": "Downgrade tradeoff",
+    "type": "context-update",
+    "target": "Save 28,99−20,99 = 8 €/mo; lose unlimited data (Naj A caps at 20 GB) and the larger 43,20 GB EU allowance.",
+    "turns": [
+      {
+        "q": "Imam Naj C, a premalo uporabljam. Naj preklopim na Naj A?",
+        "a": "✨ Če Naj C ne izkoristite v celoti, je prehod na Naj A lahko dobra izbira. Naj A vključuje:\n\n\n\n20 GB podatkov (tudi v EU),\nneomejene klice in sporočila,\nhitrost do 1 Gbit/s.\n\n\nCena je 20,99 €/mesec brez popustov. Če želite, lahko uredim prehod na paket. Bi želeli nadaljevati? 😊"
+      },
+      {
+        "q": "Koliko prihranim mesečno?",
+        "a": "✨ S prehodom z Naj C (28,99 €/mesec) na Naj A (20,99 €/mesec) prihranite 8 €/mesec. \n\n\nBi želeli, da preverimo možnosti za prehod? 😊"
+      },
+      {
+        "q": "Kaj pomembnega izgubim?",
+        "a": "✨ Pri prehodu z Naj C na Naj A izgubite:\n\n\n\nNeomejen prenos podatkov (Naj A vključuje 20 GB).\nVišji limit za EU podatke (Naj C: 43,2 GB, Naj A: 20 GB).\nZnižanje hitrosti po preseženem limitu (Naj C: 500 GB, Naj A: ni dodatnega prenosa).\n\n\nBi želeli dodatne informacije? 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs22",
+    "name": "Discount stacking (pensioner)",
+    "type": "rules",
+    "target": "Penzion and Poveži do NOT stack — only the larger applies (Poveži −5 €). Naj B net 22,99 €.",
+    "turns": [
+      {
+        "q": "Sem upokojenec z Naj B in fiksnim Net. Kateri popusti veljajo?",
+        "a": "✨ Kot upokojenec z Naj B in fiksnim paketom Net ste lahko upravičeni do naslednjih popustov:\n\n\n\nPoveži in prihrani: 5 € popusta na mesečno naročnino Naj B, če imate skupni račun za mobilne in fiksne storitve.\nPenzion: 3 € popusta za upokojence ali starejše od 60 let.\n\n\nPopusta se med seboj izključujeta; upošteva se tisti, ki prinaša večjo ugodnost. \n\n\nVas zanima še kaj? 😊"
+      },
+      {
+        "q": "Se Penzion in Poveži in prihrani seštevata?",
+        "a": "✨ Ne, popusta Penzion in Poveži in prihrani se med seboj izključujeta. Na računu se upošteva tisti popust, ki prinaša večjo ugodnost. \n\n\nVam lahko še kako pomagam? 😊"
+      },
+      {
+        "q": "Kolikšna je končna cena mobilnega dela?",
+        "a": "✨ Če imate paket Naj B in ste upravičeni do popusta Poveži in prihrani (5 €), bo vaša mesečna naročnina znašala 22,99 €. Če pa se upošteva popust Penzion (3 €), bo cena 24,99 €.\n\n\nSistem samodejno izbere ugodnejšo možnost. 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs23",
+    "name": "MNP eligibility chain",
+    "type": "rules",
+    "target": "MNP port-in = new subscriber (number not at TS in last 60 days) → eligible; promo needs 24-month binding.",
+    "turns": [
+      {
+        "q": "Prenesem številko od drugega operaterja (MNP). Sem nov naročnik?",
+        "a": "✨ Da, pri prenosu številke od drugega operaterja postanete nov naročnik pri Telekomu Slovenije. Številko lahko obdržite, prenos pa je brezplačen. 😊"
+      },
+      {
+        "q": "Velja zame akcijska cena Naj?",
+        "a": "✨ Da, kot nov naročnik pri prenosu številke lahko izkoristite akcijske cene paketov, vključno s paketom Naj. Če želite več informacij ali pomoč, mi sporočite! 😊"
+      },
+      {
+        "q": "Ali potrebujem 24-mesečno vezavo za to ceno?",
+        "a": "✨ Da, za akcijsko ceno paketa Naj je običajno potrebna 24-mesečna vezava. Če želite podrobnosti ali pomoč pri naročilu, mi sporočite! 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs24",
+    "name": "Migration fee logic",
+    "type": "rules",
+    "target": "Package change 10,95 € charged only to bonded relationships; change via Moj Telekom / 041 700 700 / a store.",
+    "turns": [
+      {
+        "q": "Koliko stane sprememba iz Naj A v Naj C?",
+        "a": "Če nimate aktivnega aneksa, lahko spremembo mobilnega paketa enostavno uredite sami v Mojem Telekomu, v sklopu Naročniško razmerje, ki se nahaja na levi strani.\nČe dostopa do Mojega Telekoma še nimate, si ga čim prej zagotovite 👇"
+      },
+      {
+        "q": "Je brezplačno, če nisem vezan?",
+        "a": "✨ Ali lahko prosim pojasnite, na kaj točno mislite z \"brezplačno\"? Ali gre za določeno storitev, paket ali ponudbo? Tako vam bom lahko bolje pomagal. 😊"
+      },
+      {
+        "q": "Kje to uredim?",
+        "a": "✨ Lahko prosim pojasnite, kaj želite urediti? Ali gre za spremembo paketa, pogojev ali kaj drugega? Tako vas bom lahko natančno usmeril. 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs25",
+    "name": "Data→usage conversion",
+    "type": "derived",
+    "target": "~0,7–1 GB/h HD → ~20–28 h from 20 GB (honest estimate ok; hallucinated precision not). Naj B unlimited domestically; EU counts against 41,71 GB.",
+    "turns": [
+      {
+        "q": "Koliko ur videa v HD lahko približno gledam z 20 GB?",
+        "a": "📊 Stanje količin iz paketa in dodatnih zakupov ter porabo lahko preverite v Mojem Telekomu spodaj 👇\nPorabo lahko preverite tudi z SMS-om. Pošljite PORABA na 1919.\n💡Če dostopa do Mojega Telekoma še nimate, si ga čim prej zagotovite. Moj Telekom vam omogoča, da vsa svoja razmerja urejate sami 👇"
+      },
+      {
+        "q": "In z neomejenim paketom Naj B?",
+        "a": "✨ S paketom Naj B imate neomejen prenos podatkov! Po doseženih 200 GB se hitrost zniža na 2/1 Mbit/s, kar še vedno omogoča gledanje HD videa brez težav. 😊"
+      },
+      {
+        "q": "Se gledanje šteje v EU-zakup?",
+        "a": "✨ Da, gledanje videa v državah EU-tarife se šteje v vaš EU-zakup podatkov. Pri paketu Naj B lahko v EU brezplačno porabite do 41,71 GB. 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs26",
+    "name": "Speed→download time",
+    "type": "derived",
+    "target": "10 GB=80 Gb → ~80 s at 1 Gbit/s; ~800 s (~13 min) at 100 Mbit/s. All NEO A/B/C reach 1 Gbit/s down on FTTH.",
+    "turns": [
+      {
+        "q": "Pri optiki 1 Gbit/s, kako hitro prenesem 10 GB datoteko?",
+        "a": "✨ Pri hitrosti 1 Gbit/s lahko teoretično prenesete 10 GB datoteko v približno 80 sekundah. To velja ob optimalnih pogojih brez drugih omejitev."
+      },
+      {
+        "q": "In pri 100 Mbit/s?",
+        "a": "✨ Pri hitrosti 100 Mbit/s bi prenos 10 GB datoteke trajal približno 13 minut in 20 sekund, ob optimalnih pogojih."
+      },
+      {
+        "q": "Kateri paket NEO ima 1 Gbit/s?",
+        "a": "Hitrost interneta, ki je vključena v vašem paketu, lahko preverite spodaj 👇\n💡 Če dostopa do Mojega Telekoma še nimate, si ga čim prej zagotovite. Moj Telekom vam omogoča, da vsa svoja razmerja urejate sami 👇"
+      }
+    ]
+  },
+  {
+    "id": "hs27",
+    "name": "Promo timeline",
+    "type": "temporal",
+    "target": "Mobi promo runs to 31. 8. 2026; on activation the price holds 6 months, then reverts to the regular price.",
+    "turns": [
+      {
+        "q": "Kdaj se konča akcija za pakete Mobi?",
+        "a": "✨ Poletna akcija za pakete Mobi A, B in C traja od 1. 7. do 31. 8. 2026. V tem obdobju lahko v aplikaciji Moj Mobi vključite paket po znižani ceni, ki velja prvih 6 mesecev. Potrebujete še kakšno informacijo? Kar povejte 😊"
+      },
+      {
+        "q": "Če vključim danes, do kdaj imam akcijsko ceno?",
+        "a": "✨ Če danes vključite paket Mobi A, B ali C v aplikaciji Moj Mobi, boste akcijsko ceno imeli 6 mesecev od dneva vklopa, dokler ne prekinete paketa ali zmanjka dobroimetja. Želite, da kaj dodatno razložim?"
+      },
+      {
+        "q": "Kaj se zgodi po tem obdobju?",
+        "a": "✨ Po 6 mesecih se vaš izbrani paket Mobi A, B ali C samodejno podaljša po redni (ne več akcijski) ceni, če imate dovolj dobroimetja. Vam lahko svetujem še pri čem?"
+      }
+    ]
+  },
+  {
+    "id": "hs28",
+    "name": "Contract-end reasoning",
+    "type": "temporal",
+    "target": "Ends 24 months from today; after that the regular price applies; early termination triggers the remaining contractual obligation.",
+    "turns": [
+      {
+        "q": "Sklenem 24-mesečno vezavo danes. Kdaj se konča?",
+        "a": "✨ Če sklenete 24-mesečno vezavo danes, se bo ta končala čez točno 24 mesecev od današnjega datuma. Na primer, če je danes 1. oktober 2023, se bo vezava končala 1. oktobra 2025. \n\n\nVam lahko še kako pomagam? 😊"
+      },
+      {
+        "q": "Kaj se zgodi s ceno po izteku vezave?",
+        "a": "✨ Po izteku vezave se cena običajno spremeni na redno mesečno naročnino, določeno v vašem pogodbenem paketu. Če želite preveriti točen znesek ali možnosti za podaljšanje vezave, vam priporočam, da se obrnete na naše svetovalce.\n\n\nŽelite, da vas povežem z mojim sodelavcem za več informacij? 😊"
+      },
+      {
+        "q": "Ali lahko prekinem prej in kaj to stane?",
+        "a": "✨ Prekinitev vezave pred iztekom je možna, vendar je običajno treba poravnati preostanek obveznosti ali stroške, določene v pogodbi. To vključuje morebitne preostale obroke za naprave ali druge ugodnosti, ki ste jih prejeli ob sklenitvi vezave.\n\n\nAli želite, da vas povežem z mojim sodelavcem za natančne informacije glede vaše pogodbe? 😊"
+      }
+    ]
+  },
+  {
+    "id": "hs29",
+    "name": "Contradictory constraints",
+    "type": "robustness",
+    "target": "No single package maximises all: no-binding → Mobi C (20,85 GB EU); most EU data → Naj C (43,20 GB, but 24-mo binding). Must articulate the tradeoff, not pretend one wins.",
+    "turns": [
+      {
+        "q": "Želim neomejene podatke, brez vezave, najceneje in največ EU-podatkov. Kateri paket?",
+        "a": "✨ Najlepša hvala za vprašanje! Za priporočilo potrebujem še informacijo, ali vas zanimajo naši mobilni ali fiksni paketi? Tako vam bom lahko predstavil najboljšo opcijo glede na vaše želje.\n\n\nPotrebujete še kakšno informacijo? Kar povejte 😊"
+      },
+      {
+        "q": "Ali obstaja en paket, ki izpolni vse hkrati?",
+        "a": "✨ Hvala za dodatno vprašanje. Trenutno ni paketa, ki bi hkrati ponujal popolnoma neomejene podatke, brez vezave, najnižjo ceno in največ EU-podatkov. Vedno je treba izbrati kompromis med temi željami.\n\n\nAli želite, da preverim konkretne pakete glede na vaše prioritete? Vam lahko svetujem še pri čem?"
+      },
+      {
+        "q": "Kaj priporočaš kot najboljši kompromis?",
+        "a": "✨ Priporočam paket, ki ponuja veliko količino podatkov v Sloveniji in visoko količino EU-podatkov, brez vezave. Priporočilo je odvisno od vaših prioritet (cena, količina podatkov, EU-podatki). \n\n\nBi želeli, da preverim aktualne pakete in izpostavim najboljše možnosti za vas?"
+      }
+    ]
+  },
+  {
+    "id": "hs30",
+    "name": "False premise + arithmetic",
+    "type": "robustness",
+    "target": "Correct the premise: Naj A is 20 GB, not 50. Then 20 GB/30 ≈ 0,67 GB/day; reason about adequacy from the corrected figure.",
+    "turns": [
+      {
+        "q": "Naj A ima 50 GB podatkov, kajne?",
+        "a": "Vas zanimajo dodatni zakupi doma ali v tujini?"
+      },
+      {
+        "q": "Koliko je to na dan v enem mesecu?",
+        "a": "✨ Oprostite, nisem prepričan, kaj točno mislite. Ali sprašujete o porabi podatkov, stroških ali čem drugem v povezavi z našimi storitvami? Prosim, pojasnite, da vam lahko pomagam!"
+      },
+      {
+        "q": "Zadošča za dnevno uporabo zemljevidov in glasbe?",
+        "a": "✨ 50 GB podatkov je običajno dovolj za redno uporabo zemljevidov in pretakanje glasbe. Če pa imate še kakšna dodatna vprašanja glede porabe ali paketov, mi sporočite! 😊"
       }
     ]
   }
