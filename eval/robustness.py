@@ -198,19 +198,37 @@ def grade(answer: str, facts) -> str:
 def run_live(limit: int, delay: float) -> dict:
     probes = PROBES[:limit] if limit else PROBES
     out = {"captured": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()), "probes": []}
+    # Checkpoint file so an interrupted run resumes instead of restarting.
+    prog_path = HERE / "robustness_progress.jsonl"
+    done: dict = {}
+    if prog_path.exists():
+        for line in prog_path.read_text(encoding="utf-8").splitlines():
+            rec = json.loads(line)
+            done[(rec["pid"], rec["variant"])] = rec["rec"]
+        print(f"Resuming: {len(done)} conversations already done.")
     total = len(probes) * len(VARIANTS)
     n = 0
-    for pid, qid, facts, variants in probes:
-        entry = {"id": pid, "source_qid": qid, "facts": facts, "variants": {}}
-        for var in VARIANTS:
-            n += 1
-            q = variants[var]
-            reply = ask_fresh(q)
-            v = grade(reply["text"], facts)
-            entry["variants"][var] = {"question": q, "answer": reply["text"], "grade": v}
-            print(f"[{n:3}/{total}] {pid} {var:12} -> {v}", flush=True)
-            time.sleep(delay)
-        out["probes"].append(entry)
+    with prog_path.open("a", encoding="utf-8") as prog:
+        for pid, qid, facts, variants in probes:
+            entry = {"id": pid, "source_qid": qid, "facts": facts, "variants": {}}
+            for var in VARIANTS:
+                n += 1
+                if (pid, var) in done:
+                    entry["variants"][var] = done[(pid, var)]
+                    continue
+                q = variants[var]
+                reply = ask_fresh(q)
+                v = grade(reply["text"], facts)
+                rec = {"question": q, "answer": reply["text"], "grade": v}
+                entry["variants"][var] = rec
+                prog.write(json.dumps({"pid": pid, "variant": var, "rec": rec},
+                                      ensure_ascii=False) + "\n")
+                prog.flush()
+                print(f"[{n:3}/{total}] {pid} {var:12} -> {v}", flush=True)
+                time.sleep(delay)
+            out["probes"].append(entry)
+    if not limit:
+        prog_path.unlink()  # complete — the checkpoint is no longer needed
     return out
 
 

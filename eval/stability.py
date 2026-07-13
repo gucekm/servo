@@ -89,23 +89,41 @@ def run_live(runs: int, delay: float) -> dict:
                 json.loads((HERE / "results.json").read_text(encoding="utf-8"))}
     out = {"runs": runs, "captured": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()),
            "questions": []}
+    # Checkpoint file: one JSON line per finished conversation, so an
+    # interrupted run resumes instead of restarting from scratch.
+    prog_path = HERE / "stability_progress.jsonl"
+    done: dict = {}
+    if prog_path.exists():
+        for line in prog_path.read_text(encoding="utf-8").splitlines():
+            rec = json.loads(line)
+            done[(rec["id"], rec["k"])] = rec["run"]
+        print(f"Resuming: {len(done)} conversations already done.")
     total = len(panel) * runs
     n = 0
-    for qid, cat, q, facts in panel:
-        entry = {"id": qid, "category": cat, "question": q,
-                 "baseline_verdict": verdict(baseline[qid]),
-                 "runs": []}
-        for k in range(runs):
-            n += 1
-            reply = ask_fresh(q)
-            rec = build_record(qid, cat, q, facts, reply["text"])
-            v = verdict(rec)
-            entry["runs"].append({"answer": reply["text"], "recall": rec["recall"],
-                                  "deflected": rec["deflected"], "verdict": v})
-            print(f"[{n:3}/{total}] {qid:7} run {k+1}/{runs}: {v:8} recall={rec['recall']:.2f}",
-                  flush=True)
-            time.sleep(delay)
-        out["questions"].append(entry)
+    with prog_path.open("a", encoding="utf-8") as prog:
+        for qid, cat, q, facts in panel:
+            entry = {"id": qid, "category": cat, "question": q,
+                     "baseline_verdict": verdict(baseline[qid]),
+                     "runs": []}
+            for k in range(runs):
+                n += 1
+                if (qid, k) in done:
+                    entry["runs"].append(done[(qid, k)])
+                    continue
+                reply = ask_fresh(q)
+                rec = build_record(qid, cat, q, facts, reply["text"])
+                v = verdict(rec)
+                run_rec = {"answer": reply["text"], "recall": rec["recall"],
+                           "deflected": rec["deflected"], "verdict": v}
+                entry["runs"].append(run_rec)
+                prog.write(json.dumps({"id": qid, "k": k, "run": run_rec},
+                                      ensure_ascii=False) + "\n")
+                prog.flush()
+                print(f"[{n:3}/{total}] {qid:7} run {k+1}/{runs}: {v:8} "
+                      f"recall={rec['recall']:.2f}", flush=True)
+                time.sleep(delay)
+            out["questions"].append(entry)
+    prog_path.unlink()  # complete — the checkpoint is no longer needed
     return out
 
 
