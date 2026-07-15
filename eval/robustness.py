@@ -305,7 +305,8 @@ def render(data: dict) -> str:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0, help="only run first N facts")
-    ap.add_argument("--delay", type=float, default=0.4)
+    ap.add_argument("--delay", type=float, default=15.0,
+                    help="pause between conversations (s); default is a polite human cadence")
     ap.add_argument("--report", metavar="RUNS_JSON",
                     help="skip the live run; re-render robustness.md from saved runs")
     args = ap.parse_args(argv)

@@ -196,7 +196,8 @@ def render(data: dict) -> str:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--runs", type=int, default=5, help="fresh conversations per question")
-    ap.add_argument("--delay", type=float, default=0.4, help="pause between conversations (s)")
+    ap.add_argument("--delay", type=float, default=15.0,
+                    help="pause between conversations (s); default is a polite human cadence")
     ap.add_argument("--report", metavar="RUNS_JSON",
                     help="skip the live run; re-render stability.md from saved runs")
     args = ap.parse_args(argv)

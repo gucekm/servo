@@ -134,18 +134,25 @@ def ask_fresh(question: str, retries: int = 2, backoff: float = 1.5) -> Dict[str
             "html": "", "urls": [], "phones": [], "element_types": []}
 
 
-def converse(turns: List[str], retries: int = 2) -> List[Dict[str, Any]]:
+# Pause between successive turns of one conversation — a human reads the reply
+# and types the next message, so ~8s is a natural, polite cadence.
+POLITE_TURN_DELAY = 8.0
+
+
+def converse(turns: List[str], retries: int = 2,
+             turn_delay: float = POLITE_TURN_DELAY) -> List[Dict[str, Any]]:
     """Run one multi-turn conversation; returns a reply record per turn."""
     for attempt in range(retries + 1):
         try:
             conv = MaksConversation()
             conv.start()
             out = []
-            for t in turns:
+            for i, t in enumerate(turns):
                 rec = conv.say(t)
                 rec["question"] = t
                 out.append(rec)
-                time.sleep(0.3)
+                if i < len(turns) - 1:      # no need to wait after the last turn
+                    time.sleep(turn_delay)
             return out
         except Exception as exc:  # noqa: BLE001
             last = exc

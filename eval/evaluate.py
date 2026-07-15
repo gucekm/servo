@@ -190,7 +190,8 @@ def rescore(path: str) -> int:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0, help="only run first N questions")
-    ap.add_argument("--delay", type=float, default=0.25, help="pause between questions (s)")
+    ap.add_argument("--delay", type=float, default=15.0,
+                    help="pause between questions (s); default is a polite human cadence")
     ap.add_argument("--rescore", metavar="RESULTS_JSON",
                     help="recompute scores from a saved results.json (no network)")
     args = ap.parse_args(argv)
