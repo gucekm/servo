@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 jailbreak.py:*)",
+      "Bash(python3 eval/jailbreak.py:*)"
+    ]
+  }
+}
