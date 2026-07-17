@@ -206,6 +206,15 @@ class KlepetClient:
             spec.method, url, headers=headers or None, params=params or None,
             json=json_body, data=data_body, timeout=30,
         )
+        if resp.status_code == 403:
+            raise RuntimeError(
+                f"{url} refused the connection (HTTP 403 Forbidden). The chat "
+                "backend rejected this request before it reached the assistant. "
+                "This is usually a geographic or IP restriction at the backend's "
+                "edge (e.g. a Boost.ai deployment that only accepts Slovenian/EU "
+                "traffic), not a problem with this profile or client — try again "
+                "from an allowed network."
+            )
         resp.raise_for_status()
         payload: Any = None
         if resp.content:
