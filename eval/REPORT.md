@@ -369,6 +369,31 @@ English/localisation path the same grounding as formal Slovenian (it invents
 prices today); (3) ground GB-allowance premises the way prices already are;
 (4) extend jailbreak defences to **multi-turn** injections, not just single-shot.
 
+### 6.7 Status / known limitations (as of 2026-07-17)
+
+Recording the operational state so the repo reflects what has and hasn't
+actually run:
+
+- **Multi-turn jailbreak retest not yet captured live.** `jailbreak.py` (15
+  advanced/multi-turn probes following up the `sc04` finding) is **built and
+  committed but has not completed a live run**. Its `jailbreak_runs.json` /
+  `jailbreak.md` do not exist yet, and `scope.py`'s `sc04` is therefore a
+  **single, unreplicated** observation — treat it as a lead to confirm, not a
+  proven vulnerability.
+- **Endpoint rate-limited/banned during testing.** The Boost endpoint
+  (`telekom-slovenije.boost.ai`) IP-banned this environment's egress with a
+  blanket HTTP 403 after the high-volume back-to-back suite runs. It happened
+  twice: once during the scope run (cleared after ~18 h) and again during the
+  jailbreak run (still active 50+ h later at the time of writing). The block is
+  volume/rate-based, not content-based — a plain greeting also 403s.
+- **Mitigation in place for future runs.** All suites now default to a polite
+  human cadence (15 s between conversations, 8 s between turns; see `live.py`
+  `POLITE_TURN_DELAY`) instead of the original sub-second bursts that tripped
+  the WAF. A clean re-run needs the endpoint reachable again — i.e. the ban
+  lifted or the test source whitelisted by Telekom.
+- **To finish §6.6/§6.7:** once reachable, run `python3 jailbreak.py`, fill its
+  `JUDGED` dict from the transcripts, and fold the multi-turn results in here.
+
 ---
 
 ## 7. Caveats
