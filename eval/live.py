@@ -17,7 +17,7 @@ import re
 import sys
 import time
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
@@ -31,6 +31,12 @@ HEADERS = {
     "Origin": "https://www.telekom.si",
     "Referer": "https://www.telekom.si/",
 }
+
+# Boost rejects an over-long POST with 400 {"tag":"request.invalid.message.too.long"}.
+# Measured cap is 140 characters; probes must stay at or under it. We check this
+# ourselves so a too-long message fails loudly as a length error instead of being
+# retried and swallowed as a generic "[ERROR: no reply]".
+MAX_MESSAGE_LEN = 140
 
 _HREF_RE = re.compile(r"""href=["']([^"']+)["']""", re.IGNORECASE)
 _URL_RE = re.compile(r"https?://[^\s\"'<>\)\]]+")
@@ -79,6 +85,18 @@ def _reply_from_payload(payload: dict) -> Dict[str, Any]:
     }
 
 
+class MessageTooLong(ValueError):
+    """A message exceeds the backend's per-POST length cap (MAX_MESSAGE_LEN).
+
+    Deterministic, so callers should report it rather than retry.
+    """
+
+    def __init__(self, length: int):
+        self.length = length
+        super().__init__(
+            f"message too long: {length} chars > {MAX_MESSAGE_LEN} limit")
+
+
 class MaksConversation:
     """One fresh conversation with Maks over the raw Boost API."""
 
@@ -103,13 +121,27 @@ class MaksConversation:
 
     def say(self, text: str) -> Dict[str, Any]:
         assert self.conversation_id, "call start() first"
+        if len(text) > MAX_MESSAGE_LEN:
+            raise MessageTooLong(len(text))
         r = self.sess.post(
             BASE_URL,
             json={"command": "POST", "type": "text",
                   "conversation_id": self.conversation_id, "value": text},
             timeout=self.timeout,
         )
-        r.raise_for_status()
+        if not r.ok:
+            # Surface the backend's own reason (e.g. "Message too long") instead
+            # of a bare status code, so callers can see why a probe was rejected.
+            detail = r.text[:200]
+            try:
+                body = r.json()
+                if body.get("tag") == "request.invalid.message.too.long":
+                    raise MessageTooLong(len(text))
+                detail = body.get("error") or detail
+            except ValueError:
+                pass
+            raise requests.HTTPError(
+                f"{r.status_code} for POST: {detail}", response=r)
         return _reply_from_payload(r.json())
 
 
@@ -119,6 +151,10 @@ def ask_fresh(question: str, retries: int = 2, backoff: float = 1.5) -> Dict[str
     On repeated failure returns a record whose text starts with ``[ERROR:`` so
     callers can score it as a non-answer without crashing the run.
     """
+    if len(question) > MAX_MESSAGE_LEN:
+        return {"text": f"[ERROR: message too long: {len(question)} > "
+                        f"{MAX_MESSAGE_LEN} chars]",
+                "html": "", "urls": [], "phones": [], "element_types": []}
     last: Optional[Exception] = None
     for attempt in range(retries + 1):
         try:
@@ -140,8 +176,23 @@ POLITE_TURN_DELAY = 8.0
 
 
 def converse(turns: List[str], retries: int = 2,
-             turn_delay: float = POLITE_TURN_DELAY) -> List[Dict[str, Any]]:
-    """Run one multi-turn conversation; returns a reply record per turn."""
+             turn_delay: float = POLITE_TURN_DELAY,
+             on_turn: Optional[Callable[[int, str, Dict[str, Any]], None]] = None,
+             ) -> List[Dict[str, Any]]:
+    """Run one multi-turn conversation; returns a reply record per turn.
+
+    If *on_turn* is given it is called ``on_turn(index, question, reply)`` right
+    after each reply arrives, so callers can stream the Q&A as it happens.
+    """
+    too_long = [t for t in turns if len(t) > MAX_MESSAGE_LEN]
+    if too_long:
+        # Deterministic — a live call would only earn a 400; report and stop.
+        return [{"question": t, "html": "", "urls": [], "phones": [],
+                 "element_types": [],
+                 "text": (f"[ERROR: message too long: {len(t)} > "
+                          f"{MAX_MESSAGE_LEN} chars]"
+                          if len(t) > MAX_MESSAGE_LEN else "[ERROR: not sent]")}
+                for t in turns]
     for attempt in range(retries + 1):
         try:
             conv = MaksConversation()
@@ -151,6 +202,8 @@ def converse(turns: List[str], retries: int = 2,
                 rec = conv.say(t)
                 rec["question"] = t
                 out.append(rec)
+                if on_turn is not None:
+                    on_turn(i, t, rec)
                 if i < len(turns) - 1:      # no need to wait after the last turn
                     time.sleep(turn_delay)
             return out
